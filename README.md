@@ -16,3 +16,5 @@ goldCorpus: contains manually created sandhis based on 271 rules and their out p
 presentation: midterm presentation
 
 uohCorpus: Manually created sandhi corpush from uoh website http://sanskrit.uohyd.ac.in/Corpus/
+
+goldCorpus.xls: Outputs of manual and automated tool.

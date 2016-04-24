@@ -1,0 +1,9 @@
+Scheme                  Characters Unavailable
+SLP1                         No
+IAST                         Anunaasika, Upadhmaniya, Jhivamulya, Udatta, Anudatta
+Velthius                     Avagraha,Anunaasika, Upadhmaniya, Jhivamulya, Udatta, Anudatta
+ITRANS                       Upadhmaniya, Jhivamulya, Udatta, Anudatta
+Harvard-Kyoto                Avagraha,Anunaasika, Upadhmaniya, Jhivamulya, Udatta, Anudatta
+WX Encoding                  Avagraha,Anunaasika, Upadhmaniya, Jhivamulya, Udatta, Anudatta
+Unicode                      No
+
