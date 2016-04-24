@@ -14,3 +14,5 @@ dictionary: contains all words extracted from sanskrit-sanskrit and sanskrit-eng
 goldCorpus: contains manually created sandhis based on 271 rules and their out puts from different sandhi splitting tools.
 
 presentation: midterm presentation
+
+uohCorpus: Manually created sandhi corpush from uoh website http://sanskrit.uohyd.ac.in/Corpus/
