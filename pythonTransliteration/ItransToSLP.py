@@ -1,0 +1,40 @@
+
+def convertITRANSToSLP(text):
+	text = text.replaceAll("AUM", "Î©"); 
+	text = text.replaceAll("OM", "Î©"); 
+	text = text.replaceAll("q", "Îº"); 
+	text = text.replaceAll("K", "Îš"); 
+	text = text.replaceAll("G", "Î³"); 
+	text = text.replaceAll("z", "Î¶"); 
+	text = text.replaceAll("J", "Î¶"); 
+	text = text.replaceAll("f", "Ï†"); 
+	text = text.replaceAll("\\.Dh", "Î”"); 
+	text = text.replaceAll("\\.D", "Î´"); 
+	text = text.replaceAll("\\.d", "Ï„"); 
+	text = text.replaceAll("\\.t", "Î¸"); 
+	text = text.replaceAll("\\.s", "Ïƒ"); 
+	text = text.replaceAll("RRi", "f");
+	text = text.replaceAll("RRI", "F");
+	text = text.replaceAll("LLi", "x");
+	text = text.replaceAll("LLI", "X");
+	text = text.replaceAll("ai", "E");
+	text = text.replaceAll("au", "O");
+	text = text.replaceAll("kh", "K");
+	text = text.replaceAll("gh", "G");
+	text = text.replaceAll("~N", "@@"); 
+	text = text.replaceAll("\\.N", "~"); 
+	text = text.replaceAll("Dh", "Q"); 
+	text = text.replaceAll("Th", "W"); 
+	text = text.replaceAll("jh", "J");
+	text = text.replaceAll("~n", "Y");
+	text = text.replaceAll("T", "w");
+	text = text.replaceAll("D", "q");
+	text = text.replaceAll("N", "R");
+	text = text.replaceAll("th", "T"); 
+	text = text.replaceAll("dh", "D");
+	text = text.replaceAll("ph", "P");
+	text = text.replaceAll("bh", "B");
+	text = text.replaceAll("Sh", "z");
+	text = text.replaceAll("sh", "S");
+	text = text.replaceAll("@@", "N"); 
+	return text
