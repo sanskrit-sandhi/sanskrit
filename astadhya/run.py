@@ -14,7 +14,7 @@ out.close()'''
 
 
 def isLengthGrater(string):
-	return False
+	#return False
 	if len(string.strip().split(' ')) > 2:
 		return True
 	for word in string.strip().split(' '):
@@ -22,17 +22,17 @@ def isLengthGrater(string):
 			return True
 	return False
 
-eq = open('eq_sandhis_nowordlength.csv','w')
-neq = open('neq_sandhis_nowordlength.csv','w')
+eq = open('eq_sandhis_wordlength.txt','w')
+neq = open('neq_sandhis_wordlength.txt','w')
 for line in open('sandhis.csv').readlines():
 	line = line.strip().replace('"','')
 	line = line.split(',');
 	if len(line) != 6:
 		print line
 	elif line[3].strip().replace(' ','') == line[4].strip().replace(' ','') or len(line[4].split(' ')) == 1 or '-' in line[4] or isLengthGrater(line[4]):
-		eq.write('"'+line[0].strip()+'","'+line[1].strip()+'","'+line[2].strip()+'","'+line[3].strip()+'","'+line[4].strip().replace(' ','+')+'",\n')
+		eq.write(line[0].strip()+':'+line[1].strip()+':'+line[2].strip()+','+line[3].strip()+','+line[4].strip().replace(' ','+')+','+line[0].strip()+'\n')
 	elif line[3].strip().replace(' ','') != line[4].strip().replace(' ',''):
-		neq.write('"'+line[0].strip()+'","'+line[1].strip()+'","'+line[2].strip()+'","'+line[3].strip()+'","'+line[4].strip().replace(' ','+')+'",\n')
+		neq.write(line[0].strip()+':'+line[1].strip()+':'+line[2].strip()+','+line[3].strip()+','+line[4].strip().replace(' ','+')+','+line[0].strip()+'\n')
 eq.close()
 neq.close()
 		
