@@ -120,6 +120,8 @@ def inriaParse(data, merged, split, out, rule, id):
             else:
                 writeToFile(merged, split, result, out, '0', rule, id)  
 						
+        else:
+            writeToFile(merged, split, '', out, '0', rule, id)  
 def processFile(filePath):
     if os.path.isfile(filePath):
         parentDir = os.path.dirname(os.path.abspath(filePath))
