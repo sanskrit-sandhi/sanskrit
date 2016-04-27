@@ -6,12 +6,13 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="SandhiMaker" key="selection"/>
+		<item value="+" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value=".concat("/>
 			<item value="sandhimaker"/>
 			<item value="SandhiMaker"/>
 			<item value="&quot;a&quot;"/>
@@ -19,9 +20,9 @@
 			<item value="convertFromFile"/>
 			<item value="iast"/>
 			<item value="vel"/>
-			<item value="IAST"/>
 		</list>
 		<list key="replacehistory">
+			<item value="+"/>
 			<item value="[i]"/>
 			<item value="[j]"/>
 			<item value="}"/>

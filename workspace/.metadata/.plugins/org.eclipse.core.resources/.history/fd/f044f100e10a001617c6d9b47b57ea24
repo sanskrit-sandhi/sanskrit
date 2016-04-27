@@ -451,13 +451,13 @@ public class UtfToVelthis {
 	}
 
 	public static void main(String[] args) throws IOException {
-		System.out.println(convert("चार्थे", "DN"));
+		//System.out.println(convert("चार्थे", "DN"));
 		//System.out.println(convert("abcd", "DN"));
 		//System.out.println(convert1("चार्थे", "DN"));
 		//System.out.println(convert2("चार्थे", "DN"));
 		
 		//convertFromFolder("C:\\Users\\IBM_ADMIN\\Desktop\\IITD\\sanskritResources\\externalTools\\goldenData\\golddataset.txt");
-		//convertFromFile("C:\\Users\\IBM_ADMIN\\Desktop\\IITD\\sanskritResources\\gitaCorpus\\gitacorpus.txt");
+		convertFromFile("C:\\Users\\IBM_ADMIN\\Desktop\\IITD\\sanskritResources\\gitaCorpus\\gitacorpus.txt");
 
 	}
 

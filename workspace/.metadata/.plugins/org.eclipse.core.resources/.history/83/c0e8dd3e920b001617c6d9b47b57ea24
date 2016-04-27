@@ -125,21 +125,21 @@ public class SandhiMaker
 	        
 			
 			if(merge.trim().equalsIgnoreCase(outMerge.trim()))
-				out.write(line +":"+outMerge+":1\n");
+				out.write(line +"\t"+outMerge+",1\n");
 			else if(outMerge.contains(",")){
 				String[] splits = outMerge.split(",");
 				boolean eq = false;
 				for(String sp : splits){
 					if(merge.trim().equalsIgnoreCase(sp.trim())){
-						out.write(line +":"+outMerge+":1\n");
+						out.write(line +"\t"+outMerge+",1\n");
 						eq = true;
 						break;
 					} 
 				}
 				if (!eq)
-					out.write(line +":"+outMerge+":0\n");
+					out.write(line +"\t"+outMerge+",0\n");
 			}else
-				out.write(line +":"+outMerge+":0\n");
+				out.write(line +"\t"+outMerge+",0\n");
 		}
 		in.close();
 		out.close();
