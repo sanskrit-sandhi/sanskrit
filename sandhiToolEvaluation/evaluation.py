@@ -112,7 +112,7 @@ def samasnidhiFilParse(data, merged, split, out, rule, id):
 def processFile(filePath):
     if os.path.isfile(filePath):
         parentDir = os.path.dirname(os.path.abspath(filePath))
-        parentDir = os.path.join(parentDir,'output')
+        parentDir = os.path.join(filePath+'_output')
         if not os.path.exists(parentDir):
             os.makedirs(parentDir)
         jnuOut = open(filePath+'.jnu','w')
