@@ -1,0 +1,35 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[left=0.15in,right=0.15in,top=0.75in,bottom=0.75in]{geometry}
+\usepackage{fontspec}
+\usepackage{fancyhdr}
+%\usepackage{verse}
+%\usepackage{varwidth}
+\pagestyle{fancy}
+\newenvironment{Verse}
+  {\center\varwidth{\linewidth}}
+  {\endvarwidth\endcenter}
+
+%\setmainfont[Script=Devanagari]{Nakula}
+\setmainfont[Script=Devanagari]{Sanskrit 2003}
+
+\begin{document} 
+\title{रामायणम्}
+\author{वाल्मीकि}
+
+\maketitle
+
+\lhead{रामायणम्}
+\chead{बाल काण्ड}
+%\rhead{\bfseries प्रथमः सर्ग}
+\lfoot{ by आकु}
+\cfoot{\thepage}
+%\cfoot{संस्कृत प्रेमियो के लिये }
+\rfoot{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\begin{verse}
+प्रजापति समः श्रीमान् धता रिपु निषूदनः | \\
+रक्षिता जीवलोकस्य धर्मस्य परि रक्षिता||
+\end{verse}
+\end{document} 

@@ -1,0 +1,80 @@
+% This is a Unicode file.
+\documentclass[12pt]{article}
+\usepackage{multicol} % just to get narrow columns on one page
+\usepackage{polyglossia} % the multilingual support package
+% for XeLaTeX - includes Sanskrit.
+% Next, from the polyglossia manual:
+\setdefaultlanguage{english} % this is mostly going to be English text, with
+\setotherlanguage{sanskrit} % some Sanskrit embedded in it.
+% These will call appropriate hyphenation.
+\usepackage{xltxtra} % standard for nearly all XeLaTeX documents
+\defaultfontfeatures{Mapping=tex-text} % ditto
+\setmainfont{Gandhari Unicode} %could be any Unicode font
+% Now define some Devanagari fonts:
+% John Smith's Nakula, input using Velthuis transliteration
+\newfontinstance
+\velthuis [Script=Devanagari,Mapping=velthuis-sanskrit]{Nakula}
+% John Smith's Sahadeva, input using Velthuis transliteration
+\newfontinstance
+\sahadeva [Script=Devanagari,Mapping=velthuis-sanskrit]{Sahadeva}
+% John's Sahadeva, input using scholarly romanisation in Unicode
+\newfontinstance
+\sahadevaunicode [Script=Devanagari,Mapping=RomDev]{Sahadeva}
+% Microsoft's Mangal font (ugh!), input using standard romanisation in Unicode.
+\newfontinstance
+\mangal [Script=Devanagari,Mapping=RomDev]{Mangal}
+% Somdev's RomDev.map is used above to get the mapping
+% from Unicode -> Devanāgarī. Zdenek Wagner's velthuis-sanskrit.map
+% is used to get the Velthuis->Devanāgarī mapping. These are the files
+% that XeTeX uses to make all the conjunct consonants without needing
+% any external preprocessor (like the old devnag.c program).
+% % Set up the font commands:
+%
+\newcommand{\velt}[1]{{\velthuis \textsanskrit{#1}}}
+\newcommand{\saha}[1]{{\sahadeva\textsanskrit{#1}}}
+\newcommand{\sahauni}[1]{{\sahadevaunicode\textsanskrit{#1}}}
+\newcommand{\mangaluni}[1]{{\mangal\textsanskrit{#1}}}
+% \textssanskrit, above, is a Polyglossia command that gets Sanskrit hyphenation right.
+% ... and here we go!
+\begin{document}
+\begin{multicols}{2} % narrow cols to force plenty of hyphenation
+\large % ditto.
+\begin{enumerate}
+\item[1]
+With Xe\LaTeX\ it's easy to typeset Velthuis encoded Devanagari like the following example, without using a preprocessor:
+\velt{sugataan sasutaan sadharmakaayaan pra.nipatyaadarato 'khilaa.m"sca vandyaan|
+sugataatmajasa.mvaraavataara.m kathayi.syaami yathaagama.m samaasaat||} Bodhicaryāvatāra 1,1.
+NB: automatic hyphenation.
+\item[2]
+A different Devanāgarī font:
+\saha{sugataan sasutaan sadharmakaayaan pra.nipatyaadarato 'khilaa.m"sca vandyaan|
+sugataatmajasa.mvaraavataara.m kathayi.syaami yathaagama.m samaasaat||} Bodhicaryāvatāra 1,1.
+\item[3]
+Another sentence: \saha{ratnojjvalastambhamanorame.su muktaamayodbhaasivitaanake.su|
+svacchojjvalasphaa.tikaku.t.time.su sungandhi.su snaanag.rhe.su te.su||} 2,10.
+\item[4]
+Now, thanks to Somdev's RomDev.map, we can input in Unicode, using standard scholarly transliteration, and get Devanāgarī generated for us automatically:
+\sahauni{āsīdrājā nalo nāma vīrsenasuto balī||\par }
+\item[5]
+Plain Unicode input, no tricks:
+āsīdrājā nalo nāma vīrsenasuto balī||
+\item[6]
+Plain Unicode romanisation input, no tricks:
+\mangaluni{āsīdrājā nalo nāma vīrsenasuto balī||\par }
+Plain Unicode Devanāgarī input, no tricks:
+{\mangal आसीद्राजा नलो नाम वीरसेनसुतो बली|\par}
+\end{enumerate}
+\end{multicols}
+
+\noindent
+English and Devanāgarī are both doing okay. The only thing that isn't hyphenating well yet is Sanskrit in roman transliteration.
+
+Other nice stuff becomes easy. E.g., define a command \verb|\example| that prints a romanised word in Nāgarī, and then repeats it in romanisation, in parentheses:
+
+\verb|\newcommand\example[1]{\sahauni{#1}~(\emph{#1})}|\newcommand\example[1]{\sahauni{#1}~(\emph{#1})}
+
+Input: \verb|\example{ekadhā}|
+
+Output: \example{ekadhā}
+\end{document}
+%that's all folk
