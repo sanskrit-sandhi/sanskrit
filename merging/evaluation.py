@@ -93,7 +93,7 @@ def getHTMLData(name, url, type):
     #print url+word
     resp = requests.get(url)
     #print resp.text
-    out.write('url: '+url)
+    out.write('url: '+url.encode('utf-8'))
     out.write(resp.text.encode('utf-8'))
     out.close()
     return resp.text
@@ -115,12 +115,13 @@ def inriaParse(data, merged, split, out, rule, id):
             #result = soup.findAll('span', {"class": "red"})[2].getText()
             result = htmlTodev(soup.findAll('span', {"class": "devared", "lang": "sa"})[2].getText()).encode('utf-8')
             #result = str(BeautifulStoneSoup(result.decode("latin-1").encode("utf-8"), convertEntities=BeautifulStoneSoup.ALL_ENTITIES))
-            print result
             if merged == result:
                 writeToFile(merged, split, result, out, '1', rule, id)
             else:
                 writeToFile(merged, split, result, out, '0', rule, id)  
 						
+        else:
+            writeToFile(merged, split, '', out, '0', rule, id)  
 def processFile(filePath):
     if os.path.isfile(filePath):
         parentDir = os.path.dirname(os.path.abspath(filePath))
@@ -131,12 +132,18 @@ def processFile(filePath):
         inrFilOut = open(filePath+'.int.inria','w')
         for word in open(filePath).readlines():
             word = word.strip().split(',')
-            inrFilData = getHTMLData(os.path.join(parentDir,word[0]),'http://sanskrit.inria.fr/cgi-bin/SKT/sktsandhier?lex=SH&l='+devToVel(word[2].replace('"','').split('+')[0].strip())+'&r='+devToVel(word[2].replace('"','').split('+')[1].strip())+'&t=VH&k=internal','int.inr')
-            inrData = getHTMLData(os.path.join(parentDir,word[0]),'http://sanskrit.inria.fr/cgi-bin/SKT/sktsandhier?lex=SH&l='+devToVel(word[2].replace('"','').split('+')[0].strip())+'&r='+devToVel(word[2].replace('"','').split('+')[1].strip())+'&t=VH&k=external','ext.inr')
-            if inrData != None:
-                inriaParse(inrData, word[1].replace(',',''), word[2].replace('"',''), inrOut, word[3].strip(),word[0].strip())
-            if inrFilData != None:
-                inriaParse(inrFilData, word[1].replace(',',''), word[2].replace('"',''), inrFilOut, word[3].strip(),word[0].strip())
+            print word[0]
+            if len(word[2].replace('"','').split('+')) == 2:
+                inrFilData = getHTMLData(os.path.join(parentDir,word[0]),'http://sanskrit.inria.fr/cgi-bin/SKT/sktsandhier?lex=SH&l='+devToVel(word[2].replace('"','').split('+')[0].strip())+'&r='+devToVel(word[2].replace('"','').split('+')[1].strip())+'&t=VH&k=internal','int.inr')
+                inrData = getHTMLData(os.path.join(parentDir,word[0]),'http://sanskrit.inria.fr/cgi-bin/SKT/sktsandhier?lex=SH&l='+devToVel(word[2].replace('"','').split('+')[0].strip())+'&r='+devToVel(word[2].replace('"','').split('+')[1].strip())+'&t=VH&k=external','ext.inr')
+                if inrData != None:
+                    inriaParse(inrData, word[1].replace(',',''), word[2].replace('"',''), inrOut, word[3].strip(),word[0].strip())
+                if inrFilData != None:
+                    inriaParse(inrFilData, word[1].replace(',',''), word[2].replace('"',''), inrFilOut, word[3].strip(),word[0].strip())
+            else:
+                split = word[2].replace('"','').strip().strip(',').split('+')
+                writeToFile(word[1].replace(',',''), split, "", inrOut, '0', word[3].strip(),word[0].strip())         
+                writeToFile(word[1].replace(',',''), split, "", inrFilOut, '0', word[3].strip(),word[0].strip())         
         inrOut.close()
 
 def processFolder(folderPath):

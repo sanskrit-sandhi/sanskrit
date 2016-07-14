@@ -1,0 +1,77 @@
+# -*- coding: utf-8 -*-
+
+from BeautifulSoup import BeautifulSoup
+from BeautifulSoup import BeautifulStoneSoup
+import urllib2
+import requests
+import os
+import sys
+import re
+uohUrl = 'http://sanskrit.uohyd.ac.in/cgi-bin/scl/sandhi/sandhi.cgi?encoding=Unicode&text='
+
+def getHTMLData(name, url, type):
+    out = open(name+'_'+type+'.html','w')
+    #print url+word
+    resp = requests.get(url)
+    #print resp.text
+    out.write("url: "+url)
+    out.write(resp.text.encode("utf-8"))
+    out.close()
+    return resp.text
+
+def writeToFile(merged, split, san, out, result, rule, id):
+    out.write(id+':'+merged+':')
+    for sa in split:
+        out.write(sa+',')
+    out.write(':')
+    out.write(san+',')
+    out.write(':'+rule+':'+result+'\n')
+
+def uohParse(data, merged, split, out, rule, id):
+    if data != None and split != None:
+        split = split.strip().strip(',').split('+')
+        soup = BeautifulSoup(data)
+        if soup != None:
+            if(len(soup.findAll('table')) > 0):
+                sandhi = soup.findAll('table')[0].findAll('tr')[1].findAll('td')[2].getText().encode("utf-8")
+                if merged == sandhi:
+                    writeToFile(merged, split, sandhi, out, '1', rule, id)
+                else:
+                    writeToFile(merged, split, sandhi, out, '0', rule, id)					
+	
+def processFile(filePath):
+    if os.path.isfile(filePath):
+        parentDir = os.path.dirname(os.path.abspath(filePath))
+        parentDir = os.path.join(parentDir,sys.argv[1]+'_output')
+        if not os.path.exists(parentDir):
+            os.makedirs(parentDir)
+        uohOut = open(filePath+'.uoh','w')
+        for word in open(filePath).readlines():
+            word = word.strip().split(',')
+            print word[0]
+            if len(word[2].replace('"','').split('+')) == 2:
+                uohData = getHTMLData(os.path.join(parentDir,word[0]),uohUrl+word[2].replace('"','').split('+')[0].strip()+'&text1='+word[2].replace('"','').split('+')[1].strip(),'.uoh')
+                if uohData != None:
+                    uohParse(uohData, word[1].replace(',',''), word[2].replace('"',''), uohOut, word[3].strip(),word[0].strip())
+            else:
+                split = word[2].replace('"','').strip().strip(',').split('+')
+                writeToFile(word[1].replace(',',''), split, "", uohOut, '0', word[3].strip(),word[0].strip())
+        uohOut.close()
+
+
+def processFolder(folderPath):
+    if os.path.isdir(folderPath):
+        for path in os.listdir(folderPath):
+            print os.path.join(folderPath, path)
+            processFolder(os.path.join(folderPath, path))
+    else:
+        processFile(folderPath)
+
+
+def main():
+    path = sys.argv[1]
+    processFolder(path)
+
+if __name__ =="__main__":
+    main()
+
