@@ -35,6 +35,3 @@ for line in open('sandhis.csv').readlines():
 		neq.write(line[0].strip()+':'+line[1].strip()+':'+line[2].strip()+','+line[3].strip()+','+line[4].strip().replace(' ','+')+','+line[0].strip()+'\n')
 eq.close()
 neq.close()
-		
-		
-	
