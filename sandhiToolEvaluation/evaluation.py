@@ -9,13 +9,15 @@ import sys
 import re
 jnuUrl = 'http://sanskrit.jnu.ac.in/sandhi/viccheda.jsp?itext='
 inriaUrl = 'http://sanskrit.inria.fr/cgi-bin/SKT/sktreader?t=VH;lex=SH;cache=f;st=t;us=f;cp=t;text='
-samasnidhiUrl = 'http://52.25.246.194/cgi-bin/scl/sandhi_splitter/sandhi_splitter.cgi?encoding=Unicode&sandhi_type=s&word='
+#samasnidhiUrl = 'http://52.25.246.194/cgi-bin/scl/sandhi_splitter/sandhi_splitter.cgi?encoding=Unicode&sandhi_type=s&word='
+samasnidhiUrl = 'http://sanskrit.uohyd.ac.in/cgi-bin/scl/sandhi_splitter/sandhi_splitter.cgi?encoding=Unicode&sandhi_type=s&word='
 
 def getHTMLData(name, url, type):
     out = open(name+'_'+type+'.html','w')
     #print url+word
     resp = requests.get(url)
     #print resp.text
+    out.write("url: "+url)
     out.write(resp.text.encode("utf-8"))
     out.close()
     return resp.text
@@ -122,6 +124,7 @@ def processFile(filePath):
         inrFilOut = open(filePath+'.inria.fil','w')
         for word in open(filePath).readlines():
             word = word.strip().split(',')
+            print word[0]
             jnuData = getHTMLData(os.path.join(parentDir, word[0]),jnuUrl+word[1].replace(',',''), 'jnu')
             samData = getHTMLData(os.path.join(parentDir,word[0]),samasnidhiUrl+word[1].replace(',',''), 'sam')
             if jnuData != None:
@@ -131,6 +134,7 @@ def processFile(filePath):
                 samasnidhiFilParse(samData, word[1].replace(',',''), word[2].replace('"',''), samFilOut, word[3].strip(), word[0].strip())
         for word in open(filePath+'.vel').readlines():
             word = word.strip().split(',')
+            print word[0]
             inrData = getHTMLData(os.path.join(parentDir,word[0]),inriaUrl+word[1].replace(',','')+';topic=;abs=f;allSol=2;mode=t;cpts=','inr')
             inrFilData = getHTMLData(os.path.join(parentDir,word[0]),inriaUrl+word[1].replace(',','')+';topic=;abs=f;allSol=2;mode=p;cpts=','inr')
             if inrData != None:

@@ -27,7 +27,7 @@ public class UtfToVelthis {
 				
 				//System.out.println(origC);
 				String l = String.format("%04x", (int) origC);
-				System.out.println(origC +" ... "+l);
+				//System.out.println(origC +" ... "+l);
 				//System.out.println(origC+"  "+(int) origC+"  "+l);
 				int lenL = l.length();
 				if (lenL == 0)
@@ -427,6 +427,7 @@ public class UtfToVelthis {
 		
 		while ((str = in.readLine()) != null) {
 			String left = convert(str.split(",")[1], "DN");
+			System.out.println("String is.."+str);
 			String right = EncodingUtil.convertSLPToIAST(EncodingUtil.convertDevanagariToSLP(str.split(",")[2]));
 			if(str.split(",").length < 4)
 				out.write(str.split(",")[0]+","+left+","+right.trim()+","+""+"\n");
@@ -451,13 +452,24 @@ public class UtfToVelthis {
 	}
 
 	public static void main(String[] args) throws IOException {
-		System.out.println(convert("चार्थे", "DN"));
+		//System.out.println(convert("चार्थे", "DN"));
 		//System.out.println(convert("abcd", "DN"));
 		//System.out.println(convert1("चार्थे", "DN"));
 		//System.out.println(convert2("चार्थे", "DN"));
 		
 		//convertFromFolder("C:\\Users\\IBM_ADMIN\\Desktop\\IITD\\sanskritResources\\externalTools\\goldenData\\golddataset.txt");
 		//convertFromFile("C:\\Users\\IBM_ADMIN\\Desktop\\IITD\\sanskritResources\\gitaCorpus\\gitacorpus.txt");
+		//convertFromFile("C:\\Users\\IBM_ADMIN\\Desktop\\IITD\\sanskritResources\\sanskrit\\astadhya\\neq_sandhis_nowordlength.txt");
+		//convertFromFile("C:\\Users\\IBM_ADMIN\\Desktop\\IITD\\sanskritResources\\sanskrit\\astadhya\\neq_sandhis_nowordlength.txt");
+		//convertFromFile("C:\\Users\\IBM_ADMIN\\Desktop\\IITD\\sanskritResources\\sanskrit\\uohCorpus.fil\\uoh.filteredcorpus.txt");
+		//convertFromFile("C:\\Users\\IBM_ADMIN\\Desktop\\IITD\\sanskritResources\\sanskrit\\gitaCorpus\\Fourth_Fifth.txt.space");
+		
+		//convertFromFile("/Users/neelamadhav/Desktop/IBM_old/IITD/sanskritResources/sanskrit/goldData/Literature.txt.nospace");
+		//convertFromFile("/Users/neelamadhav/Desktop/IBM_old/IITD/sanskritResources/sanskrit/goldData/Literature.txt.plus");
+		
+		convertFromFile("/Users/neelamadhav/Desktop/IBM_old/IITD/sanskritResources/sanskrit/gitaCorpus/gitaCorpus.txt.nospace");
+		convertFromFile("/Users/neelamadhav/Desktop/IBM_old/IITD/sanskritResources/sanskrit/gitaCorpus/gitaCorpus.txt.plus");
+
 
 	}
 

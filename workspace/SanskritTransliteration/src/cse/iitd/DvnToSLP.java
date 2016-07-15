@@ -121,7 +121,7 @@ public class DvnToSLP
             {
                 shabda.add(unicode.get(varna));
                 lastEntry = unicode.get(varna);
-                System.out.println("words now is " +  listToString(shabda));
+                //System.out.println("words now is " +  listToString(shabda));
             }
             else if (matra.containsKey(varna))
             {

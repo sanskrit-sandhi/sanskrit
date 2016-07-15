@@ -1,0 +1,7 @@
+remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+remote: warning: See http://git.io/iEPt8g for more information.        
+remote: warning: File merging/uoh.zip is 75.99 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: warning: File merging/uoh/uoh.filteredcorpus.txt_output.zip is 75.19 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+To https://github.com/sanskritiitd/sanskrit.git
+   dd33c43..f4d2ad0  master -> master
+Branch master set up to track remote branch master from origin.

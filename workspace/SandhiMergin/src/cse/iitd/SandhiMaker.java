@@ -97,7 +97,7 @@ public class SandhiMaker
 
     private static void convertFromFile(String filePath) throws IOException {
 		File fileDir = new File(filePath);
-		String outFile = filePath+".out";
+		String outFile = filePath+".san.merge";
 		BufferedReader in = new BufferedReader(new InputStreamReader(new FileInputStream(fileDir), "UTF8"));
 		Writer out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(outFile), "UTF-8"));
 
@@ -107,45 +107,47 @@ public class SandhiMaker
 			String merge = line.split(",")[1];
 			
 			String[] split = line.split(",")[2].split("\\+");
-			System.out.println(split.toString());
-			
-			//String tf1InSLP = EncodingUtil.convertToSLP("वृद्धिः", "DVN");
-	        //String tf2InSLP = EncodingUtil.convertToSLP("आदैच्", "DVN");
-			
-			String tf1InSLP = EncodingUtil.convertToSLP(split[0], "DVN");
-	        String tf2InSLP = EncodingUtil.convertToSLP(split[1], "DVN");
-
-	        // convert anta + adi into their Sandhied form(s)
-	        SandhiMaker sandhiMaker = new SandhiMaker(tf1InSLP, tf2InSLP, false, false);
-
-	        String sandhiMergedForm = sandhiMaker.getSandhiCombinedForm(); // Merge the Two Words
-	        //Log.logInfo("sandhiMerged Form " + sandhiMergedForm);
-	        String outMerge = EncodingUtil.convertSLPToDevanagari(sandhiMergedForm);
-	        
-	        
-			
-			if(merge.trim().equalsIgnoreCase(outMerge.trim()))
-				out.write(line +":"+outMerge+":1\n");
-			else if(outMerge.contains(",")){
-				String[] splits = outMerge.split(",");
-				boolean eq = false;
-				for(String sp : splits){
-					if(merge.trim().equalsIgnoreCase(sp.trim())){
-						out.write(line +":"+outMerge+":1\n");
-						eq = true;
-						break;
-					} 
-				}
-				if (!eq)
-					out.write(line +":"+outMerge+":0\n");
-			}else
-				out.write(line +":"+outMerge+":0\n");
+			if(split.length == 2) {
+				//String tf1InSLP = EncodingUtil.convertToSLP("वृद्धिः", "DVN");
+		        //String tf2InSLP = EncodingUtil.convertToSLP("आदैच्", "DVN");
+				
+				String tf1InSLP = EncodingUtil.convertToSLP(split[0], "DVN");
+		        String tf2InSLP = EncodingUtil.convertToSLP(split[1], "DVN");
+	
+		        // convert anta + adi into their Sandhied form(s)
+		        SandhiMaker sandhiMaker = new SandhiMaker(tf1InSLP, tf2InSLP, false, false);
+	
+		        String sandhiMergedForm = sandhiMaker.getSandhiCombinedForm(); // Merge the Two Words
+		        //Log.logInfo("sandhiMerged Form " + sandhiMergedForm);
+		        String outMerge = EncodingUtil.convertSLPToDevanagari(sandhiMergedForm);
+		        
+		        
+				
+				if(merge.trim().equalsIgnoreCase(outMerge.trim()))
+					out.write(line +","+outMerge+",1\n");
+				else if(outMerge.contains(",")){
+					String[] splits = outMerge.split(",");
+					boolean eq = false;
+					for(String sp : splits){
+						if(merge.trim().equalsIgnoreCase(sp.trim())){
+							out.write(line +","+outMerge+",1\n");
+							eq = true;
+							break;
+						} 
+					}
+					if (!eq)
+						out.write(line +","+outMerge+",0\n");
+				}else
+					out.write(line +","+outMerge+",0\n");
+			}else 
+				out.write(line +",,0\n");
 		}
+		
 		in.close();
 		out.close();
 	}
     public static void main(String[] args) throws IOException {
-    	String inFile = "C:\\Users\\IBM_ADMIN\\Desktop\\IITD\\sanskritResources\\sanskrit\\astadhya\\neq_sandhis_wordlength.txt";
+    	String inFile = "C:\\Users\\IBM_ADMIN\\Desktop\\IITD\\sanskritResources\\sanskrit\\gitaCorpus\\gitaCorpus.txt.nospace";
     	convertFromFile(inFile);
 	}
 
