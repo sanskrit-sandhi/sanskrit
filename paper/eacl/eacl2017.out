@@ -1,0 +1,20 @@
+\BOOKMARK [1][-]{section.1}{Credits}{}% 1
+\BOOKMARK [1][-]{section.2}{Introduction}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Types of Sandhi}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Sandhi Splitting}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Sandhi Merging}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Exisiting Sandhi Splitting and Merging tools:}{}% 6
+\BOOKMARK [1][-]{section.4}{Methodology of Evaluation:}{}% 7
+\BOOKMARK [2][-]{subsection.4.1}{Rule-based}{section.4}% 8
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Analysis of Results}{subsection.4.1}% 9
+\BOOKMARK [2][-]{subsection.4.2}{Literature-Based Evaluation:}{section.4}% 10
+\BOOKMARK [3][-]{subsubsection.4.2.1}{150-word corpus}{subsection.4.2}% 11
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Manually created Bhagvad Gita corpus containing nine chapters }{subsection.4.2}% 12
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Dictionary-filtered UoH corpora}{subsection.4.2}% 13
+\BOOKMARK [3][-]{subsubsection.4.2.4}{Word-length filtered āstaadhyaayi corpus}{subsection.4.2}% 14
+\BOOKMARK [1][-]{section.5}{Analysis of Errors}{}% 15
+\BOOKMARK [2][-]{subsection.5.1}{Rules not Implemented}{section.5}% 16
+\BOOKMARK [2][-]{subsection.5.2}{Optional Rules}{section.5}% 17
+\BOOKMARK [2][-]{subsection.5.3}{Cascading split effect}{section.5}% 18
+\BOOKMARK [2][-]{subsection.5.4}{Multiple splits}{section.5}% 19
+\BOOKMARK [2][-]{subsection.5.5}{Compounding effect}{section.5}% 20

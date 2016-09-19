@@ -1,9 +1,9 @@
 %
-% File coling2016.tex
+% File eacl2017.tex
 %
-% Contact: mutiyama@nict.go.jp
-%%
-%% Based on the style files for COLING-2014, which were, in turn,
+%% Based on the style files for ACL-2016
+%% Based on the style files for ACL-2015, with some improvements
+%%  taken from the NAACL-2016 style
 %% Based on the style files for ACL-2014, which were, in turn,
 %% Based on the style files for ACL-2013, which were, in turn,
 %% Based on the style files for ACL-2012, which were, in turn,
@@ -17,22 +17,21 @@
 %% and that of ACL 08 by Joakim Nivre and Noah Smith
 
 \documentclass[11pt]{article}
-\usepackage{coling2016}
+\usepackage{eacl2017}
 \usepackage{times}
 \usepackage{url}
 \usepackage{latexsym}
 
-
-	
-\usepackage{fontspec}
+%\eaclfinalcopy % Uncomment this line for the final submission
+%\def\eaclpaperid{***} %  Enter the acl Paper ID here
 
 %\setlength\titlebox{5cm}
-
 % You can expand the titlebox if you need extra space
 % to show all the authors. Please do not make the titlebox
 % smaller than 5cm (the original size); we will check this
 % in the camera-ready version and ask you to change it back.
 
+\newcommand\BibTeX{B{\sc ib}\TeX}
 
 \title{Evaluation of Sankrit Sandhi Tools}
 
@@ -50,62 +49,44 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-  Sanskrit texts contain numerous words which are formed by the combination of two or more words. This process, known as Sandhi, takes place according to certain rules codified by the grammarian Paanini in his \textit{  āstaadhyaayi}i. The reverse process of getting back the component words from the Sandhied words is known as Sandhi splitting. This paper attempts to evaluate the performance of the existing Sandhi tools.  The evaluation is done both with reference to the rules of Paanini and the words used in actual literature. The performance of the Sandhi tools is found to be terribly bad, and the possible reasons behind this are traced.  
+  Sanskrit texts contain numerous words which are formed by the combination of two or more words. This process, known as Sandhi, takes place according to certain rules codified by the grammarian Paanini in his \textit{ \={a}staadhyaayii}. The reverse process of getting back the component words from the Sandhied words is known as Sandhi splitting. This paper attempts to evaluate the performance of the existing Sandhi tools.  The evaluation is done both with reference to the rules of Paanini and the words used in actual literature. The performance of the Sandhi tools is found to be terribly bad, and the possible reasons behind this are traced.  
 The word sandhi is an umbrella term that is used to refer to sound changes that take place when two sounds are close enough. The two sounds may merge to give a single sound, one of the two sounds (the former or the latter) may get changed/reduplicated before combining with the other, or even get elided. A new sound may also come in between. 
-
-
-
 \end{abstract}
 
+\section{Credits}
+
+This document has been adapted from the instructions for earlier ACL
+and NAACL proceedings, including those for ACL-2016 by Yannick Versley, 
+Hai Zhao and Yusuke Miyao, NAACL-2016 by Margaret
+Mitchell, ACL-2012 by Maggie Li and Michael
+White, those from ACL-2010 by Jing-Shing Chang and Philipp Koehn,
+those for ACL-2008 by Johanna D. Moore, Simone Teufel, James Allan,
+and Sadaoki Furui, those for ACL-2005 by Hwee Tou Ng and Kemal
+Oflazer, those for ACL-2002 by Eugene Charniak and Dekang Lin, and
+earlier ACL and EACL formats. Those versions were written by several
+people, including John Chen, Henry S. Thompson and Donald
+Walker. Additional elements were taken from the formatting
+instructions of the {\em International Joint Conference on Artificial
+  Intelligence} and the \emph{Conference on Computer Vision and
+Pattern Recognition}. 
+
+This version is distributed by the EACL-2017 publication chairs, Maria Liakata and Chris Biemann.
 
 \section{Introduction}
-\label{intro}
 
-%
-% The following footnote without marker is needed for the camera-ready
-% version of the paper.
-% Comment out the instructions (first text) and uncomment the 8 lines
-% under "final paper" for your variant of English.
-% 
-\blfootnote{
-    %
-    % for review submission
-    %
-    \hspace{-0.65cm}  % space normally used by the marker
-    Place licence statement here for the camera-ready version, see
-    Section~\ref{licence} of the instructions for preparing a
-    manuscript.
-    %
-    % % final paper: en-uk version (to license, a licence)
-    %
-    % \hspace{-0.65cm}  % space normally used by the marker
-    % This work is licensed under a Creative Commons 
-    % Attribution 4.0 International Licence.
-    % Licence details:
-    % \url{http://creativecommons.org/licenses/by/4.0/}
-    % 
-    % % final paper: en-us version (to licence, a license)
-    %
-    % \hspace{-0.65cm}  % space normally used by the marker
-    % This work is licenced under a Creative Commons 
-    % Attribution 4.0 International License.
-    % License details:
-    % \url{http://creativecommons.org/licenses/by/4.0/}
-}
-
-\textit{ āstaadhyaayi} (meaning a collection of eight books) by \textit{pāṇini} is the source of Sanskrit grammar, syntax and semantics. The word  \textit{‘sandhi’} sandhi ``joining'', however, does not appear in any of the \textit{sutrā} (rules) of \textit{pāṇini}. There are certain rules that are governed by the condition of  \textit{saṃhitā} which as defined in \textit{sutrā} 109 of Chapter 4 of Book 1, means ‘closest proximity of letters’. These rules talk about the changes that take place when two letters are in ‘closest proximity’.
-\textit{saṃhitā} is always applicable within a word, between an \textit{upasargā} and a verb root and between words in a compound formation. As regards other cases, it depends on how words are pronounced. If words of a sentence are spoken together without a hiatus,  \textit{saṃhitā} applies and sound changes will take place at word boundaries. However, if there is a hiatus between two words, \textit{saṃhitā} does not apply. 
- \textit{sutrā} ``formulae/rules'' 73-157 of Chapter 1 of Book 6 and all rules of Chapters 3 and 4 of Book 8 describe the changes of sound under the condition of \textit{saṃhitā}. The rules which govern change of sounds when \textit{saṃhitā} is applicable are hereafter referred to as Sandhi (\textit{saṃdhiḥ}) rules.
+\textit{ \={a}staadhyaayi} (meaning a collection of eight books) by \textit{p\={a}\d{n}ini} is the source of Sanskrit grammar, syntax and semantics. The word  \textit{‘sandhi’} sandhi ``joining'', however, does not appear in any of the \textit{sutr\={a}} (rules) of \textit{p\={a}\d{n}ini}. There are certain rules that are governed by the condition of  \textit{sa\d{m}hit\={a}} which as defined in \textit{sutr\={a}} 109 of Chapter 4 of Book 1, means ‘closest proximity of letters’. These rules talk about the changes that take place when two letters are in ‘closest proximity’.
+\textit{sa\d{m}hit\={a}} is always applicable within a word, between an \textit{upasarg\={a}} and a verb root and between words in a compound formation. As regards other cases, it depends on how words are pronounced. If words of a sentence are spoken together without a hiatus,  \textit{sa\d{m}hit\={a}} applies and sound changes will take place at word boundaries. However, if there is a hiatus between two words, \textit{sa\d{m}hit\={a}} does not apply. 
+ \textit{sutr\={a}} ``formulae/rules'' 73-157 of Chapter 1 of Book 6 and all rules of Chapters 3 and 4 of Book 8 describe the changes of sound under the condition of \textit{sa\d{m}hit\={a}}. The rules which govern change of sounds when \textit{sa\d{m}hit\={a}} is applicable are hereafter referred to as Sandhi (\textit{sa\d{m}dhi\d{h}}) rules.
 
 
 \subsection{Types of Sandhi} - Sandhi can take place either within a word, or between two words. Thus, it is of two types:
 \begin{enumerate}
-\item \textbf{Internal Sandhi:} Sanskrit grammar has three kinds of minimal meaningful units (morphemes) – prefixes, roots and suffixes and it seems that every word in Sanskrit can be derived from them. When these units combine to form a word, \textit{saṃhitā} applies and certain changes take place. This is known as internal sandhi.
-For example, \textit{ bho} (changed form of verb \textit{bhū} bhuu (‘’to be’’)) + \textit{anam} (anam, a noun forming suffix) $\rightarrow$ \textit{bhavanam }(bhavanam, “being”) is a case of internal sandhi.
+\item \textbf{Internal Sandhi:} Sanskrit grammar has three kinds of minimal meaningful units (morphemes) – prefixes, roots and suffixes and it seems that every word in Sanskrit can be derived from them. When these units combine to form a word, \textit{sa\d{m}hit\={a}} applies and certain changes take place. This is known as internal sandhi.
+For example, \textit{ bho} (changed form of verb \textit{bh\={u}} bhuu (‘’to be’’)) + \textit{anam} (anam, a noun forming suffix) $\rightarrow$ \textit{bhavanam }(bhavanam, “being”) is a case of internal sandhi.
 
 \item \textbf{External Sandhi:}
 When sandhi takes place between two words, it is known as external sandhi. For example,
-\textit{tau} (``both of them'') + \textit{ekadā} (``once'') $\rightarrow$ \textit{tāvekadā} (``both of them once'') involves external sandhi.
+\textit{tau} (``both of them'') + \textit{ekad\={a}} (``once'') $\rightarrow$ \textit{t\={a}vekad\={a}} (``both of them once'') involves external sandhi.
 
 \end{enumerate}
 
@@ -114,9 +95,9 @@ When sandhi takes place between two words, it is known as external sandhi. For e
     
 Also, depending on whether the two letters that are combining are vowels, consonants or visarga, sandhis are classified as follows:
 \begin{enumerate}
-\item \textbf{Vowel Sandhi:} Both letters are vowels e.g. \textit{ hima} (``snow'') + \textit{ ālayaḥ} (``house'') $\rightarrow$ \textit{himālayaḥ} (``house of snow'')
-\item \textbf{Consonant Sandhi :}  At least one of the two letters is a consonant, e.g. \textit{vṛkṣa} (``tree'') + \textit{chāyā }(``shade'') $\rightarrow$ \textit{vṛkṣacchāyā} (``shade of tree'') 
-\item \textbf{Visarga Sandhi :} A visarga combines with a vowel or a consonant, e.g.  \textit{ punaḥ }(``again'') + \textit{janma }(``birth'') $\rightarrow$ \textit{punarjanma} (punarjanma, “rebirth”)
+\item \textbf{Vowel Sandhi:} Both letters are vowels e.g. \textit{ hima} (``snow'') + \textit{ \={a}laya\d{h}} (``house'') $\rightarrow$ \textit{him\={a}laya\d{h}} (``house of snow'')
+\item \textbf{Consonant Sandhi :}  At least one of the two letters is a consonant, e.g. \textit{v\d{r}k\d{s}a} (``tree'') + \textit{ch\={a}y\={a} }(``shade'') $\rightarrow$ \textit{v\d{r}k\d{s}acch\={a}y\={a}} (``shade of tree'') 
+\item \textbf{Visarga Sandhi :} A visarga combines with a vowel or a consonant, e.g.  \textit{ puna\d{h} }(``again'') + \textit{janma }(``birth'') $\rightarrow$ \textit{punarjanma} (punarjanma, “rebirth”)
 
 \end{enumerate}
 
@@ -125,13 +106,6 @@ Also, depending on whether the two letters that are combining are vowels, conson
 The process of breaking a sandhied word into the original units it is made of is known as sandhi splitting. A tool which can perform this task is referred to here as a sandhi splitter.
 \subsection{Sandhi Merging}
 On the other hand merging of two or more words into a compound word is refereed to Sandhi Merging.
-
-
-
-
-
-
-
 
 \section{Exisiting Sandhi Splitting and Merging tools:}
 The process of breaking a sandhied word into the original units it is made of is known as sandhi splitting. A tool which can perform this task is referred to here as a sandhi splitter.  In the same lines the tools which can merge two words to form the compound word is known as sandhi merging tool. 
@@ -145,11 +119,6 @@ Another Sandhi splitter is available at the TDIL website
 \end{enumerate}
 
 
-
-
-
-
-
 \section{Methodology of Evaluation:}
 \label{sect:methodology}
 
@@ -161,11 +130,11 @@ The three splitters are evaluated against a corpus which contains at least one e
 
 For most sandhied words, each of these splitters gives a very large number of possible splits. If any of the splits for a given word matches with the correct split, the splitter is considered to have correctly identified the splits. 
 
-While evaluating each of the three splitters for external sandhis, even if the splits are not fully correct and there is some error in the spellings of the words far away from the location where the sandhi takes place, the slightly incorrect split is still considered as correct. An example is \textit{nayanam} (the act of directing)  whose correct split is \textit{ne} (changed form of the root nee meaning ‘direct’) + \textit{anam} (a noun forming suffix)  but \textit{ne}  + \textit{anama} is also considered to be correct, even though the last letter does not have a \textit{halanta}.  Another example is \textit{prauḍhaḥ}(fully developed, aged, etc) where both \textit{pra} + \textit{ūḍhaḥ}  and \textit{pra}+ \textit{ūḍha} are considered correct.  However, the automated evaluation rejects the latter result in each of these cases.
+While evaluating each of the three splitters for external sandhis, even if the splits are not fully correct and there is some error in the spellings of the words far away from the location where the sandhi takes place, the slightly incorrect split is still considered as correct. An example is \textit{nayanam} (the act of directing)  whose correct split is \textit{ne} (changed form of the root nee meaning ‘direct’) + \textit{anam} (a noun forming suffix)  but \textit{ne}  + \textit{anama} is also considered to be correct, even though the last letter does not have a \textit{halanta}.  Another example is \textit{prau\d{d}ha\d{h}}(fully developed, aged, etc) where both \textit{pra} + \textit{\={u}\d{d}ha\d{h}}  and \textit{pra}+ \textit{\={u}\d{d}ha} are considered correct.  However, the automated evaluation rejects the latter result in each of these cases.
 
 
 This privilege has not been given to internal sandhi cases, which if the splits are only slightly wrong, there are not considered.  This is because internal sandhi is between prefixes, roots and suffixes and small mistakes in each of these has the potential to change the meaning.
-There are some rules which govern combination of letters that may themselves be the results of application of other rules. An example is \textit{vṛkṣas }(vrik.sas, “tree”) + \textit{śete} ( ``sleeps'') $\rightarrow$ \textit{vṛkṣaśśete} (``tree sleeps'') where the split \textit{vṛkṣaḥ } +\textit{śete}  gives the original form. So, even though the corresponding rule has to do with change of \textit{s} to\textit{ ś}, the presence of \textit{visarga} is duly considered correct.
+There are some rules which govern combination of letters that may themselves be the results of application of other rules. An example is \textit{v\d{r}k\d{s}as }(vrik.sas, “tree”) + \textit{\'{s}ete} ( ``sleeps'') $\rightarrow$ \textit{v\d{r}k\d{s}a\'{s}\'{s}ete} (``tree sleeps'') where the split \textit{v\d{r}k\d{s}a\d{h} } +\textit{\'{s}ete}  gives the original form. So, even though the corresponding rule has to do with change of \textit{s} to\textit{ \'{s}}, the presence of \textit{visarga} is duly considered correct.
 
 Evaluation results are summarized in the following table
 
@@ -186,7 +155,7 @@ There is a significant difference in the results for the UoH and the INRIA split
 
 \begin{table}[h]
 \begin{center}
-\begin{tabular}{|r| r| r| r| }
+\begin{tabular}{|p {1.1cm}| p {1.9cm}| p {1.9cm}| p {1.2cm}| }
 \hline \bf Splitter & \bf External Sandhi Cases (132) & \bf Internal Sandhi Cases (150) & \bf Overall \\
 \hline
 JNU &  21 (15.9 \%) & 14 (9.3 \%) & 12.4 \%  \\
@@ -244,13 +213,12 @@ This was created from 11 different texts. This has 50 examples from one text, an
 
 \begin{table}[h]
 \begin{center}
-\begin{tabular}{l l}
-\hline \bf Manual Evaluation Results & \bf Automated Evaluation Results \\
+\begin{tabular}{p {1cm} p{2.5cm} p{2.5cm}}
+\hline \bf  Splitter & \bf Manual Evaluation Results & \bf Automated Evaluation Results \\
 \hline
-Performance of 
-$JNU Splitter = 14 /150 * 100 = 9.33 \%$  & \\
-$UoH Splitter = 96/150 * 100 = 64 \%$  & \\
-$INRIA Splitter = 123/150 * 100 = 82 \%$  & \\
+JNU & $14 /150*100=9.33 \%$  & 15/150*100=\\
+UoH & $96/150*100=64 \%$  & 98/150*100=\\
+INRIA & $123/150*100=82 \%$  & 95/150*100=\\
 \hline
 \end{tabular}
 \end{center}
@@ -270,12 +238,15 @@ Results of Automated Evaluation:
 
 \begin{table}[h]
 \begin{center}
-\begin{tabular}{l r r r r r r}
+\begin{tabular}{l r r r}
 \hline 
-&  \bf  $A_1$ [157] & \bf  $A_2$ [270] & \bf $A_3$ [168] & \bf $A_4$ [164]  & \bf $A_5$ [113]  & \bf Total [872] \\
-JNU & 2(1.3\%) & 10(3.7\%) & 11(6.5\%) & 4(2.4\%) & 9(7.9\%) & 36 (4.1\%) \\
-UoH & 61(38.8\%) & 115(42.6\%) & 74(44\%) & 78(47.6\%) & 48(42.5\%) & 376(43.1\%)\\
-INRIA & 95(60.5\%) & 160 (59.3\%) & 93(55.4) & 88(53.7\%) & 60(53.1\%) & 496(56.9\%)\\
+ & \bf JNU & \bf UoH & \bf INRIA \\
+ \bf$A_1$ [157] &  2(1.3\%) &  61(38.8\%) & 95(60.5\%) \\
+ \bf$A_2$ [270] & 10(3.7\%) &  115(42.6\%) & 160 (59.3\%) \\
+ \bf $A_3$ [168] & 11(6.5\%) & 74(44\%) & 93(55.4) \\
+ \bf $A_4$ [164] & 4(2.4\%) & 78(47.6\%) & 88(53.7\%) \\
+ \bf $A_5$ [113] & 9(7.9\%) &  48(42.5\%) & 60(53.1\%) \\
+ \bf Total [872] & 36 (4.1\%) &  376(43.1\%) & 496(56.9\%) \\
 \hline
 \end{tabular}
 \end{center}
@@ -289,11 +260,11 @@ INRIA & 95(60.5\%) & 160 (59.3\%) & 93(55.4) & 88(53.7\%) & 60(53.1\%) & 496(56.
 The strategy involved checking whether the splits could be located in some dictionary. Five dictionaries were used for this purpose. We restricted ourselves only to such cases where the splits could be located, even though they may be many cases of correct splits where the splits themselves cannot be located in the dictionary, because of various reasons (dictionaries may not contain all the declensions/ conjugations of a word, nor they are expected to). Further to check that the sandhied words in such cases did not have typos, a sandhi tool was used to do sandhi of the splits identified in the dictionary and check whether the result in each case matched with the sandhied word as given in the corpus. If the two words did not match for a particular case, it was neglected.
 
 Just to illustrate this, we consider the five cases listed below.\\
-\textit{ tumulo vyanunādayan $\rightarrow$ tumulaḥ+vi+anunādayan\\
-sarvānbandhūnavasthitān $\rightarrow$ sarvān + bandhūn + avasthitān\\
-śabda iva $\rightarrow$ śabdaḥ+  iva\\                                              
-nārhati $\rightarrow$ na + arhati\\
-astamito bhagavān $\rightarrow$ astam + itaḥ + bhagavān
+\textit{ tumulo vyanun\={a}dayan $\rightarrow$ tumula\d{h}+vi+anun\={a}dayan\\
+sarv\={a}nbandh\={u}navasthit\={a}n $\rightarrow$ sarv\={a}n + bandh\={u}n + avasthit\={a}n\\
+\'{s}abda iva $\rightarrow$ \'{s}abda\d{h}+  iva\\                                              
+n\={a}rhati $\rightarrow$ na + arhati\\
+astamito bhagav\={a}n $\rightarrow$ astam + ita\d{h} + bhagav\={a}n
 }
 
 The first two cases were not included because at least one word in each of the splits could not be located in any of the dictionaries used for this purpose. The last three cases were considered for the purpose of evaluation. 
@@ -318,21 +289,21 @@ INRIA & 13416 (73.2 \%)\\
 \end{table}
 
 
-\subsubsection{Word-length filtered \textit{āstaadhyaayi} corpus}
-    Many \textit{sutrā} (rules) of \textit{pāṇini} themselves contain many sandhied words. All the sutras with their splits are available at …. This was found to be another good source which could be used for the evaluation of the three splitting tools.  However, even this source suffered with the limitation of insufficient splits.  Moreover, a very significant number of splits could not be expected to be located in any dictionary, because these were the forms of the different sets/ \textit{mahesvara sutrā} that \textit{pāṇini} uses to codify Sanskrit grammar, syntax and semantics. Hence, the strategy used in the previous case to limit to cases of correct splits could not be applied in this case.
+\subsubsection{Word-length filtered \textit{\={a}staadhyaayi} corpus}
+    Many \textit{sutr\={a}} (rules) of \textit{p\={a}\d{n}ini} themselves contain many sandhied words. All the sutras with their splits are available at …. This was found to be another good source which could be used for the evaluation of the three splitting tools.  However, even this source suffered with the limitation of insufficient splits.  Moreover, a very significant number of splits could not be expected to be located in any dictionary, because these were the forms of the different sets/ \textit{mahesvara sutr\={a}} that \textit{p\={a}\d{n}ini} uses to codify Sanskrit grammar, syntax and semantics. Hence, the strategy used in the previous case to limit to cases of correct splits could not be applied in this case.
     
 Since the problem initially arose because of cases of insufficient splits, another strategy was worked out.  The splits which can undergo further splitting themselves are likely to be of greater length than those cases in which further splitting is not possible. The larger the length of the splits, the more likely they are to undergo further splitting. All those cases where the length of the splits was less than a specified word length were analysed together and the results were noted for different values of the word lengths-10,20,30, 40 and 50.
 
 The following five examples are used here for the purpose of illustration. At least one of the splits in each of the first two cases is considerably long, and further splitting is evident.  When the word length is reduced, the possibility of further splits is also reduced, though not eliminated. So, in the next two cases, though the word length is reduced, the first split of the third case and the second split of the fourth case can themselves be further split. It is only for the last case that further splitting is not possible.
 
-\textit{prathamacaramatayālpārdhakatipayanemāśca $\rightarrow$ prathamacaramatayālpārdhakatipayanemāḥ+ca \\
-udupadhādbhāvādikarmaṇoranyatarasyām $\rightarrow$ udupadhāt+bhāvādikarmaṇoḥ+anyatarasyām \\
-taddhitaścāsarvavibhaktiḥ $\rightarrow$ taddhitaḥ+ca+ca+asarvavibhaktiḥ \\
-vṛddhirādaic $\rightarrow$ vṛddhiḥ+ādaic \\
-vija iṭ $\rightarrow$ vijaḥ+iṭ \\                                                 
+\textit{prathamacaramatay\={a}lp\={a}rdhakatipayanem\={a}\'{s}ca $\rightarrow$ prathamacaramatay\={a}lp\={a}rdhakatipayanem\={a}\d{h}+ca \\
+udupadh\={a}dbh\={a}v\={a}dikarma\d{n}oranyatarasy\={a}m $\rightarrow$ udupadh\={a}t+bh\={a}v\={a}dikarma\d{n}o\d{h}+anyatarasy\={a}m \\
+taddhita\'{s}c\={a}sarvavibhakti\d{h} $\rightarrow$ taddhita\d{h}+ca+ca+asarvavibhakti\d{h} \\
+v\d{r}ddhir\={a}daic $\rightarrow$ v\d{r}ddhi\d{h}+\={a}daic \\
+vija i\d{t} $\rightarrow$ vija\d{h}+i\d{t} \\                                                 
 }
 
-Results on \textit{āstaadhyaayi}
+Results on \textit{\={a}staadhyaayi}
 Total Number of Sutras –3,959
 Sutras where Sandhi Split Applicable –2,700
     
@@ -340,13 +311,16 @@ Sutras where Sandhi Split Applicable –2,700
 
 \begin{table}[h]
 \begin{center}
-\begin{tabular}{ l  r r r r r r  }
-\hline  \bf No. of letters (<=) & \bf 10 & \bf  20 & \bf 30 & \bf 40 & \bf 50 & \bf  All \\
+\begin{tabular}{ p{2cm}  r r r }
+\hline  
+\bf No. of letters ($\le$) & Samples & JNU & UoH \\
 \hline
- &(93)&( 571) & (1512) & (2045) & (2302) & (2700)\\
-JNU & 4(4.3) & 10(1.75) & 17(1.12) & 18 (0.88) & 18(0.78) & 18 (0.66)\\
-UoH  & 21(22.6) & 100 (17.5) & 226(14.9) & 263(12.86) & 263(11.42) & 263 (9.74)\\
-INRIA & 29(31.2) & 195(34.15) &  378(25) & 444(21.7) & 460(19.9) & 507(18.7)\\
+\bf 10 & 93 & 4(4.3) & 21(22.6) \\
+\bf 20 & 571 & 10(1.75) & 100 (17.5) \\
+\bf 30 & 1512 & 17(1.12) & 226(14.9) \\
+\bf 40 & 2045 & 18 (0.88) & 263(12.86) \\
+\bf 50 & 2302 & 18(0.78) & 263(11.42) \\
+\bf All  & 2700 & 18 (0.66) & 263 (9.74) \\
 \hline
 \end{tabular}
 \end{center}
@@ -359,13 +333,13 @@ The literature based evaluation results are also not very impressive. The cases 
 
 
 \subsection{Rules not Implemented}
-      It seems that some of the rules which are even frequent used have not been implemented by one or more of the three splitters. For example, the visarga of \textit{saḥ} and \textit{eṣaḥ} is elided optionally when any letter other than अ follows it, and there are many such cases of this elision, for example, in Srimad Bhagvad Gita. But none of the three splitters is able to undo this elision to get back the visarga. For example, none of the three splitters is able to do the following split
+      It seems that some of the rules which are even frequent used have not been implemented by one or more of the three splitters. For example, the visarga of \textit{sa\d{h}} and \textit{e\d{s}a\d{h}} is elided optionally when any letter other than \textit{a} follows it, and there are many such cases of this elision, for example, in Srimad Bhagvad Gita. But none of the three splitters is able to undo this elision to get back the visarga. For example, none of the three splitters is able to do the following split
       
-                        \textit{sa yogī} $\rightarrow$ \textit{saḥ} (that) + \textit{yogī} (who practises yoga)
+                        \textit{sa yog\={\i}} $\rightarrow$ \textit{sa\d{h}} (that) + \textit{yog\={\i}} (who practises yoga)
                         
 It will be incorrect to say that rules of elision, in general, are not implemented by any of the three splitters. For example, the split of
  
-            \textit{bālakā hasanti} $\rightarrow$ \textit{bālakāḥ} (boys) + \textit{hasanti} (laugh) is detected correctly by INRIA.                      
+            \textit{b\={a}lak\={a} hasanti} $\rightarrow$ \textit{b\={a}lak\={a}\d{h}} (boys) + \textit{hasanti} (laugh) is detected correctly by INRIA.                      
 
     
 \subsection{Optional Rules}    
@@ -378,25 +352,25 @@ There are some rules which are optional in nature, and less frequently used. For
 \subsection{Cascading split effect}
 There are some rules in which the effect of combination of two words is not restricted to the change in sound at the extreme boundaries of the two words (last sound of first word + first sound of second word). Other letters can also get affected. For example, in 
 
-       \textit{uttara} (north) + \textit{ayana} (movement) $\rightarrow$ \textit{uttarāyaṇa} (``northward movement'', refers to movement of Sun towards Tropic of Cancer), the \textit{r} of \textit{uttara} causes the change of \textit{n} of \textit{ayana} into \textit{ ṇ}. In absence of \textit{r}, no such change takes place in the case of 
+       \textit{uttara} (north) + \textit{ayana} (movement) $\rightarrow$ \textit{uttar\={a}ya\d{n}a} (``northward movement'', refers to movement of Sun towards Tropic of Cancer), the \textit{r} of \textit{uttara} causes the change of \textit{n} of \textit{ayana} into \textit{ \d{n}}. In absence of \textit{r}, no such change takes place in the case of 
 
 
-\textit{dakṣiṇa} (south) + \textit{ayana} (movement) $\rightarrow$ \textit{dakṣiṇāyana} (southward movement, refers to movement of Sun towards Tropic of Capricorn) 
-The three sandhi splitters do not seem to have taken care of such changes. So, while they are able to split \textit{dakṣiṇāyana} correctly, the same is not true for \textit{uttarāyaṇa}.
+\textit{dak\d{s}i\d{n}a} (south) + \textit{ayana} (movement) $\rightarrow$ \textit{dak\d{s}i\d{n}\={a}yana} (southward movement, refers to movement of Sun towards Tropic of Capricorn) 
+The three sandhi splitters do not seem to have taken care of such changes. So, while they are able to split \textit{dak\d{s}i\d{n}\={a}yana} correctly, the same is not true for \textit{uttar\={a}ya\d{n}a}.
 
- Another example is the case of change of \textit{s} into \textit{ṣ} when it is immediately preceded by some vowels (for example, \textit{i}, and this \textit{ṣ} changing its subsequent letter because of another sandhi rule, for example  \textit{th} into \textit{ṭh}. Thus, we have the examples of:
+ Another example is the case of change of \textit{s} into \textit{\d{s}} when it is immediately preceded by some vowels (for example, \textit{i}, and this \textit{\d{s}} changing its subsequent letter because of another sandhi rule, for example  \textit{th} into \textit{\d{t}h}. Thus, we have the examples of:
  
-                    \textit{prati} + \textit{sthita} $\rightarrow$ \textit{pratiṣṭhita} (``well-established'')
+                    \textit{prati} + \textit{sthita} $\rightarrow$ \textit{prati\d{s}\d{t}hita} (``well-established'')
                      
                      
-and   \textit{yudhi} + \textit{sthiraḥ} $\rightarrow$ \textit{yudhiṣṭhiraḥ}  (one who is stable in war)
+and   \textit{yudhi} + \textit{sthira\d{h}} $\rightarrow$ \textit{yudhi\d{s}\d{t}hira\d{h}}  (one who is stable in war)
 where the sandhied forms are \textbf{not split by any of the three splitters}.
 
 
 \subsection{Multiple splits} 
 The process of sandhi splitting involves splitting the sandhied word at different potential locations, and validating the splits to check which one of them is correct. If the set used for validation is not complete, even correct splits may sometimes not be validated. For example, in 
 
-   \textit{a} (not) + \textit{chedyaḥ} (``solvable'', ``penetrable'') $\rightarrow$ \textit{acchedyaḥ} (``not solvable/penetrable'')
+   \textit{a} (not) + \textit{chedya\d{h}} (``solvable'', ``penetrable'') $\rightarrow$ \textit{acchedya\d{h}} (``not solvable/penetrable'')
    
 the fact that none of the three splitters has been able to split the sandhied word may have to do with the possiblity that may \textit{a} not have been validated as a proper split.
 
@@ -405,63 +379,13 @@ the fact that none of the three splitters has been able to split the sandhied wo
 The process of compounding, due to which words come together without necessarily their being a change when they merge, also creates problems. While the UoH and the INRIA tools do have the provision of decompounding along with sandhi splitting, the JNU splitter does not have a way to do both together.
 For example,
 
-\textit{lakṣyasyārthatvavyavahārānurodhena} $\rightarrow$  \textit{lakṣyasya} + \textit{arthatvavyavahāra} + \textit{anurodhena} 
+\textit{lak\d{s}yasy\={a}rthatvavyavah\={a}r\={a}nurodhena} $\rightarrow$  \textit{lak\d{s}yasya} + \textit{arthatvavyavah\={a}ra} + \textit{anurodhena} 
 
 The second split is not validated without decompounding, and thus even though, only vowel sandhis are involved, the JNU splitter is not able to correctly split the word.  
 Even the INRIA and UoH splitters are not always able to get around this problem.
 For example, none of the three splitters is able to detect this:
 
-\textit{prapañce'vāntaravibhāgapravibhāgabhinnānantapadārthasaṅ‌kule'pi} $\rightarrow$ \textit{prapañce} + \textit{ava} + \textit{antara-vibhāga-pravibhāga-bhinna} + \textit{ananta-pada} + \textit{artha-saṅ‌kule} + \textit{api}
+\textit{prapa\~{n}ce'v\={a}ntaravibh\={a}gapravibh\={a}gabhinn\={a}nantapad\={a}rthasa\.{n}kule'pi} $\rightarrow$ \textit{prapa\~{n}ce} + \textit{ava} + \textit{antara-vibh\={a}ga-pravibh\={a}ga-bhinna} + \textit{ananta-pada} + \textit{artha-sa\.{n}kule} + \textit{api}
 
-
-\section{Conclusion:}
-
-
-
-
-
-\section*{Acknowledgements}
-
-The acknowledgements should go immediately before the references.  Do
-not number the acknowledgements section. Do not include this section
-when submitting your paper for review.
-
-% include your own bib file like this:
-%\bibliographystyle{acl}
-%\bibliography{coling2016}
-
-\begin{thebibliography}{}
-
-\bibitem[\protect\citename{Aho and Ullman}1972]{Aho:72}
-Alfred~V. Aho and Jeffrey~D. Ullman.
-\newblock 1972.
-\newblock {\em The Theory of Parsing, Translation and Compiling}, volume~1.
-\newblock Prentice-{Hall}, Englewood Cliffs, NJ.
-
-\bibitem[\protect\citename{{American Psychological Association}}1983]{APA:83}
-{American Psychological Association}.
-\newblock 1983.
-\newblock {\em Publications Manual}.
-\newblock American Psychological Association, Washington, DC.
-
-\bibitem[\protect\citename{{Association for Computing Machinery}}1983]{ACM:83}
-{Association for Computing Machinery}.
-\newblock 1983.
-\newblock {\em Computing Reviews}, 24(11):503--512.
-
-\bibitem[\protect\citename{Chandra \bgroup et al.\egroup }1981]{Chandra:81}
-Ashok~K. Chandra, Dexter~C. Kozen, and Larry~J. Stockmeyer.
-\newblock 1981.
-\newblock Alternation.
-\newblock {\em Journal of the Association for Computing Machinery},
-  28(1):114--133.
-
-\bibitem[\protect\citename{Gusfield}1997]{Gusfield:97}
-Dan Gusfield.
-\newblock 1997.
-\newblock {\em Algorithms on Strings, Trees and Sequences}.
-\newblock Cambridge University Press, Cambridge, UK.
-
-\end{thebibliography}
 
 \end{document}
