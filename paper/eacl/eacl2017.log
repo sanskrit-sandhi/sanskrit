@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.17)  17 SEP 2016 16:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.17)  20 SEP 2016 06:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -103,11 +103,76 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no Ñ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no Ñ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no Ñ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no Ñ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no Ñ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no Ñ in font ptmr7t!
+Missing character: There is no ƒ in font ptmr7t!
+Missing character: There is no ± in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no Ñ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no Ñ in font ptmr7t!
+Missing character: There is no ƒ in font ptmr7t!
+Missing character: There is no ± in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no Ñ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no Ñ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no Ñ in font ptmr7t!
+Missing character: There is no ƒ in font ptmr7t!
+Missing character: There is no ± in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no Ñ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no Ñ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no Ñ in font ptmr7t!
+Missing character: There is no ƒ in font ptmr7t!
+Missing character: There is no ± in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no Ñ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no Ñ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no Ñ in font ptmr7t!
+Missing character: There is no ƒ in font ptmr7t!
+Missing character: There is no ± in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no Ñ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no Ñ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no Ñ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no Ñ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no Ñ in font ptmr7t!
+Missing character: There is no ƒ in font ptmr7t!
+Missing character: There is no ± in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no Ñ in font ptmr7t!
 
-Underfull \hbox (badness 1308) in paragraph at lines 52--54
+Underfull \hbox (badness 1308) in paragraph at lines 64--66
 []\OT1/ptm/m/n/10.95 Sanskrit texts con-tain nu-mer-ous words
  []
 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 66.
+[1{/usr/local/texlive/2016basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+
+]
 Missing character: There is no ‚ in font ptmri7t!
 Missing character: There is no Ä in font ptmri7t!
 Missing character: There is no ò in font ptmri7t!
@@ -127,13 +192,13 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
 
-Underfull \hbox (badness 1412) in paragraph at lines 77--80
+Underfull \hbox (badness 1412) in paragraph at lines 70--73
  []\OT1/ptm/m/it/10.95 astaadhyaayi \OT1/ptm/m/n/10.95 (mean-ing a col-lec-tion
  of eight
  []
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 82.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 75.
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ì in font ptmr7t!
@@ -149,8 +214,6 @@ Missing character: There is no ô in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 85.
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ú in font ptmr7t!
@@ -158,22 +221,18 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
 
-Underfull \hbox (badness 1642) in paragraph at lines 84--86
+Underfull \hbox (badness 1642) in paragraph at lines 77--79
 []\OT1/ptm/b/n/10.95 Internal Sandhi: \OT1/ptm/m/n/10.95 San-skrit gram-mar has
 
  []
 
 
-Underfull \hbox (badness 1688) in paragraph at lines 84--86
+Underfull \hbox (badness 1688) in paragraph at lines 77--79
 \OT1/ptm/m/n/10.95 three kinds of min-i-mal mean-ing-ful units
  []
 
-[1{/usr/local/texlive/2016basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-
-
-]
-Underfull \hbox (badness 1910) in paragraph at lines 98--99
+Underfull \hbox (badness 1910) in paragraph at lines 91--92
 []\OT1/ptm/b/n/10.95 Vowel Sandhi: \OT1/ptm/m/n/10.95 Both let-ters are vow-els
 
  []
@@ -184,58 +243,83 @@ Missing character: There is no ú in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 114.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 109.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 109.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 109.
 
 (/usr/local/texlive/2016basic/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 2158) in paragraph at lines 114--115
-[]\OT1/ptm/b/n/10.95 Sanskrit Sandhi An-a-lyzer and Split-ter
+Underfull \hbox (badness 10000) in paragraph at lines 109--109
+[][]$\OT1/pcr/m/n/9 http : / / sanskrit . jnu . ac . in / rstudents /
  []
 
-
-Underfull \hbox (badness 1701) in paragraph at lines 114--115
-\OT1/ptm/m/n/10.95 der the guid-ance of Prof. Girish Nath
- []
-
-
-Underfull \hbox (badness 5893) in paragraph at lines 115--118
-[]\OT1/ptm/b/n/10.95 Sandhi-Splitter \OT1/ptm/m/n/10.95 This was de-vel-oped at
-
- []
-
-
-Underfull \hbox (badness 1259) in paragraph at lines 115--118
-\OT1/ptm/m/n/10.95 Uni-ver-sity of Hy-der-abad un-der the guid-
- []
-
-
-Underfull \hbox (badness 1048) in paragraph at lines 115--118
-\OT1/ptm/m/n/10.95 ance of Ms. Amba Kulka-rni (As-so-ciate
- []
-
-
-Underfull \hbox (badness 1502) in paragraph at lines 115--118
-\OT1/ptm/m/n/10.95 split-ter is avail-able at the TDIL web-site
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 115--118
-\OT1/pcr/m/n/10.95 http : / / tdil-[]dc . in / san / sandhi _
- []
-
-
-Underfull \hbox (badness 1019) in paragraph at lines 115--118
-\OT1/pcr/m/n/10.95 splitter / index _ dit . html$ \OT1/ptm/m/n/10.95 but it is
- []
-
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ¶ in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ¶ in font ptmr7t!
 [2]
+Underfull \hbox (badness 3068) in paragraph at lines 115--116
+\OT1/ptm/m/n/10.95 marks, check the word length to de-ter-mine
+ []
+
+Missing character: There is no ƒ in font ptmr7t!
+Missing character: There is no Å in font ptmr7t!
+Missing character: There is no ƒ in font ptmr7t!
+Missing character: There is no Å in font ptmr7t!
+
+Underfull \hbox (badness 7649) in paragraph at lines 131--134
+\OT1/ptm/m/n/10.95 This was de-vel-oped at Uni-ver-sity of Hy-
+ []
+
+
+Underfull \hbox (badness 2205) in paragraph at lines 131--134
+\OT1/ptm/m/n/10.95 der-abad un-der the guid-ance of Ms. Amba
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--134
+\OT1/ptm/m/n/10.95 Kulka-rni (As-so-ciate Pro-fes-sor, De-part-ment
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 131--134
+\OT1/ptm/m/n/10.95 of San-skrit Stud-ies). This is avail-able at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--134
+\OT1/pcr/m/n/10.95 http : / / sanskrit . uohyd . ac . in / scl/$
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 131--134
+\OT1/ptm/m/n/10.95 . An-other Sandhi split-ter is avail-able at the
+ []
+
+
+Underfull \hbox (badness 2980) in paragraph at lines 131--134
+\OT1/ptm/m/n/10.95 TDIL web-site $\OT1/pcr/m/n/10.95 http : / / tdil-[]dc . in 
+/ san /
+ []
+
+
+Underfull \hbox (badness 3690) in paragraph at lines 131--134
+\OT1/pcr/m/n/10.95 sandhi _ splitter / index _ dit . html$ \OT1/ptm/m/n/10.95 b
+ut
+ []
+
+
+LaTeX Warning: Citation `Kumar2010' on page 3 undefined on input line 136.
+
+[3]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ¶ in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ¶ in font ptmr7t!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ò in font ptmr7t!
@@ -249,75 +333,79 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
 
-Overfull \hbox (3.98207pt too wide) in paragraph at lines 159--159
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (3.98207pt too wide) in paragraph at lines 192--192
 []\OT1/ptm/b/n/10.95 Splitter| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--159
+Underfull \hbox (badness 10000) in paragraph at lines 192--192
 []\OT1/ptm/b/n/10.95 External
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--159
+Underfull \hbox (badness 10000) in paragraph at lines 192--192
 \OT1/ptm/b/n/10.95 Sandhi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--159
+Underfull \hbox (badness 10000) in paragraph at lines 192--192
 []\OT1/ptm/b/n/10.95 Internal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--159
+Underfull \hbox (badness 10000) in paragraph at lines 192--192
 \OT1/ptm/b/n/10.95 Sandhi
  []
 
 
-Overfull \hbox (1.0277pt too wide) in paragraph at lines 159--160
+Overfull \hbox (1.0277pt too wide) in paragraph at lines 192--193
 []\OT1/ptm/b/n/10.95 Overall| 
  []
 
 
-Overfull \hbox (2.47542pt too wide) in paragraph at lines 158--166
+Overfull \hbox (2.47542pt too wide) in paragraph at lines 191--199
  [] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 177.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 210.
 
 (/usr/local/texlive/2016basic/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 177.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 210.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1931) has occurred while \output is active []
 
- [3]
-Overfull \hbox (6.82753pt too wide) in paragraph at lines 217--217
+ [4]
+Overfull \hbox (6.82753pt too wide) in paragraph at lines 250--250
 []\OT1/ptm/b/n/10.95 Splitter| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--218
+Underfull \hbox (badness 10000) in paragraph at lines 250--251
 []\OT1/ptm/b/n/10.95 Automated
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--218
+Underfull \hbox (badness 10000) in paragraph at lines 250--251
 \OT1/ptm/b/n/10.95 Eval-u-a-tion
  []
 
 
-Overfull \hbox (1.95512pt too wide) in paragraph at lines 221--221
+Overfull \hbox (1.95512pt too wide) in paragraph at lines 254--254
 []\OT1/ptm/m/n/10.95 INRIA| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--221
+Underfull \hbox (badness 10000) in paragraph at lines 254--254
 []$\OT1/cmr/m/n/10.95 123\OML/cmm/m/it/10.95 =\OT1/cmr/m/n/10.95 150 \OMS/cmsy/
 m/n/10.95 ^^C
  []
@@ -326,52 +414,56 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ¶ in font ptmr7t!
 
-Overfull \hbox (29.83453pt too wide) in paragraph at lines 241--252
+Overfull \hbox (29.83453pt too wide) in paragraph at lines 274--285
  [] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 262--269
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 295--302
 \OT1/ptm/m/it/10.95 tu-mulo vya-nun[]adayan $\OMS/cmsy/m/n/10.95 !$
  []
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 292.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 325.
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ¶ in font ptmr7t!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4]
-Underfull \hbox (badness 10000) in paragraph at lines 304--305
+
+Underfull \hbox (badness 10000) in paragraph at lines 337--338
 []\OT1/ptm/m/it/10.95 prathamacaramatay[]alp[]ardhakatipayanem[]a[]sca
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 304--305
+Underfull \hbox (badness 10000) in paragraph at lines 337--338
 \OMS/cmsy/m/n/10.95 !$ \OT1/ptm/m/it/10.95 prathamacara-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 304--305
+Underfull \hbox (badness 10000) in paragraph at lines 337--338
 \OT1/ptm/m/it/10.95 udupadh[]adbh[]av[]adikarma[]oranyatarasy[]am $\OMS/cmsy/m/
 n/10.95 !$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 304--305
+Underfull \hbox (badness 10000) in paragraph at lines 337--338
 \OT1/ptm/m/it/10.95 taddhita[]sc[]asarvavibhakti[] $\OMS/cmsy/m/n/10.95 !$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 304--305
+Underfull \hbox (badness 10000) in paragraph at lines 337--338
 
  []
 
+[6]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ì in font ptmr7t!
@@ -379,55 +471,57 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ì in font ptmr7t!
 
-Overfull \hbox (11.42595pt too wide) in paragraph at lines 314--326
+Overfull \hbox (11.42595pt too wide) in paragraph at lines 347--359
  [] 
  []
 
-[5]
-Underfull \hbox (badness 1715) in paragraph at lines 355--356
+
+Underfull \hbox (badness 1715) in paragraph at lines 388--389
 []\OT1/ptm/m/it/10.95 uttara \OT1/ptm/m/n/10.95 (north) + \OT1/ptm/m/it/10.95 a
 yana \OT1/ptm/m/n/10.95 (move-ment) $\OMS/cmsy/m/n/10.95 !$ \OT1/ptm/m/it/10.95
  ut-
  []
 
 
-Underfull \hbox (badness 6063) in paragraph at lines 358--360
+Underfull \hbox (badness 6063) in paragraph at lines 391--393
 []\OT1/ptm/m/it/10.95 dak[]i[]a \OT1/ptm/m/n/10.95 (south) + \OT1/ptm/m/it/10.9
 5 ayana \OT1/ptm/m/n/10.95 (move-ment) $\OMS/cmsy/m/n/10.95 !$
  []
 
 
-Underfull \hbox (badness 2932) in paragraph at lines 358--360
+Underfull \hbox (badness 2932) in paragraph at lines 391--393
 \OT1/ptm/m/it/10.95 dak[]i[][]ayana \OT1/ptm/m/n/10.95 (south-ward move-ment, r
 efers to
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 382--383
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 415--416
 []\OT1/ptm/m/it/10.95 lak[]yasy[]arthatvavyavah[]ar[]anurodhena $\OMS/cmsy/m/n/
 10.95 !$
  []
 
 
-Overfull \hbox (97.23535pt too wide) in paragraph at lines 388--389
+Overfull \hbox (97.23535pt too wide) in paragraph at lines 421--422
 []\OT1/ptm/m/it/10.95 prapa[]nce'v[]antaravibh[]agapravibh[]agabhinn[]anantapad
 []arthasa[]nkule'pi
  []
 
-[6] (./eacl2017.aux)
+[8
+
+] (./eacl2017.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  )
 (\end occurred when \iffalse on line 331 was incomplete) 
 Here is how much of TeX's memory you used:
- 535 strings out of 494447
- 6978 string characters out of 6166766
- 67832 words of memory out of 5000000
- 3907 multiletter control sequences out of 15000+600000
- 20669 words of font info for 48 fonts, out of 8000000 for 9000
+ 555 strings out of 494447
+ 7176 string characters out of 6166766
+ 69832 words of memory out of 5000000
+ 3919 multiletter control sequences out of 15000+600000
+ 25985 words of font info for 60 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 24i,10n,19p,903b,252s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,10n,25p,1939b,252s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/201
 6basic/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2016basic/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016basic
@@ -440,10 +534,10 @@ asic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016basic/
 texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2016basic/texm
 f-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016basic/texmf-dis
 t/fonts/type1/urw/times/utmri8a.pfb>
-Output written on eacl2017.pdf (6 pages, 135755 bytes).
+Output written on eacl2017.pdf (8 pages, 141758 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
- 45 compressed objects within 1 object stream
+ 72 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

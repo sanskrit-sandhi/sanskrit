@@ -49,28 +49,21 @@
 \begin{document}
 \maketitle
 \begin{abstract}
+	
+	P ̄an . nini s grammar saw the culmination of different thoughts into his monumental work asht ̄adhy ̄ayi . The modern age of information theory has provided a new boost to the studies of asht ̄adhy ̄ay ̄ı from the perspective of information coding. The importance of asht ̄adhyay ̄ı is three fold. The first one, as is well known, as an almost exhaustive grammar for any natural language with meticulous details yet small enough to memorize. Though asht ̄adhy ̄ay ̄ı is written to de- scribe the then prevalent Sanskrit language, it provides a grammatical frame- work which is general enough to analyse other languages as well. This makes the study of asht ̄adhy ̄ay ̄ı from the point of view of concepts it uses for language analysis important. The third aspect of asht ̄adhy ̄ay ̄ı is its organization. The set of less than 4000 s ̄utra s is similar to any computer program with one major difference the program being written for a human being and not for a machine thereby allowing some non-formal or semi-formal s ̄utra s which require a hu- man being to interpret and implement them. Nevertheless, we believe that the study of asht ̄adhy ̄ay ̄ı from programming point of view may lead to a new pro- gramming paradigm because of its rich structure. Possibly these are the reasons, why Gerard Huet feels that Panini should be called as the father of informatics 1 .
+	
+	
+	The Ashtadhyayi is a list of rules. But these rules, too, are lists: of verbs, of suffixes, and so on. These lists have different headings, and these headings describe the behavior of the items they contain. But the Ashtadhyayi is more complicated than this: ideas in one rule can carry over to the next, or to the next twenty; basic words have specialized meanings; and rules in one chapter may control rules in another. In this way, Panini created a brief and immensely dense work. Thus, we have a large arrangement of different rules that we must try to understand.
+	
+	
+	The Ashtadhyayi formulated in a morphologically, syntactically, and lexically regimented form of sanskrit. To maximize concision with a minimum of ambiguity, rules are compressed by systematically omitting repeated expressions from them, according to a procedure modeled on natural language syntax (anuvrtti)
+	
+	It is believed by many scholars that though P ̄an . ini has written a grammar for Sanskrit, the concepts he used are general ones and thus it providesa frame- work to write grammars for other languages.
+	
+	
   Sanskrit texts contain numerous words which are formed by the combination of two or more words. This process, known as Sandhi, takes place according to certain rules codified by the grammarian Paanini in his \textit{ \={a}staadhyaayii}. The reverse process of getting back the component words from the Sandhied words is known as Sandhi splitting. This paper attempts to evaluate the performance of the existing Sandhi tools.  The evaluation is done both with reference to the rules of Paanini and the words used in actual literature. The performance of the Sandhi tools is found to be terribly bad, and the possible reasons behind this are traced.  
 The word sandhi is an umbrella term that is used to refer to sound changes that take place when two sounds are close enough. The two sounds may merge to give a single sound, one of the two sounds (the former or the latter) may get changed/reduplicated before combining with the other, or even get elided. A new sound may also come in between. 
 \end{abstract}
-
-\section{Credits}
-
-This document has been adapted from the instructions for earlier ACL
-and NAACL proceedings, including those for ACL-2016 by Yannick Versley, 
-Hai Zhao and Yusuke Miyao, NAACL-2016 by Margaret
-Mitchell, ACL-2012 by Maggie Li and Michael
-White, those from ACL-2010 by Jing-Shing Chang and Philipp Koehn,
-those for ACL-2008 by Johanna D. Moore, Simone Teufel, James Allan,
-and Sadaoki Furui, those for ACL-2005 by Hwee Tou Ng and Kemal
-Oflazer, those for ACL-2002 by Eugene Charniak and Dekang Lin, and
-earlier ACL and EACL formats. Those versions were written by several
-people, including John Chen, Henry S. Thompson and Donald
-Walker. Additional elements were taken from the formatting
-instructions of the {\em International Joint Conference on Artificial
-  Intelligence} and the \emph{Conference on Computer Vision and
-Pattern Recognition}. 
-
-This version is distributed by the EACL-2017 publication chairs, Maria Liakata and Chris Biemann.
 
 \section{Introduction}
 
@@ -110,13 +103,53 @@ On the other hand merging of two or more words into a compound word is refereed 
 \section{Exisiting Sandhi Splitting and Merging tools:}
 The process of breaking a sandhied word into the original units it is made of is known as sandhi splitting. A tool which can perform this task is referred to here as a sandhi splitter.  In the same lines the tools which can merge two words to form the compound word is known as sandhi merging tool. 
 There has been considerable amount of research in the field of sandhi splitting and merging. As of now, three distinct sandhi splitters and merging tools are available:
-\begin{enumerate}
-\item \textbf{Sanskrit Sandhi Analyzer and Splitter } This is a vowel-sandhi splitter. The other two kinds of sandhis (consonant and visarga) are not split by this. This was developed at Jawaharlal Nehru University under the guidance of Prof. Girish Nath Jha (Professor, Computational Linguistics, Special Centre for Sanskrit Studies). This is available at \url{http://sanskrit.jnu.ac.in/sandhi/viccheda.jsp}.
-\item \textbf{Sandhi-Splitter} This was developed at University of Hyderabad under the guidance of Ms. Amba Kulkarni (Associate Professor, Department of Sanskrit Studies). This is available at \url{http://sanskrit.uohyd.ac.in/scl/}  . 
+
+
+
+\subsection{Sanskrit Sandhi Analyzer and Splitter}\footnote{\url{http://sanskrit.jnu.ac.in/rstudents/mphil/sachin.pdf}} This is a vowel-sandhi splitter. The other two kinds of sandhis (consonant and visarga) are not split by this. This was developed at Jawaharlal Nehru University under the guidance of Prof. Girish Nath Jha (Professor, Computational Linguistics, Special Centre for Sanskrit Studies). This is available at \url{http://sanskrit.jnu.ac.in/sandhi/viccheda.jsp}.
+
+Architecture of the system is as follows:
+Pre-processing -> Subanta processing -> Fixed List Checking -> Sandhi Analysis - > Result generator
+
+\subsubsection{Pre-processing}
+Pre-processing includes marking the punctation marks, check the word length to determine whether we can split the words or not, and searching in the corpus if the intput word is already an instance of the examples.
+
+\subsubsection{Subanta analysis}
+This analysis includes splitting the noun phrases into its constituents base (prātipadika) and case terminations (kāraka-vacana-vibhakti).  Sandhi analyzer  will  process  the  base  words only. 
+
+\subsubsection{Fixed List checking}
+	After  subanta analysis, the input text has been segmented into base and affixes. Now only  base  words  will  be  processed  for  sandhi analysis.  But  before  that  these  words  will  be  checked  into  a Dictionary (Monier Williams Sanskrit Digital Dictionary),  place  name  list  and  noun  list.  The  words  found  in  these  resources, will  be exempted  from  sandhi processing. These different files are  merged to  one text file which is named as lexicon.
+	
+\subsubsection{Sandhi Analysis}
+The segmenter class will check the  vowel sandhi rule - base in the database to mark the resultant  sandhi sounds  (marker)  for  potential  splitting  and  to  identify  the  sandhi patterns  for  viccheda , corresponding to the marked sound. 
+
+
+\subsubsection{Result generator}
+	At  each  step  of  marker  and  pattern  identification,  the  class  will  check  the  segmented  words  in  the  lexicon  to  generate  the  result.  For  this  purpose,  it  will  use  Dictionary (Monier Williams Sanskrit Digital Dictionary)  and  customized Sanskrit corpora as the ling uistic resources. To be a valid segmentation , both  the segments must be available in either of the linguistic resources. If the word has more  than one sounds marked for  sandhi , then only the first word must be present in either of  the linguistics resources . The remaining string in this case will continue with the process  of rule pattern matching, splitting and search in the linguistic resources.
+
+
+\subsection{Sandhi-Splitter} This was developed at University of Hyderabad under the guidance of Ms. Amba Kulkarni (Associate Professor, Department of Sanskrit Studies). This is available at \url{http://sanskrit.uohyd.ac.in/scl/}  . 
 Another Sandhi splitter is available at the TDIL website 
 \url{http://tdil-dc.in/san/sandhi_splitter/index_dit.html}  but it is the same as the one mentioned above, the only difference being in version. The former is considered here because it is the latest version.
-\item \textbf{The Sanskrit Reader Companion } This is a Sasnkrit segmenter and parser, and therefore, also able to split sandhis. This was developed at INRIA, France under the guidance of Professor Gerard Huet, emeritus Professor. This is available at \url{http://sanskrit.inria.fr/DICO/reader.fr.html}.
+
+\subsubsection{Segmentation Algorithm}
+The basic outline of the algorithm is\cite{Kumar2010}:
+\begin{enumerate}
+	\item Recursively break a word at every possible position applying a sandhi rule and generate all possible candidates for the input.
+	\item Pass the constituents of all the candidates through the morphological analyser.
+	\item Declare the candidate as a valid candidate, if all its constituents are recognised by the morphological analyser, and all except the last segment are compounding forms.
+	\item Assign weights to the accepted candidates and sort them based on the weights as defined in the previous subsection.
+	\item The optimal solution will be the one with the highest weight.
 \end{enumerate}
+
+
+\subsection{The Sanskrit Reader Companion } This is a Sasnkrit segmenter and parser, and therefore, also able to split sandhis. This was developed at INRIA, France under the guidance of Professor Gerard Huet, emeritus Professor. This is available at \url{http://sanskrit.inria.fr/DICO/reader.fr.html}.
+
+
+attested preverbs for roots. In a second phase, more stem generation occurs for roots, accounting for the various tenses/moods ( lakaras ), as well as absolutives and in nitives, but also participles (adjectival kr . dantas ) in 10 varieties. Finally, in exional  morphology  paradigms  derive  the  in ected  forms  according  to  the morphological parameters, some of which being read from the lexicon, some of which being de ned in speci c tables. It is not simple to relate our paradigmatic derivations and the operations of Paninian grammar. Some stem operations relate to morpho-phonetic operations well identi ed in the central rules ( stras ), such as taking the phonetic grades of gun . a or vr . ddhi . Some are dispersed in various parts of the grammar, such as stem substitutions. Still others, such as retro exion, occur in the  nal section ( tripadP )  of  the As . t . adhyayP ,  which  comprises  a  list  of  rewrite  rules  which  are applied iteratively at the end of the derivation process, in some kind of phonetic smoothing" phase. Since the forms stored in our data banks are to be matched to the surface realization of the sentence, this phonetic smoothing must be applied at the time of generation of these forms. Some careful analysis must be done in order to understand the mutual interaction of the retro exion rules and of the external sandhi rules (which are used in segmentation in the Heritage reader). This analysis will be given in section 4.4 below. The main discrepancy between the Paninian processes and our reader opera- tions is in the order of rewritings. Often the stras relevant to a given operation are dispersed in di erent sections of the As . t . adhyayP , and thus it is hard to give the trace of the needed stras . However, in many cases, one can recognize the stra operations from the computer program. A complete analysis, in the speci c case of future passive participles  
+
+One related diculty concerns the precise de nition of the sandhi relation label- ing implicitly the arcs of the diagram. For most arcs, it is what Western linguists call external sandhi". However, for the arcs issued from the Pv phase, it adds retro exion rules, necessary to explain verbal forms of verbs (or participles) pre-  xed by preverb sequences. Furthermore, the forms stored in the various data banks  (Noun,  etc.)  use  such  retro exion  rules  in  the  formation  of  their  stems and of their in exions. The correctness and completeness of our method involves thus a careful as- sessment of the mutual interaction (feeding, bleeding) between the rules of the morpho-phonetic processes of stem formation and in ection, the rules of external sandhi, and the  nal tripadP rules.
+
 
 
 \section{Methodology of Evaluation:}
