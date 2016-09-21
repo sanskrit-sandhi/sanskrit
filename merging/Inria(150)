@@ -1,4 +1,5 @@
 Inria(150)
+	INRIA	JNU	UoH
 Manual	6	14	27
 Auto	3	10	17
 Merge	75	21	36
@@ -7,4 +8,33 @@ Merge	75	21	36
 External(132)
 Manual	50	21	48
 Auto	38	22	34
+Merge	55	38	57
+
+
+Literature(157)
+Manual	122	14	100
+Auto	63	14	30
+Merge	130	86	132
+
+Literature
+
+type	JNU	INRIA	INRIA.FIL	UOH	UOH.FIL
+nospace	15	74	71	81	0
+plus	15	94	89	97	0
+Manual	19	127		105
+Merge	jnu	inria.ext	inria.int	uoh		
+nospace	75	125	87	122
+plus	51	130	89	125
+
+
+Gita Corpus (1434)
+type	JNU	INRIA	INRIA.FIL	UOH	UOH.FIL
+plus	62	965	888	646	1
+nospace	62	788	727	601	1
+Merge	jnu	inria.ext	inria.int	uoh	
+nospace	379	798	523	892
+plus	315	799	523	883
+
+
+
 

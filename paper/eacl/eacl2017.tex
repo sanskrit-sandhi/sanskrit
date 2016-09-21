@@ -146,7 +146,9 @@ The basic outline of the algorithm is\cite{Kumar2010}:
 \subsection{The Sanskrit Reader Companion } This is a Sasnkrit segmenter and parser, and therefore, also able to split sandhis. This was developed at INRIA, France under the guidance of Professor Gerard Huet, emeritus Professor. This is available at \url{http://sanskrit.inria.fr/DICO/reader.fr.html}.
 
 
-attested preverbs for roots. In a second phase, more stem generation occurs for roots, accounting for the various tenses/moods ( lakaras ), as well as absolutives and in nitives, but also participles (adjectival kr . dantas ) in 10 varieties. Finally, in exional  morphology  paradigms  derive  the  in ected  forms  according  to  the morphological parameters, some of which being read from the lexicon, some of which being de ned in speci c tables. It is not simple to relate our paradigmatic derivations and the operations of Paninian grammar. Some stem operations relate to morpho-phonetic operations well identi ed in the central rules ( stras ), such as taking the phonetic grades of gun . a or vr . ddhi . Some are dispersed in various parts of the grammar, such as stem substitutions. Still others, such as retro exion, occur in the  nal section ( tripadP )  of  the As . t . adhyayP ,  which  comprises  a  list  of  rewrite  rules  which  are applied iteratively at the end of the derivation process, in some kind of phonetic smoothing" phase. Since the forms stored in our data banks are to be matched to the surface realization of the sentence, this phonetic smoothing must be applied at the time of generation of these forms. Some careful analysis must be done in order to understand the mutual interaction of the retro exion rules and of the external sandhi rules (which are used in segmentation in the Heritage reader). This analysis will be given in section 4.4 below. The main discrepancy between the Paninian processes and our reader opera- tions is in the order of rewritings. Often the stras relevant to a given operation are dispersed in di erent sections of the As . t . adhyayP , and thus it is hard to give the trace of the needed stras . However, in many cases, one can recognize the stra operations from the computer program. A complete analysis, in the speci c case of future passive participles  
+In Sanskrit Reader Companion, Sandhi splitter is a component of the sanskrit parser, which tokenizes sanskrit input text and produces meaning ful splits. The flow of the Sanskrit parser is as follows
+
+At first the lexicon is analysed, to gather stems and their morphological parameters, such as permitted genders of nominal stems, allowed present classes (gana) and attested preverbs for roots. In second phase, more stem generation occurs for roots, accounting  for the various tenses/moods ( lakaras ), as well as absolutives and in nitives, but also participles (adjectival kr . dantas ) in 10 varieties. Finally, inflexional  morphology  paradigms  derive  the  in ected  forms  according  to  the morphological parameters, some of which being read from the lexicon, some of which being de ned in speci c tables. It is not simple to relate our paradigmatic derivations and the operations of Paninian grammar. Some stem operations relate to morpho-phonetic operations well identi ed in the central rules ( stras ), such as taking the phonetic grades of gun . a or vr . ddhi . Some are dispersed in various parts of the grammar, such as stem substitutions. Still others, such as retro exion, occur in the  nal section ( tripadP )  of  the As . t . adhyayP ,  which  comprises  a  list  of  rewrite  rules  which  are applied iteratively at the end of the derivation process, in some kind of phonetic smoothing" phase. Since the forms stored in our data banks are to be matched to the surface realization of the sentence, this phonetic smoothing must be applied at the time of generation of these forms. Some careful analysis must be done in order to understand the mutual interaction of the retro exion rules and of the external sandhi rules (which are used in segmentation in the Heritage reader). This analysis will be given in section 4.4 below. The main discrepancy between the Paninian processes and our reader opera- tions is in the order of rewritings. Often the stras relevant to a given operation are dispersed in di erent sections of the As . t . adhyayP , and thus it is hard to give the trace of the needed stras . However, in many cases, one can recognize the stra operations from the computer program. A complete analysis, in the speci c case of future passive participles  
 
 One related diculty concerns the precise de nition of the sandhi relation label- ing implicitly the arcs of the diagram. For most arcs, it is what Western linguists call external sandhi". However, for the arcs issued from the Pv phase, it adds retro exion rules, necessary to explain verbal forms of verbs (or participles) pre-  xed by preverb sequences. Furthermore, the forms stored in the various data banks  (Noun,  etc.)  use  such  retro exion  rules  in  the  formation  of  their  stems and of their in exions. The correctness and completeness of our method involves thus a careful as- sessment of the mutual interaction (feeding, bleeding) between the rules of the morpho-phonetic processes of stem formation and in ection, the rules of external sandhi, and the  nal tripadP rules.
 
@@ -219,9 +221,9 @@ Sandhi Merging tool results:
 \begin{center}
 \begin{tabular}{|l|rl|}
 \hline \bf Splitting tool & \bf Manual \bf & Automated \\ \hline
-JNU&12.4\%&11.4\% \\
-UoH&26.6\%&18.1\% \\
-INRIA&19.5\%&14.5\% \\
+JNU&x\%&20.92\% \\
+UoH&x\%&32.97\% \\
+INRIA&x\%&51.77\% \\
 \hline
 \end{tabular}
 \end{center}
@@ -249,14 +251,30 @@ This was created from 11 different texts. This has 50 examples from one text, an
 \begin{tabular}{p {1cm} p{2.5cm} p{2.5cm}}
 \hline \bf  Splitter & \bf Manual Evaluation Results & \bf Automated Evaluation Results \\
 \hline
-JNU & $14 /150*100=9.33 \%$  & 15/150*100=\\
-UoH & $96/150*100=64 \%$  & 98/150*100=\\
-INRIA & $123/150*100=82 \%$  & 95/150*100=\\
+JNU & $19 /150*100=12.66 \%$  & $15/150*100=10\%$\\
+UoH & $105/150*100=70 \%$  & $98/150*100=65.33\%$\\
+INRIA & $127/150*100=84.66 \%$  & $94/150*100=62.66\%$\\
 \hline
 \end{tabular}
 \end{center}
 \caption{\label{font-table} Evaluation Results }
 \end{table}
+
+
+\begin{table}[h]
+	\begin{center}
+		\begin{tabular}{p {1cm} p{2.5cm} p{2.5cm}}
+			\hline \bf  Merger & \bf Manual Evaluation Results & \bf Automated Evaluation Results \\
+			\hline
+			JNU & $x \%$  & $75/150*100=50\%$\\
+			UoH & $x \%$  & $129/150*100=86\%$\\
+			INRIA & $x \%$  & $131/150*100=87.33\%$\\
+			\hline
+		\end{tabular}
+	\end{center}
+	\caption{\label{font-table} Evaluation Results }
+\end{table}
+
 
 The results of automated evaluation are reported below. The difference of ….. between the two sets of results is henceforth  considered as the error margin. This is expected to be the boost in performance of the three sandhi splitters if the corpora considered further were to be manually evaluated. Only automated evaluation has been done for them.
 
@@ -271,21 +289,72 @@ Results of Automated Evaluation:
 
 \begin{table}[h]
 \begin{center}
-\begin{tabular}{l r r r}
+\begin{tabular}{p{1.4cm} | p{1.6cm} | p{1.5cm} | p{1.5cm}}
 \hline 
- & \bf JNU & \bf UoH & \bf INRIA \\
- \bf$A_1$ [157] &  2(1.3\%) &  61(38.8\%) & 95(60.5\%) \\
- \bf$A_2$ [270] & 10(3.7\%) &  115(42.6\%) & 160 (59.3\%) \\
- \bf $A_3$ [168] & 11(6.5\%) & 74(44\%) & 93(55.4) \\
- \bf $A_4$ [164] & 4(2.4\%) & 78(47.6\%) & 88(53.7\%) \\
- \bf $A_5$ [113] & 9(7.9\%) &  48(42.5\%) & 60(53.1\%) \\
- \bf Total [872] & 36 (4.1\%) &  376(43.1\%) & 496(56.9\%) \\
+ & \bf JNU & \bf UoH & \bf INRIA \\ 
+ \hline
+ \bf $A_1$ [157] &   2 (\%) &   76 (\%) &   114 (\%) \\
+ \bf $A_2$ [270] &   10 (\%) &   132 (\%) &   188 (\%) \\
+ \bf $A_3$ [169] &   11 (\%) &   83 (\%) &   110 (\%) \\
+ \bf $A_4$ [165] &   9 (\%) &   86 (\%) &   108 (\%) \\
+ \bf $A_5$ [113] &   4 (\%) &   52 (\%) &   76 (\%) \\
+ \bf $A_6$ [187] &   13 (\%) &   80 (\%) &   122 (\%) \\
+ \bf $A_7$ [120] &   6 (\%) &   43 (\%) &   84 (\%) \\
+ \bf $A_8$ [116] &   6 (\%) &   54 (\%) &   79 (\%) \\
+ \bf $A_9$ [135] &   1 (\%) &   44 (\%) &   91 (\%) \\
+ \bf Total [1432] &   62 (\%) &   650 (\%) &   972 (\%) \\
+ 
+\bf $A_1$ [157] &   2 (1.27 \%) &   76 (48.41 \%) &   114 (72.61 \%) \\
+\bf $A_2$ [270] &   3 (1.11 \%) &   132 (48.89 \%) &   188 (69.63 \%) \\
+\bf $A_3$ [169] &   4 (2.37 \%) &   83 (49.11 \%) &   110 (65.09 \%) \\
+\bf $A_4$ [165] &   5 (3.03 \%) &   86 (52.12 \%) &   108 (65.45 \%) \\
+\bf $A_5$ [113] &   6 (5.31 \%) &   52 (46.02 \%) &   76 (67.26 \%) \\
+\bf $A_6$ [187] &   7 (3.74 \%) &   80 (42.78 \%) &   122 (65.24 \%) \\
+\bf $A_7$ [120] &   8 (6.67 \%) &   43 (35.83 \%) &   84 (70.00 \%) \\
+\bf $A_8$ [116] &   9 (7.76 \%) &   54 (46.55 \%) &   79 (68.10 \%) \\
+\bf $A_9$ [135] &   10 (7.41 \%) &   44 (32.59 \%) &   91 (67.41 \%) \\
+\bf Total [1432] &   11 (0.77 \%) &   650 (45.39 \%) &   972 (67.88 \%) \\
+ 
 \hline
 \end{tabular}
 \end{center}
 \caption{\label{font-table} Evaluation Results }
 \end{table}
 
+
+\begin{table}[h]
+	\begin{center}
+		\begin{tabular}{p{1.4cm} | p{1.6cm} | p{1.5cm} | p{1.5cm}}
+			\hline 
+			& \bf JNU & \bf UoH & \bf INRIA \\
+			\hline
+			\bf $A_1$ [157] &   47 (\%) &   90 (\%) &   87 (\%) \\
+			\bf $A_2$ [270] &   71 (\%) &   181 (\%) &   174 (\%) \\
+			\bf $A_3$ [169] &   52 (\%) &   126 (\%) &   111 (\%) \\
+			\bf $A_4$ [165] &   47 (\%) &   121 (\%) &   105 (\%) \\
+			\bf $A_5$ [113] &   29 (\%) &   77 (\%) &   64 (\%) \\
+			\bf $A_6$ [187] &   47 (\%) &   114 (\%) &   100 (\%) \\
+			\bf $A_7$ [120] &   29 (\%) &   64 (\%) &   53 (\%) \\
+			\bf $A_8$ [116] &   30 (\%) &   67 (\%) &   63 (\%) \\
+			\bf $A_9$ [135] &   27 (\%) &   65 (\%) &   55 (\%) \\
+			\bf Total [1432] &   379 (\%) &   905 (\%) &   812 (\%) \\
+			
+			
+			\bf $A_1$ [157] &   47 (29.94 \%) &   90 (57.32 \%) &   87 (55.41 \%) \\
+			\bf $A_2$ [270] &   71 (26.30 \%) &   181 (67.04 \%) &   174 (64.44 \%) \\
+			\bf $A_3$ [169] &   52 (30.77 \%) &   126 (74.56 \%) &   111 (65.68 \%) \\
+			\bf $A_4$ [165] &   47 (28.48 \%) &   121 (73.33 \%) &   105 (63.64 \%) \\
+			\bf $A_5$ [113] &   29 (25.66 \%) &   77 (68.14 \%) &   64 (56.64 \%) \\
+			\bf $A_6$ [187] &   47 (25.13 \%) &   114 (60.96 \%) &   100 (53.48 \%) \\
+			\bf $A_7$ [120] &   29 (24.17 \%) &   64 (53.33 \%) &   53 (44.17 \%) \\
+			\bf $A_8$ [116] &   30 (25.86 \%) &   67 (57.76 \%) &   63 (54.31 \%) \\
+			\bf $A_9$ [135] &   27 (20.00 \%) &   65 (48.15 \%) &   55 (40.74 \%) \\
+			\bf Total [1432] &   379 (26.47 \%) &   905 (63.20 \%) &   812 (56.70 \%) \\
+			\hline
+		\end{tabular}
+	\end{center}
+	\caption{\label{font-table} Evaluation Results }
+\end{table}
 
 \subsubsection{Dictionary-filtered UoH corpora}
  The UoH website has 39 sandhi-split corpora but they are not fully correct. There are cases of typos, insufficient splits and even wrong splits. Therefore, they were not directly used for the purpose of automated evaluation. The corpora contained thousands of words in total, and a strategy was worked out to create a subset of them that had no errors.
@@ -312,13 +381,28 @@ Total Number of Cases: 18,326
 \begin{tabular}{| r | r | }
 \hline  \bf Splitter & \bf No. of Cases Correctly Identified \\
 \hline
-JNU & 3215 (17.5 \%) \\
-UoH & 11405 (62.2 \%) \\
-INRIA & 13416 (73.2 \%)\\
+JNU & 3214 (17.53 \%) \\
+UoH & 11405 (62.23 \%) \\
+INRIA & 13416 (73.20 \%)\\
 \hline
 \end{tabular}
 \end{center}
 \caption{\label{font-table} Evaluation Results }
+\end{table}
+
+
+\begin{table}[h]
+	\begin{center}
+		\begin{tabular}{| r | r | }
+			\hline  \bf Merger & \bf No. of Cases Correctly Identified \\
+			\hline
+			JNU & 6517 (35.56 \%) \\
+			UoH & 12895 (70.36.2 \%) \\
+			INRIA & 12611 (68.81 \%)\\
+			\hline
+		\end{tabular}
+	\end{center}
+	\caption{\label{font-table} Evaluation Results }
 \end{table}
 
 

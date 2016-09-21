@@ -8,7 +8,7 @@ def process(file):
 	out = open(file+'.out','w')
 	for line in open(file+'.jnu').readlines():
 		line = line.strip().split(':')
-		print line[0], line[5], line
+		print line[0], line[5]
 		jnuMap[line[0]] = line[5]
 	for line in open(file+'.ext.inria').readlines():
 		line = line.strip().split(':')
