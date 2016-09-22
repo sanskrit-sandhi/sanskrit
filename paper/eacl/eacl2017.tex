@@ -21,6 +21,7 @@
 \usepackage{times}
 \usepackage{url}
 \usepackage{latexsym}
+\usepackage{graphicx}
 
 %\eaclfinalcopy % Uncomment this line for the final submission
 %\def\eaclpaperid{***} %  Enter the acl Paper ID here
@@ -50,24 +51,24 @@
 \maketitle
 \begin{abstract}
 	
-	P ̄an . nini s grammar saw the culmination of different thoughts into his monumental work asht ̄adhy ̄ayi . The modern age of information theory has provided a new boost to the studies of asht ̄adhy ̄ay ̄ı from the perspective of information coding. The importance of asht ̄adhyay ̄ı is three fold. The first one, as is well known, as an almost exhaustive grammar for any natural language with meticulous details yet small enough to memorize. Though asht ̄adhy ̄ay ̄ı is written to de- scribe the then prevalent Sanskrit language, it provides a grammatical frame- work which is general enough to analyse other languages as well. This makes the study of asht ̄adhy ̄ay ̄ı from the point of view of concepts it uses for language analysis important. The third aspect of asht ̄adhy ̄ay ̄ı is its organization. The set of less than 4000 s ̄utra s is similar to any computer program with one major difference the program being written for a human being and not for a machine thereby allowing some non-formal or semi-formal s ̄utra s which require a hu- man being to interpret and implement them. Nevertheless, we believe that the study of asht ̄adhy ̄ay ̄ı from programming point of view may lead to a new pro- gramming paradigm because of its rich structure. Possibly these are the reasons, why Gerard Huet feels that Panini should be called as the father of informatics 1 .
+	\textit{P\={a}\d{n}ini's} grammar saw the culmination of different thoughts into his monumental work \textit{A\d{s}\d{t}\={a}dhy\={a}y\={\i}}. The modern age of information theory has provided a new boost to the studies of \textit{a\d{s}\d{t}\={a}dhy\={a}y\={\i}} from the perspective of information coding. 
 	
+	It is believed by many scholars that though \textit{P\={a}\d{n}ini's} has written a grammar for Sanskrit, the concepts he used are general ones and thus it provides a framework to write grammars for other languages.
 	
-	The Ashtadhyayi is a list of rules. But these rules, too, are lists: of verbs, of suffixes, and so on. These lists have different headings, and these headings describe the behavior of the items they contain. But the Ashtadhyayi is more complicated than this: ideas in one rule can carry over to the next, or to the next twenty; basic words have specialized meanings; and rules in one chapter may control rules in another. In this way, Panini created a brief and immensely dense work. Thus, we have a large arrangement of different rules that we must try to understand.
+	The \textit{a\d{s}\d{t}\={a}dhy\={a}y\={\i}} formulated in a morphologically, syntactically, and lexically regimented form of sanskrit. To maximize concision with a minimum of ambiguity, rules are compressed by systematically omitting repeated expressions from them, according to a procedure modeled on natural language syntax (\textit{anuv\d{r}tti})
 	
+	Sanskrit texts contain numerous words which are formed by the combination of two or more words. This process, known as Sandhi, takes place according to certain rules codified by the grammarian \textit{P\={a}\d{n}ini} in his \textit{a\d{s}\d{t}\={a}dhy\={a}y\={\i}}. The reverse process of getting back the component words from the Sandhied words is known as Sandhi splitting. This paper attempts to evaluate the performance of the existing Sandhi tools.  The evaluation is done both with reference to the rules of Paanini and the words used in actual literature. The performance of the Sandhi tools is found to be terribly bad, and the possible reasons behind this are traced.  
 	
-	The Ashtadhyayi formulated in a morphologically, syntactically, and lexically regimented form of sanskrit. To maximize concision with a minimum of ambiguity, rules are compressed by systematically omitting repeated expressions from them, according to a procedure modeled on natural language syntax (anuvrtti)
-	
-	It is believed by many scholars that though P ̄an . ini has written a grammar for Sanskrit, the concepts he used are general ones and thus it providesa frame- work to write grammars for other languages.
-	
-	
-  Sanskrit texts contain numerous words which are formed by the combination of two or more words. This process, known as Sandhi, takes place according to certain rules codified by the grammarian Paanini in his \textit{ \={a}staadhyaayii}. The reverse process of getting back the component words from the Sandhied words is known as Sandhi splitting. This paper attempts to evaluate the performance of the existing Sandhi tools.  The evaluation is done both with reference to the rules of Paanini and the words used in actual literature. The performance of the Sandhi tools is found to be terribly bad, and the possible reasons behind this are traced.  
-The word sandhi is an umbrella term that is used to refer to sound changes that take place when two sounds are close enough. The two sounds may merge to give a single sound, one of the two sounds (the former or the latter) may get changed/reduplicated before combining with the other, or even get elided. A new sound may also come in between. 
+	The word sandhi is an umbrella term that is used to refer to sound changes that take place when two sounds are close enough. The two sounds may merge to give a single sound, one of the two sounds (the former or the latter) may get changed/reduplicated before combining with the other, or even get elided. A new sound may also come in between. 
 \end{abstract}
 
 \section{Introduction}
 
-\textit{ \={a}staadhyaayi} (meaning a collection of eight books) by \textit{p\={a}\d{n}ini} is the source of Sanskrit grammar, syntax and semantics. The word  \textit{‘sandhi’} sandhi ``joining'', however, does not appear in any of the \textit{sutr\={a}} (rules) of \textit{p\={a}\d{n}ini}. There are certain rules that are governed by the condition of  \textit{sa\d{m}hit\={a}} which as defined in \textit{sutr\={a}} 109 of Chapter 4 of Book 1, means ‘closest proximity of letters’. These rules talk about the changes that take place when two letters are in ‘closest proximity’.
+The importance of \textit{a\d{s}\d{t}\={a}dhy\={a}y\={\i}} is three fold. The first one, as is well known, as an almost exhaustive grammar for any natural language with meticulous details yet small enough to memorize. Though \textit{a\d{s}\d{t}\={a}dhy\={a}y\={\i}} is written to describe the then prevalent Sanskrit language, it provides a grammatical framework which is general enough to analyse other languages as well. This makes the study of \textit{a\d{s}\d{t}\={a}dhy\={a}y\={\i}} from the point of view of concepts it uses for language analysis important. The third aspect of \textit{a\d{s}\d{t}\={a}dhy\={a}y\={\i}} is its organization. The set of less than 4000 \textit{s\={u}tra} is similar to any computer program with one major difference the program being written for a human being and not for a machine thereby allowing some non-formal or semi-formal \textit{s\={u}tra} which require a human being to interpret and implement them. Nevertheless, we believe that the study of \textit{a\d{s}\d{t}\={a}dhy\={a}y\={\i}} from programming point of view may lead to a new programming paradigm because of its rich structure.
+
+The \textit{a\d{s}\d{t}\={a}dhy\={a}y\={\i}} is a list of rules. But these rules, too, are lists: of verbs, of suffixes, and so on. These lists have different headings, and these headings describe the behavior of the items they contain. But the \textit{a\d{s}\d{t}\={a}dhy\={a}y\={\i}} is more complicated than this: ideas in one rule can carry over to the next, or to the next twenty; basic words have specialized meanings; and rules in one chapter may control rules in another. In this way, 	\textit{P\={a}\d{n}ini's} created a brief and immensely dense work. Thus, we have a large arrangement of different rules that we must try to understand.
+
+\textit{A\d{s}\d{t}\={a}dhy\={a}y\={\i}} (meaning a collection of eight books) by \textit{P\={a}\d{n}ini} is the source of Sanskrit grammar, syntax and semantics. The word  \textit{‘sandhi’} ``joining'', however, does not appear in any of the \textit{sutr\={a}} (rules) of \textit{p\={a}\d{n}ini}. There are certain rules that are governed by the condition of  \textit{sa\d{m}hit\={a}} which as defined in \textit{sutr\={a}} 109 of Chapter 4 of Book 1, means ‘closest proximity of letters’. These rules talk about the changes that take place when two letters are in ‘closest proximity’.
 \textit{sa\d{m}hit\={a}} is always applicable within a word, between an \textit{upasarg\={a}} and a verb root and between words in a compound formation. As regards other cases, it depends on how words are pronounced. If words of a sentence are spoken together without a hiatus,  \textit{sa\d{m}hit\={a}} applies and sound changes will take place at word boundaries. However, if there is a hiatus between two words, \textit{sa\d{m}hit\={a}} does not apply. 
  \textit{sutr\={a}} ``formulae/rules'' 73-157 of Chapter 1 of Book 6 and all rules of Chapters 3 and 4 of Book 8 describe the changes of sound under the condition of \textit{sa\d{m}hit\={a}}. The rules which govern change of sounds when \textit{sa\d{m}hit\={a}} is applicable are hereafter referred to as Sandhi (\textit{sa\d{m}dhi\d{h}}) rules.
 
@@ -109,7 +110,6 @@ There has been considerable amount of research in the field of sandhi splitting 
 \subsection{Sanskrit Sandhi Analyzer and Splitter}\footnote{\url{http://sanskrit.jnu.ac.in/rstudents/mphil/sachin.pdf}} This is a vowel-sandhi splitter. The other two kinds of sandhis (consonant and visarga) are not split by this. This was developed at Jawaharlal Nehru University under the guidance of Prof. Girish Nath Jha (Professor, Computational Linguistics, Special Centre for Sanskrit Studies). This is available at \url{http://sanskrit.jnu.ac.in/sandhi/viccheda.jsp}.
 
 Architecture of the system is as follows:
-Pre-processing -> Subanta processing -> Fixed List Checking -> Sandhi Analysis - > Result generator
 
 \subsubsection{Pre-processing}
 Pre-processing includes marking the punctation marks, check the word length to determine whether we can split the words or not, and searching in the corpus if the intput word is already an instance of the examples.
@@ -145,13 +145,15 @@ The basic outline of the algorithm is\cite{Kumar2010}:
 
 \subsection{The Sanskrit Reader Companion } This is a Sasnkrit segmenter and parser, and therefore, also able to split sandhis. This was developed at INRIA, France under the guidance of Professor Gerard Huet, emeritus Professor. This is available at \url{http://sanskrit.inria.fr/DICO/reader.fr.html}.
 
+ The flow of Sanskrit parser is as follows
 
-In Sanskrit Reader Companion, Sandhi splitter is a component of the sanskrit parser, which tokenizes sanskrit input text and produces meaning ful splits. The flow of the Sanskrit parser is as follows
+At first the lexicon is analysed, to gather stems and their morphological parameters, such as permitted genders of nominal stems, allowed present classes (\textit{ga\d{n}a}) and attested preverbs for roots. 
 
-At first the lexicon is analysed, to gather stems and their morphological parameters, such as permitted genders of nominal stems, allowed present classes (gana) and attested preverbs for roots. In second phase, more stem generation occurs for roots, accounting  for the various tenses/moods ( lakaras ), as well as absolutives and in nitives, but also participles (adjectival kr . dantas ) in 10 varieties. Finally, inflexional  morphology  paradigms  derive  the  in ected  forms  according  to  the morphological parameters, some of which being read from the lexicon, some of which being de ned in speci c tables. It is not simple to relate our paradigmatic derivations and the operations of Paninian grammar. Some stem operations relate to morpho-phonetic operations well identi ed in the central rules ( stras ), such as taking the phonetic grades of gun . a or vr . ddhi . Some are dispersed in various parts of the grammar, such as stem substitutions. Still others, such as retro exion, occur in the  nal section ( tripadP )  of  the As . t . adhyayP ,  which  comprises  a  list  of  rewrite  rules  which  are applied iteratively at the end of the derivation process, in some kind of phonetic smoothing" phase. Since the forms stored in our data banks are to be matched to the surface realization of the sentence, this phonetic smoothing must be applied at the time of generation of these forms. Some careful analysis must be done in order to understand the mutual interaction of the retro exion rules and of the external sandhi rules (which are used in segmentation in the Heritage reader). This analysis will be given in section 4.4 below. The main discrepancy between the Paninian processes and our reader opera- tions is in the order of rewritings. Often the stras relevant to a given operation are dispersed in di erent sections of the As . t . adhyayP , and thus it is hard to give the trace of the needed stras . However, in many cases, one can recognize the stra operations from the computer program. A complete analysis, in the speci c case of future passive participles  
+In second phase, more stem generation occurs for roots, accounting  for the various tenses/moods (\textit{lak\={a}ras} ), as well as absolutives and in nitives, but also participles (adjectival \textit{k\d{r}dantas} ) in 10 varieties. 
 
-One related diculty concerns the precise de nition of the sandhi relation label- ing implicitly the arcs of the diagram. For most arcs, it is what Western linguists call external sandhi". However, for the arcs issued from the Pv phase, it adds retro exion rules, necessary to explain verbal forms of verbs (or participles) pre-  xed by preverb sequences. Furthermore, the forms stored in the various data banks  (Noun,  etc.)  use  such  retro exion  rules  in  the  formation  of  their  stems and of their in exions. The correctness and completeness of our method involves thus a careful as- sessment of the mutual interaction (feeding, bleeding) between the rules of the morpho-phonetic processes of stem formation and in ection, the rules of external sandhi, and the  nal tripadP rules.
+Finally, inflexional  morphology  paradigms  derive  the  in ected  forms  according  to  the morphological parameters, some of which being read from the lexicon, some of which being de ned in speci c tables. 
 
+It is not simple to relate our paradigmatic derivations and the operations of Paninian grammar. Some stem operations relate to morpho-phonetic operations well identified in the central rules (\textit{s\={u}tras} ), such as taking the phonetic grades of \textit{gu\d{n}a} or \textit{v\d{r}ddhi}. Some are dispersed in various parts of the grammar, such as stem substitutions. Still others, such as retroflexion, occur in the  final section (\textit{trip\={a}d\={\i}} )  of  the \textit{a\d{s}\d{t}\={a}dhy\={a}y\={\i}},  which  comprises  a  list  of  rewrite  rules  which  are applied iteratively at the end of the derivation process, in some kind of phonetic smoothing'' phase. Since the forms stored in our data banks are to be matched to the surface realization of the sentence, this phonetic smoothing must be applied at the time of generation of these forms. Some careful analysis must be done in order to understand the mutual interaction of the retroflexion rules and of the external sandhi rules (which are used in segmentation in the Heritage reader). This analysis will be given in section 4.4 below. The main discrepancy between the Paninian processes and our reader operations is in the order of rewritings. Often the stras relevant to a given operation are dispersed in different sections of the \textit{a\d{s}\d{t}\={a}dhy\={a}y\={\i}} , and thus it is hard to give the trace of the needed stras . However, in many cases, one can recognize the stra operations from the computer program. A complete analysis, in the speci c case of future passive participles .
 
 
 \section{Methodology of Evaluation:}
@@ -293,27 +295,17 @@ Results of Automated Evaluation:
 \hline 
  & \bf JNU & \bf UoH & \bf INRIA \\ 
  \hline
- \bf $A_1$ [157] &   2 (\%) &   76 (\%) &   114 (\%) \\
- \bf $A_2$ [270] &   10 (\%) &   132 (\%) &   188 (\%) \\
- \bf $A_3$ [169] &   11 (\%) &   83 (\%) &   110 (\%) \\
- \bf $A_4$ [165] &   9 (\%) &   86 (\%) &   108 (\%) \\
- \bf $A_5$ [113] &   4 (\%) &   52 (\%) &   76 (\%) \\
- \bf $A_6$ [187] &   13 (\%) &   80 (\%) &   122 (\%) \\
- \bf $A_7$ [120] &   6 (\%) &   43 (\%) &   84 (\%) \\
- \bf $A_8$ [116] &   6 (\%) &   54 (\%) &   79 (\%) \\
- \bf $A_9$ [135] &   1 (\%) &   44 (\%) &   91 (\%) \\
- \bf Total [1432] &   62 (\%) &   650 (\%) &   972 (\%) \\
  
 \bf $A_1$ [157] &   2 (1.27 \%) &   76 (48.41 \%) &   114 (72.61 \%) \\
-\bf $A_2$ [270] &   3 (1.11 \%) &   132 (48.89 \%) &   188 (69.63 \%) \\
-\bf $A_3$ [169] &   4 (2.37 \%) &   83 (49.11 \%) &   110 (65.09 \%) \\
-\bf $A_4$ [165] &   5 (3.03 \%) &   86 (52.12 \%) &   108 (65.45 \%) \\
-\bf $A_5$ [113] &   6 (5.31 \%) &   52 (46.02 \%) &   76 (67.26 \%) \\
-\bf $A_6$ [187] &   7 (3.74 \%) &   80 (42.78 \%) &   122 (65.24 \%) \\
-\bf $A_7$ [120] &   8 (6.67 \%) &   43 (35.83 \%) &   84 (70.00 \%) \\
-\bf $A_8$ [116] &   9 (7.76 \%) &   54 (46.55 \%) &   79 (68.10 \%) \\
-\bf $A_9$ [135] &   10 (7.41 \%) &   44 (32.59 \%) &   91 (67.41 \%) \\
-\bf Total [1432] &   11 (0.77 \%) &   650 (45.39 \%) &   972 (67.88 \%) \\
+\bf $A_2$ [270] &   10 (3.70 \%) &   132 (48.89 \%) &   188 (69.63 \%) \\
+\bf $A_3$ [169] &   11 (6.51 \%) &   83 (49.11 \%) &   110 (65.09 \%) \\
+\bf $A_4$ [165] &   9 (5.45 \%) &   86 (52.12 \%) &   108 (65.45 \%) \\
+\bf $A_5$ [113] &   4 (3.54 \%) &   52 (46.02 \%) &   76 (67.26 \%) \\
+\bf $A_6$ [187] &   13 (6.95 \%) &   80 (42.78 \%) &   122 (65.24 \%) \\
+\bf $A_7$ [120] &   6 (5.00 \%) &   43 (35.83 \%) &   84 (70.00 \%) \\
+\bf $A_8$ [116] &   6 (5.17 \%) &   54 (46.55 \%) &   79 (68.10 \%) \\
+\bf $A_9$ [135] &   1 (0.74 \%) &   44 (32.59 \%) &   91 (67.41 \%) \\
+\bf Total [1432] &   62 (4.33 \%) &   650 (45.39 \%) &   972 (67.88 \%) \\
  
 \hline
 \end{tabular}
@@ -322,22 +314,18 @@ Results of Automated Evaluation:
 \end{table}
 
 
+\begin{figure*}[!h]
+	\center
+	\includegraphics[scale=0.34]{images/split.png}
+	\caption{\label{screen}Screenshot of the built QA system showing the orchestration flow for the question - ``problem with transfer order"}
+\end{figure*}
+
 \begin{table}[h]
 	\begin{center}
 		\begin{tabular}{p{1.4cm} | p{1.6cm} | p{1.5cm} | p{1.5cm}}
 			\hline 
 			& \bf JNU & \bf UoH & \bf INRIA \\
 			\hline
-			\bf $A_1$ [157] &   47 (\%) &   90 (\%) &   87 (\%) \\
-			\bf $A_2$ [270] &   71 (\%) &   181 (\%) &   174 (\%) \\
-			\bf $A_3$ [169] &   52 (\%) &   126 (\%) &   111 (\%) \\
-			\bf $A_4$ [165] &   47 (\%) &   121 (\%) &   105 (\%) \\
-			\bf $A_5$ [113] &   29 (\%) &   77 (\%) &   64 (\%) \\
-			\bf $A_6$ [187] &   47 (\%) &   114 (\%) &   100 (\%) \\
-			\bf $A_7$ [120] &   29 (\%) &   64 (\%) &   53 (\%) \\
-			\bf $A_8$ [116] &   30 (\%) &   67 (\%) &   63 (\%) \\
-			\bf $A_9$ [135] &   27 (\%) &   65 (\%) &   55 (\%) \\
-			\bf Total [1432] &   379 (\%) &   905 (\%) &   812 (\%) \\
 			
 			
 			\bf $A_1$ [157] &   47 (29.94 \%) &   90 (57.32 \%) &   87 (55.41 \%) \\
@@ -355,6 +343,13 @@ Results of Automated Evaluation:
 	\end{center}
 	\caption{\label{font-table} Evaluation Results }
 \end{table}
+
+\begin{figure*}[!h]
+	\center
+	\includegraphics[scale=0.34]{images/merge.png}
+	\caption{\label{screen}Screenshot of the built QA system showing the orchestration flow for the question - ``problem with transfer order"}
+\end{figure*}
+
 
 \subsubsection{Dictionary-filtered UoH corpora}
  The UoH website has 39 sandhi-split corpora but they are not fully correct. There are cases of typos, insufficient splits and even wrong splits. Therefore, they were not directly used for the purpose of automated evaluation. The corpora contained thousands of words in total, and a strategy was worked out to create a subset of them that had no errors.
