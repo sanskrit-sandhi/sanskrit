@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.17)  22 SEP 2016 12:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.17)  22 SEP 2016 20:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -95,6 +95,9 @@ LaTeX Warning: Label `font-table' multiply defined.
 LaTeX Warning: Label `font-table' multiply defined.
 
 
+LaTeX Warning: Label `font-table' multiply defined.
+
+
 LaTeX Warning: Label `screen' multiply defined.
 
 
@@ -110,7 +113,22 @@ LaTeX Warning: Label `font-table' multiply defined.
 LaTeX Warning: Label `font-table' multiply defined.
 
 
-LaTeX Warning: Label `font-table' multiply defined.
+LaTeX Warning: Label `screen' multiply defined.
+
+
+LaTeX Warning: Label `screen' multiply defined.
+
+
+LaTeX Warning: Label `screen' multiply defined.
+
+
+LaTeX Warning: Label `screen' multiply defined.
+
+
+LaTeX Warning: Label `screen' multiply defined.
+
+
+LaTeX Warning: Label `screen' multiply defined.
 
 )
 \openout1 = `eacl2017.aux'.
@@ -629,7 +647,7 @@ Package pdftex.def Info: images/split.png used on input line 319.
 (pdftex.def)             Requested size: 163.80983pt x 122.85738pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Underfull \hbox (badness 1009) in paragraph at lines 331--331
@@ -796,16 +814,12 @@ Package pdftex.def Info: images/merge.png used on input line 349.
 (pdftex.def)             Requested size: 163.80983pt x 122.85738pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 [5]
 Underfull \hbox (badness 10000) in paragraph at lines 359--366
 \OT1/ptm/m/it/10.95 tu-mulo vya-nun[]adayan $\OMS/cmsy/m/n/10.95 !$
  []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -819,6 +833,9 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ¦ in font ptmr7t!
 [6 <./images/split.png> <./images/merge.png>]
+Underfull \vbox (badness 1292) has occurred while \output is active []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 416--417
 []\OT1/ptm/m/it/10.95 prathamacaramatay[]alp[]ardhakatipayanem[]a[]sca
  []
@@ -844,9 +861,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 416--417
 
  []
 
-
-Underfull \vbox (badness 1728) has occurred while \output is active []
-
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
@@ -858,56 +872,105 @@ Overfull \hbox (11.42595pt too wide) in paragraph at lines 426--438
  [] 
  []
 
+<images/visarga.png, id=35, 481.8pt x 361.35pt>
+File: images/visarga.png Graphic file (type png)
+ <use images/visarga.png>
+Package pdftex.def Info: images/visarga.png used on input line 447.
+(pdftex.def)             Requested size: 163.80983pt x 122.85738pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+<images/consonant.png, id=36, 481.8pt x 361.35pt>
+File: images/consonant.png Graphic file (type png)
+ <use images/consonant.png>
+Package pdftex.def Info: images/consonant.png used on input line 453.
+(pdftex.def)             Requested size: 163.80983pt x 122.85738pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7]
-Underfull \hbox (badness 1715) in paragraph at lines 467--468
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/vowel.png, id=37, 481.8pt x 361.35pt>
+File: images/vowel.png Graphic file (type png)
+ <use images/vowel.png>
+Package pdftex.def Info: images/vowel.png used on input line 459.
+(pdftex.def)             Requested size: 163.80983pt x 122.85738pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/visargamerge.png, id=38, 481.8pt x 361.35pt>
+File: images/visargamerge.png Graphic file (type png)
+
+<use images/visargamerge.png>
+Package pdftex.def Info: images/visargamerge.png used on input line 465.
+(pdftex.def)             Requested size: 163.80983pt x 122.85738pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/consonantmerge.png, id=39, 481.8pt x 361.35pt>
+File: images/consonantmerge.png Graphic file (type png)
+
+<use images/consonantmerge.png>
+Package pdftex.def Info: images/consonantmerge.png used on input line 471.
+(pdftex.def)             Requested size: 163.80983pt x 122.85738pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/vowelmerge.png, id=40, 481.8pt x 361.35pt>
+File: images/vowelmerge.png Graphic file (type png)
+ <use images/vowelmerge.png>
+Package pdftex.def Info: images/vowelmerge.png used on input line 477.
+(pdftex.def)             Requested size: 163.80983pt x 122.85738pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7]
+Underfull \hbox (badness 1715) in paragraph at lines 509--510
 []\OT1/ptm/m/it/10.95 uttara \OT1/ptm/m/n/10.95 (north) + \OT1/ptm/m/it/10.95 a
 yana \OT1/ptm/m/n/10.95 (move-ment) $\OMS/cmsy/m/n/10.95 !$ \OT1/ptm/m/it/10.95
  ut-
  []
 
 
-Underfull \hbox (badness 6063) in paragraph at lines 470--472
+Underfull \hbox (badness 6063) in paragraph at lines 512--514
 []\OT1/ptm/m/it/10.95 dak[]i[]a \OT1/ptm/m/n/10.95 (south) + \OT1/ptm/m/it/10.9
 5 ayana \OT1/ptm/m/n/10.95 (move-ment) $\OMS/cmsy/m/n/10.95 !$
  []
 
 
-Underfull \hbox (badness 2932) in paragraph at lines 470--472
+Underfull \hbox (badness 2932) in paragraph at lines 512--514
 \OT1/ptm/m/it/10.95 dak[]i[][]ayana \OT1/ptm/m/n/10.95 (south-ward move-ment, r
 efers to
  []
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 494--495
+[8 <./images/visarga.png> <./images/consonant.png> <./images/vowel.png> <./imag
+es/visargamerge.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 536--537
 []\OT1/ptm/m/it/10.95 lak[]yasy[]arthatvavyavah[]ar[]anurodhena $\OMS/cmsy/m/n/
 10.95 !$
  []
 
 
-Overfull \hbox (97.23535pt too wide) in paragraph at lines 500--501
+Overfull \hbox (97.23535pt too wide) in paragraph at lines 542--543
 []\OT1/ptm/m/it/10.95 prapa[]nce'v[]antaravibh[]agapravibh[]agabhinn[]anantapad
 []arthasa[]nkule'pi
  []
 
-[9
-
-] (./eacl2017.aux)
+[9 <./images/consonantmerge.png> <./images/vowelmerge.png>] (./eacl2017.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  )
 (\end occurred when \iffalse on line 331 was incomplete) 
 Here is how much of TeX's memory you used:
- 1820 strings out of 494447
- 26540 string characters out of 6166766
- 105092 words of memory out of 5000000
- 5116 multiletter control sequences out of 15000+600000
+ 1850 strings out of 494447
+ 27227 string characters out of 6166766
+ 104092 words of memory out of 5000000
+ 5140 multiletter control sequences out of 15000+600000
  25985 words of font info for 60 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  38i,10n,24p,1608b,252s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -923,10 +986,10 @@ asic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016basic/
 texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2016basic/texm
 f-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016basic/texmf-dis
 t/fonts/type1/urw/times/utmri8a.pfb>
-Output written on eacl2017.pdf (9 pages, 164158 bytes).
+Output written on eacl2017.pdf (9 pages, 225661 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
+ 91 PDF objects out of 1000 (max. 8388607)
  53 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
