@@ -48,7 +48,6 @@
 \date{}
 
 \begin{document}
-\maketitle
 \begin{abstract}
 	Sanskrit is one of the oldest and culturally rich languages that originated in 200 B.C. Learning the fundamentals of an old language will provide insights to the overall community of language modeling. There are two broad ways of performing language modeling: (i) Grammar model and (ii) probabilistic model. Words in Sanskrit language are formed by a process called Sandhi merging, which is a combination of two or more morphemes (component words). The reverse process of getting back the component words from the full words is known as Sandhi splitting. It is believed by many scholars that though \textit{P\={a}\d{n}ini's} has written a grammar for Sanskrit words in his monumental work called \textit{A\d{s}\d{t}\={a}dhy\={a}y\={\i}}. Analyzing and understanding word formation in Sanskrit is conceptually generic providing us with a framework to write grammars for other languages. However, the publicly available dataset such as the University of Hyderabad dataset is very erroneous making it challenging to evaluate automated algorithms. The primary contribution of this research work is to create a set of golden datasets with manually created ground truth made public for promoting open research in this fundamental problem. Further as the second contribution, we present the results of three publicly available tools for performing Sandhi splitting and Sandhi merging and benchmark their performance. We finally discuss the characteristics of each of the tool and emphasize the need for further research.
 \end{abstract}
@@ -63,7 +62,7 @@ The basic constituents of a language are its characters which are joined togethe
 
 Sanskrit is one of the oldest languages designed by mankind having its origin in the Indo-Aryan civilization from 200B.C. Sanskrit has a rich tradition of poetry and literature works written, making it an important linguistic study. Being one of the oldest language, word formation in Sanskrit can be defined by set of deterministic rules and follows a defined structure. \textit{A\d{s}\d{t}\={a}dhy\={a}y\={\i}} (meaning a collection of eight books) by \textit{P\={a}\d{n}ini} is the source of Sanskrit's grammar, syntax, and semantics. The importance of \textit{a\d{s}\d{t}\={a}dhy\={a}y\={\i}} is three fold. The first one, as is well known, as an almost exhaustive grammar for any natural language with meticulous details yet small enough to memorize. Though \textit{a\d{s}\d{t}\={a}dhy\={a}y\={\i}} is written to describe the then prevalent Sanskrit language, it provides a grammatical framework which is general enough to analyse other languages as well. This makes the study of \textit{a\d{s}\d{t}\={a}dhy\={a}y\={\i}} from the point of view of concepts it uses for language analysis important. The third aspect of \textit{a\d{s}\d{t}\={a}dhy\={a}y\={\i}} is its organization. The set of less than 4000 \textit{s\={u}tra} is similar to any computer program with one major difference the program being written for a human being and not for a machine thereby allowing some non-formal or semi-formal \textit{s\={u}tra} which require a human being to interpret and implement them. Nevertheless, we believe that the study of \textit{a\d{s}\d{t}\={a}dhy\={a}y\={\i}} from programming point of view may lead to a new programming paradigm because of its rich structure. In this way, 	\textit{P\={a}\d{n}ini's} created a brief and immensely dense work. 
 
-<<Write about Sandhi and splitting and merging>>
+With a rich deterministic grammar supporting the Sanskrit language, the formation of each word also happens in a structured manner governed by set of rules called Sandhi. Morphemes are the basic unbreakable morphological units that forms the fundamental building blocks for words. The process of merging two or more morphemes to form a word in Sanskrit is called as Sandhi merging. On the other hand, the process of breaking a word into its constituent morphemes is called Sandhi splitting. This process is akin to most of the other languages, such as in English, \textit{``come"} + \textit{``-ing"} $\rightarrow$ \textit{``coming"}, where we lose the additional ``\textit{e}" in the word \textit{``come"} while merging. Learning this process could provide fundamental insights into the linguistic cognition of forming words and sentences of a language. Further, learning an automated algorithm that could perform Sandhi splitting and merging in Sanskrit would also provide a framework for learning word organization in languages.
 
 
 The word ``sandhi'', more properly written as \textit{sa\d{m}dhi}, means ``junction'' or ``combination.'' It refers to the ``combination'' of two sounds that sit next to each other. The word ``sandhi'' was borrowed into English, where it refers to the same sorts of changes in any language. So, we can talk about English sandhi, Chinese sandhi, Latin sandhi, and so on.
@@ -194,7 +193,7 @@ For example:
 
 In the corpus we generated serial numbers with the information of type of the sandhi, First column contains the compund word followed by the splits. Then we have the rule number corresponding to the  \textit{a\d{s}\d{t}\={a}dhy\={a}y\={\i}}. And the last column reflects the type of the Sandhi.
 	
-\subsection{Literature based corpus}
+\subsubsection{Benchmark corpus}
 We identified there is some mismatch between manual evaluation versus automated evaluated so we created a small set of literature corpus inorder to benchmark our automated tool.
 
 This corpus contains 150 examples from the actual literature.  This was created from 11 different texts. This has 50 examples from one text, and 10 examples each from the other ten texts. This is smaller in size compared to the other literature corpora, hence the evaluation for this was done both manually and using the automated tool. The other three were evaluated with the help of the tool only because of their much larger size.
@@ -207,10 +206,45 @@ Five different corpora were used for this purpose:
 
 A huge set of corpus was created manual by UoH\footnote{\url{http://sanskrit.uohyd.ac.in/Corpus/}}. We manually verified their corpus and identified that the corpus is not reliable.
 
+
+
+\subsubsection{\textit{Bhagavad-g\={\i}t\={a}} Corpus}
+The sandhi-split \textit{bhagavad-g\={\i}t\={a}} corpus at the UoH website had several limitations which made it unfit to be used for the purpose of automated evaluation. For example, within the first two chapters, out of the total of 431 sandhi cases, there were 41 typos, 92 cases of insufficient splits and 10 cases of even wrong splits.
+
+Thus, a new corpus was manually created. This was done for half of Gita, i.e. for the 9 chapters.
+
+\subsubsection{UoH Corpus}
 The UoH website has 39 sandhi-split corpora but they are not fully correct. There are cases of typos, insufficient splits and even wrong splits. Therefore, they were not directly used for the purpose of automated evaluation. The corpora contained thousands of words in total, and a strategy was worked out to create a subset of them that had no errors.
 
 The strategy involved checking whether the splits could be located in some dictionary. Five dictionaries were used for this purpose. We restricted ourselves only to such cases where the splits could be located, even though they may be many cases of correct splits where the splits themselves cannot be located in the dictionary, because of various reasons (dictionaries may not contain all the declensions/ conjugations of a word, nor they are expected to). Further to check that the sandhied words in such cases did not have typos, a sandhi tool was used to do sandhi of the splits identified in the dictionary and check whether the result in each case matched with the sandhied word as given in the corpus. If the two words did not match for a particular case, it was neglected.
 
+Just to illustrate this, we consider the five cases listed below.\\
+\textit{ tumulo vyanun\={a}dayan $\rightarrow$ tumula\d{h}+vi+anun\={a}dayan\\
+	sarv\={a}nbandh\={u}navasthit\={a}n $\rightarrow$ sarv\={a}n + bandh\={u}n + avasthit\={a}n\\
+	\'{s}abda iva $\rightarrow$ \'{s}abda\d{h}+  iva\\                                              
+	n\={a}rhati $\rightarrow$ na + arhati\\
+	astamito bhagav\={a}n $\rightarrow$ astam + ita\d{h} + bhagav\={a}n
+}
+
+The first two cases were not included because at least one word in each of the splits could not be located in any of the dictionaries used for this purpose. The last three cases were considered for the purpose of evaluation. 
+
+\subsubsection{\textit{A\d{s}\d{t}\={a}dhy\={a}y\={\i}} Corpus}
+Many \textit{sutr\={a}} (rules) of \textit{p\={a}\d{n}ini} themselves contain many sandhied words. All the sutras with their splits are available at …. This was found to be another good source which could be used for the evaluation of the three splitting tools.  However, even this source suffered with the limitation of insufficient splits.  Moreover, a very significant number of splits could not be expected to be located in any dictionary, because these were the forms of the different sets/ \textit{mahesvara sutr\={a}} that \textit{p\={a}\d{n}ini} uses to codify Sanskrit grammar, syntax and semantics. Hence, the strategy used in the previous case to limit to cases of correct splits could not be applied in this case.
+
+Since the problem initially arose because of cases of insufficient splits, another strategy was worked out.  The splits which can undergo further splitting themselves are likely to be of greater length than those cases in which further splitting is not possible. The larger the length of the splits, the more likely they are to undergo further splitting. All those cases where the length of the splits was less than a specified word length were analysed together and the results were noted for different values of the word lengths-10,20,30, 40 and 50.
+
+The following five examples are used here for the purpose of illustration. At least one of the splits in each of the first two cases is considerably long, and further splitting is evident.  When the word length is reduced, the possibility of further splits is also reduced, though not eliminated. So, in the next two cases, though the word length is reduced, the first split of the third case and the second split of the fourth case can themselves be further split. It is only for the last case that further splitting is not possible.
+
+\textit{prathamacaramatay\={a}lp\={a}rdhakatipayanem\={a}\'{s}ca $\rightarrow$ prathamacaramatay\={a}lp\={a}rdhakatipayanem\={a}\d{h}+ca \\
+	udupadh\={a}dbh\={a}v\={a}dikarma\d{n}oranyatarasy\={a}m $\rightarrow$ udupadh\={a}t+bh\={a}v\={a}dikarma\d{n}o\d{h}+anyatarasy\={a}m \\
+	taddhita\'{s}c\={a}sarvavibhakti\d{h} $\rightarrow$ taddhita\d{h}+ca+ca+asarvavibhakti\d{h} \\
+	v\d{r}ddhir\={a}daic $\rightarrow$ v\d{r}ddhi\d{h}+\={a}daic \\
+	vija i\d{t} $\rightarrow$ vija\d{h}+i\d{t} \\                                                 
+}
+
+Results on \textit{A\d{s}\d{t}\={a}dhy\={a}y\={\i}} 
+Total Number of Sutras –3,959
+Sutras where Sandhi Split Applicable –2,700
 
 
 \section{Methodology of Evaluation:}
