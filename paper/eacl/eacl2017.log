@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.17)  26 SEP 2016 11:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.17)  26 SEP 2016 17:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -101,10 +101,13 @@ LaTeX Warning: Label `font-table' multiply defined.
 LaTeX Warning: Label `font-table' multiply defined.
 
 
+LaTeX Warning: Label `screen' multiply defined.
+
+
 LaTeX Warning: Label `font-table' multiply defined.
 
 
-LaTeX Warning: Label `screen' multiply defined.
+LaTeX Warning: Label `font-table' multiply defined.
 
 
 LaTeX Warning: Label `font-table' multiply defined.
@@ -368,6 +371,82 @@ Underfull \hbox (badness 1320) in paragraph at lines 166--167
 []\OT1/ptm/m/n/10.95 It is not sim-ple to re-late our paradig-matic
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--182
+[]\OT1/ptm/b/n/10.95 S.
+ []
+
+
+Overfull \hbox (4.28922pt too wide) in paragraph at lines 184--184
+[]\OT1/ptm/m/n/10.95 6.1.73.1| 
+ []
+
+
+Overfull \hbox (7.41316pt too wide) in paragraph at lines 184--185
+[]\OT1/ptm/m/n/10.95 consonant| 
+ []
+
+
+Overfull \hbox (6.15872pt too wide) in paragraph at lines 185--185
+[][]\OT1/ptm/m/n/10.95 acch[]adayati| 
+ []
+
+
+Overfull \hbox (10.31813pt too wide) in paragraph at lines 185--185
+[][]\OT1/ptm/m/n/10.95 a+ch[]adayati| 
+ []
+
+
+Overfull \hbox (4.28922pt too wide) in paragraph at lines 185--185
+[]\OT1/ptm/m/n/10.95 6.1.74.1| 
+ []
+
+
+Overfull \hbox (7.41316pt too wide) in paragraph at lines 185--186
+[]\OT1/ptm/m/n/10.95 consonant| 
+ []
+
+
+Overfull \hbox (10.14467pt too wide) in paragraph at lines 186--186
+[]\OT1/ptm/m/n/10.95 svacchanda[]| 
+ []
+
+
+Overfull \hbox (14.30408pt too wide) in paragraph at lines 186--186
+[]\OT1/ptm/m/n/10.95 sva+chanda[]| 
+ []
+
+
+Overfull \hbox (4.28922pt too wide) in paragraph at lines 186--186
+[]\OT1/ptm/m/n/10.95 6.1.73.1| 
+ []
+
+
+Overfull \hbox (7.41316pt too wide) in paragraph at lines 186--187
+[]\OT1/ptm/m/n/10.95 consonant| 
+ []
+
+
+Overfull \hbox (3.63867pt too wide) in paragraph at lines 187--187
+[]\OT1/ptm/m/n/10.95 m[]a+chidat| 
+ []
+
+
+Overfull \hbox (4.28922pt too wide) in paragraph at lines 187--187
+[]\OT1/ptm/m/n/10.95 6.1.74.1| 
+ []
+
+
+Overfull \hbox (7.41316pt too wide) in paragraph at lines 187--188
+[]\OT1/ptm/m/n/10.95 consonant| 
+ []
+
+
+Overfull \hbox (20.16673pt too wide) in paragraph at lines 180--191
+ [] 
+ []
+
+[4]
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ¶ in font ptmr7t!
@@ -386,434 +465,421 @@ Missing character: There is no ú in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
-[4]
-Overfull \hbox (3.98207pt too wide) in paragraph at lines 206--206
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (3.98207pt too wide) in paragraph at lines 253--253
 []\OT1/ptm/b/n/10.95 Splitter| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--206
+Underfull \hbox (badness 10000) in paragraph at lines 253--253
 []\OT1/ptm/b/n/10.95 External
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--206
+Underfull \hbox (badness 10000) in paragraph at lines 253--253
 \OT1/ptm/b/n/10.95 Sandhi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--206
+Underfull \hbox (badness 10000) in paragraph at lines 253--253
 []\OT1/ptm/b/n/10.95 Internal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--206
+Underfull \hbox (badness 10000) in paragraph at lines 253--253
 \OT1/ptm/b/n/10.95 Sandhi
  []
 
 
-Overfull \hbox (1.0277pt too wide) in paragraph at lines 206--207
+Overfull \hbox (1.0277pt too wide) in paragraph at lines 253--254
 []\OT1/ptm/b/n/10.95 Overall| 
  []
 
 
-Overfull \hbox (2.47542pt too wide) in paragraph at lines 205--213
+Overfull \hbox (2.47542pt too wide) in paragraph at lines 252--260
  [] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Overfull \hbox (6.82753pt too wide) in paragraph at lines 264--264
+[5]
+Overfull \hbox (6.82753pt too wide) in paragraph at lines 311--311
 []\OT1/ptm/b/n/10.95 Splitter| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 264--265
-[]\OT1/ptm/b/n/10.95 Automated
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 264--265
-\OT1/ptm/b/n/10.95 Eval-u-a-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 267--267
-[]$\OT1/cmr/m/n/10.95 105\OML/cmm/m/it/10.95 =\OT1/cmr/m/n/10.95 150 \OMS/cmsy/
-m/n/10.95 ^^C
- []
-
-
-Overfull \hbox (1.95512pt too wide) in paragraph at lines 268--268
-[]\OT1/ptm/m/n/10.95 INRIA| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 268--268
-[]$\OT1/cmr/m/n/10.95 127\OML/cmm/m/it/10.95 =\OT1/cmr/m/n/10.95 150 \OMS/cmsy/
-m/n/10.95 ^^C
- []
-
-
-Overfull \hbox (6.6964pt too wide) in paragraph at lines 279--279
-[]\OT1/ptm/b/n/10.95 Merger| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 279--280
-[]\OT1/ptm/b/n/10.95 Automated
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 279--280
-\OT1/ptm/b/n/10.95 Eval-u-a-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 282--283
-[]$\OT1/cmr/m/n/10.95 129\OML/cmm/m/it/10.95 =\OT1/cmr/m/n/10.95 150 \OMS/cmsy/
-m/n/10.95 ^^C
- []
-
-
-Overfull \hbox (1.95512pt too wide) in paragraph at lines 283--283
-[]\OT1/ptm/m/n/10.95 INRIA| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 283--284
-[]$\OT1/cmr/m/n/10.95 131\OML/cmm/m/it/10.95 =\OT1/cmr/m/n/10.95 150 \OMS/cmsy/
-m/n/10.95 ^^C
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ¶ in font ptmr7t!
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 309--310
-[]\OT1/ptm/m/n/10.95 114
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 309--310
-\OT1/ptm/m/n/10.95 (72.61
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 310--310
-[]\OT1/ptm/m/n/10.95 10 (3.70
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 310--310
-[]\OT1/ptm/m/n/10.95 132
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 310--310
-\OT1/ptm/m/n/10.95 (48.89
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 310--311
-[]\OT1/ptm/m/n/10.95 188
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 310--311
-\OT1/ptm/m/n/10.95 (69.63
+Underfull \hbox (badness 10000) in paragraph at lines 311--311
+[]\OT1/ptm/b/n/10.95 Manual
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 311--311
-[]\OT1/ptm/m/n/10.95 11 (6.51
+\OT1/ptm/b/n/10.95 Eval-u-a-tion
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 311--312
-[]\OT1/ptm/m/n/10.95 110
+[]\OT1/ptm/b/n/10.95 Automated
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 311--312
-\OT1/ptm/m/n/10.95 (65.09
+\OT1/ptm/b/n/10.95 Eval-u-a-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--313
-[]\OT1/ptm/m/n/10.95 108
+Overfull \hbox (1.95512pt too wide) in paragraph at lines 315--315
+[]\OT1/ptm/m/n/10.95 INRIA| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--313
-\OT1/ptm/m/n/10.95 (65.45
+Overfull \hbox (6.6964pt too wide) in paragraph at lines 326--326
+[]\OT1/ptm/b/n/10.95 Merger| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 314--314
-[]\OT1/ptm/m/n/10.95 13 (6.95
+Underfull \hbox (badness 10000) in paragraph at lines 326--327
+[]\OT1/ptm/b/n/10.95 Automated
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 314--315
-[]\OT1/ptm/m/n/10.95 122
+Underfull \hbox (badness 10000) in paragraph at lines 326--327
+\OT1/ptm/b/n/10.95 Eval-u-a-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 314--315
-\OT1/ptm/m/n/10.95 (65.24
+Overfull \hbox (1.95512pt too wide) in paragraph at lines 330--330
+[]\OT1/ptm/m/n/10.95 INRIA| 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 318--318
-[]\OT1/ptm/b/n/10.95 Total
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 318--318
-[]\OT1/ptm/m/n/10.95 62 (4.33
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 318--318
-[]\OT1/ptm/m/n/10.95 650
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 318--318
-\OT1/ptm/m/n/10.95 (45.39
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 318--319
-[]\OT1/ptm/m/n/10.95 972
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 318--319
-\OT1/ptm/m/n/10.95 (67.88
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/split.png, id=26, 481.8pt x 361.35pt>
-File: images/split.png Graphic file (type png)
- <use images/split.png>
-Package pdftex.def Info: images/split.png used on input line 329.
-(pdftex.def)             Requested size: 163.80983pt x 122.85738pt.
-
-Underfull \hbox (badness 1009) in paragraph at lines 341--341
-[]\OT1/ptm/m/n/10.95 47 (29.94
- []
-
-
-Underfull \hbox (badness 1009) in paragraph at lines 342--342
-[]\OT1/ptm/m/n/10.95 71 (26.30
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 342--342
-[]\OT1/ptm/m/n/10.95 181
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 342--342
-\OT1/ptm/m/n/10.95 (67.04
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 342--343
-[]\OT1/ptm/m/n/10.95 174
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 342--343
-\OT1/ptm/m/n/10.95 (64.44
- []
-
-
-Underfull \hbox (badness 1009) in paragraph at lines 343--343
-[]\OT1/ptm/m/n/10.95 52 (30.77
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 343--343
-[]\OT1/ptm/m/n/10.95 126
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 343--343
-\OT1/ptm/m/n/10.95 (74.56
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 343--344
-[]\OT1/ptm/m/n/10.95 111
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 343--344
-\OT1/ptm/m/n/10.95 (65.68
- []
-
-
-Underfull \hbox (badness 1009) in paragraph at lines 344--344
-[]\OT1/ptm/m/n/10.95 47 (28.48
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 344--344
-[]\OT1/ptm/m/n/10.95 121
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 344--344
-\OT1/ptm/m/n/10.95 (73.33
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 344--345
-[]\OT1/ptm/m/n/10.95 105
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 344--345
-\OT1/ptm/m/n/10.95 (63.64
- []
-
-
-Underfull \hbox (badness 1009) in paragraph at lines 345--345
-[]\OT1/ptm/m/n/10.95 29 (25.66
- []
-
-
-Underfull \hbox (badness 1009) in paragraph at lines 346--346
-[]\OT1/ptm/m/n/10.95 47 (25.13
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 346--346
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ¶ in font ptmr7t!
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 356--357
 []\OT1/ptm/m/n/10.95 114
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 346--346
-\OT1/ptm/m/n/10.95 (60.96
+Underfull \hbox (badness 10000) in paragraph at lines 356--357
+\OT1/ptm/m/n/10.95 (72.61
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 346--347
-[]\OT1/ptm/m/n/10.95 100
+Underfull \hbox (badness 10000) in paragraph at lines 357--357
+[]\OT1/ptm/m/n/10.95 10 (3.70
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 346--347
-\OT1/ptm/m/n/10.95 (53.48
+Underfull \hbox (badness 10000) in paragraph at lines 357--357
+[]\OT1/ptm/m/n/10.95 132
  []
 
 
-Underfull \hbox (badness 1009) in paragraph at lines 347--347
-[]\OT1/ptm/m/n/10.95 29 (24.17
+Underfull \hbox (badness 10000) in paragraph at lines 357--357
+\OT1/ptm/m/n/10.95 (48.89
  []
 
 
-Underfull \hbox (badness 1009) in paragraph at lines 348--348
-[]\OT1/ptm/m/n/10.95 30 (25.86
+Underfull \hbox (badness 10000) in paragraph at lines 357--358
+[]\OT1/ptm/m/n/10.95 188
  []
 
 
-Underfull \hbox (badness 1009) in paragraph at lines 349--349
-[]\OT1/ptm/m/n/10.95 27 (20.00
+Underfull \hbox (badness 10000) in paragraph at lines 357--358
+\OT1/ptm/m/n/10.95 (69.63
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--350
+Underfull \hbox (badness 10000) in paragraph at lines 358--358
+[]\OT1/ptm/m/n/10.95 11 (6.51
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
+[]\OT1/ptm/m/n/10.95 110
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
+\OT1/ptm/m/n/10.95 (65.09
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 359--360
+[]\OT1/ptm/m/n/10.95 108
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 359--360
+\OT1/ptm/m/n/10.95 (65.45
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--361
+[]\OT1/ptm/m/n/10.95 13 (6.95
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--362
+[]\OT1/ptm/m/n/10.95 122
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--362
+\OT1/ptm/m/n/10.95 (65.24
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 365--365
 []\OT1/ptm/b/n/10.95 Total
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--350
+Underfull \hbox (badness 10000) in paragraph at lines 365--365
+[]\OT1/ptm/m/n/10.95 62 (4.33
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 365--365
+[]\OT1/ptm/m/n/10.95 650
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 365--365
+\OT1/ptm/m/n/10.95 (45.39
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 365--366
+[]\OT1/ptm/m/n/10.95 972
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 365--366
+\OT1/ptm/m/n/10.95 (67.88
+ []
+
+<images/split.png, id=29, 481.8pt x 361.35pt>
+File: images/split.png Graphic file (type png)
+ <use images/split.png>
+Package pdftex.def Info: images/split.png used on input line 376.
+(pdftex.def)             Requested size: 163.80983pt x 122.85738pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 388--388
+[]\OT1/ptm/m/n/10.95 47 (29.94
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 389--389
+[]\OT1/ptm/m/n/10.95 71 (26.30
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 389--389
+[]\OT1/ptm/m/n/10.95 181
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 389--389
+\OT1/ptm/m/n/10.95 (67.04
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 389--390
+[]\OT1/ptm/m/n/10.95 174
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 389--390
+\OT1/ptm/m/n/10.95 (64.44
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 390--390
+[]\OT1/ptm/m/n/10.95 52 (30.77
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 390--390
+[]\OT1/ptm/m/n/10.95 126
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 390--390
+\OT1/ptm/m/n/10.95 (74.56
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 390--391
+[]\OT1/ptm/m/n/10.95 111
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 390--391
+\OT1/ptm/m/n/10.95 (65.68
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 391--391
+[]\OT1/ptm/m/n/10.95 47 (28.48
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 391--391
+[]\OT1/ptm/m/n/10.95 121
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 391--391
+\OT1/ptm/m/n/10.95 (73.33
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 391--392
+[]\OT1/ptm/m/n/10.95 105
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 391--392
+\OT1/ptm/m/n/10.95 (63.64
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 392--392
+[]\OT1/ptm/m/n/10.95 29 (25.66
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 393--393
+[]\OT1/ptm/m/n/10.95 47 (25.13
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
+[]\OT1/ptm/m/n/10.95 114
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 393--393
+\OT1/ptm/m/n/10.95 (60.96
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 393--394
+[]\OT1/ptm/m/n/10.95 100
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 393--394
+\OT1/ptm/m/n/10.95 (53.48
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 394--394
+[]\OT1/ptm/m/n/10.95 29 (24.17
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 395--395
+[]\OT1/ptm/m/n/10.95 30 (25.86
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 396--396
+[]\OT1/ptm/m/n/10.95 27 (20.00
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 397--397
+[]\OT1/ptm/b/n/10.95 Total
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 397--397
 []\OT1/ptm/m/n/10.95 379
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--350
+Underfull \hbox (badness 10000) in paragraph at lines 397--397
 []\OT1/ptm/m/n/10.95 905
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--350
+Underfull \hbox (badness 10000) in paragraph at lines 397--397
 \OT1/ptm/m/n/10.95 (63.20
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--351
+Underfull \hbox (badness 10000) in paragraph at lines 397--398
 []\OT1/ptm/m/n/10.95 812
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--351
+Underfull \hbox (badness 10000) in paragraph at lines 397--398
 \OT1/ptm/m/n/10.95 (56.70
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/merge.png, id=27, 481.8pt x 361.35pt>
+<images/merge.png, id=30, 481.8pt x 361.35pt>
 File: images/merge.png Graphic file (type png)
  <use images/merge.png>
-Package pdftex.def Info: images/merge.png used on input line 359.
+Package pdftex.def Info: images/merge.png used on input line 406.
 (pdftex.def)             Requested size: 163.80983pt x 122.85738pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 369--376
+Underfull \hbox (badness 10000) in paragraph at lines 416--423
 \OT1/ptm/m/it/10.95 tu-mulo vya-nun[]adayan $\OMS/cmsy/m/n/10.95 !$
  []
 
 
-Underfull \vbox (badness 1728) has occurred while \output is active []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
- [6 <./images/split.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 414.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 461.
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ¶ in font ptmr7t!
-[7 <./images/merge.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 426--427
+[7 <./images/split.png> <./images/merge.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 473--474
 []\OT1/ptm/m/it/10.95 prathamacaramatay[]alp[]ardhakatipayanem[]a[]sca
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 426--427
+Underfull \hbox (badness 10000) in paragraph at lines 473--474
 \OMS/cmsy/m/n/10.95 !$ \OT1/ptm/m/it/10.95 prathamacara-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 426--427
+Underfull \hbox (badness 10000) in paragraph at lines 473--474
 \OT1/ptm/m/it/10.95 udupadh[]adbh[]av[]adikarma[]oranyatarasy[]am $\OMS/cmsy/m/
 n/10.95 !$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 426--427
+Underfull \hbox (badness 10000) in paragraph at lines 473--474
 \OT1/ptm/m/it/10.95 taddhita[]sc[]asarvavibhakti[] $\OMS/cmsy/m/n/10.95 !$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 426--427
+Underfull \hbox (badness 10000) in paragraph at lines 473--474
 
  []
 
@@ -824,111 +890,115 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ì in font ptmr7t!
 
-Overfull \hbox (11.42595pt too wide) in paragraph at lines 436--448
+Overfull \hbox (11.42595pt too wide) in paragraph at lines 483--495
  [] 
  []
 
-<images/visarga.png, id=39, 481.8pt x 361.35pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/visarga.png, id=38, 481.8pt x 361.35pt>
 File: images/visarga.png Graphic file (type png)
  <use images/visarga.png>
-Package pdftex.def Info: images/visarga.png used on input line 457.
+Package pdftex.def Info: images/visarga.png used on input line 504.
 (pdftex.def)             Requested size: 163.80983pt x 122.85738pt.
 
-<images/consonant.png, id=40, 481.8pt x 361.35pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/consonant.png, id=39, 481.8pt x 361.35pt>
 File: images/consonant.png Graphic file (type png)
  <use images/consonant.png>
-Package pdftex.def Info: images/consonant.png used on input line 463.
+Package pdftex.def Info: images/consonant.png used on input line 510.
 (pdftex.def)             Requested size: 163.80983pt x 122.85738pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/vowel.png, id=41, 481.8pt x 361.35pt>
+<images/vowel.png, id=40, 481.8pt x 361.35pt>
 File: images/vowel.png Graphic file (type png)
  <use images/vowel.png>
-Package pdftex.def Info: images/vowel.png used on input line 469.
+Package pdftex.def Info: images/vowel.png used on input line 516.
 (pdftex.def)             Requested size: 163.80983pt x 122.85738pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/visargamerge.png, id=42, 481.8pt x 361.35pt>
+<images/visargamerge.png, id=41, 481.8pt x 361.35pt>
 File: images/visargamerge.png Graphic file (type png)
 
 <use images/visargamerge.png>
-Package pdftex.def Info: images/visargamerge.png used on input line 475.
+Package pdftex.def Info: images/visargamerge.png used on input line 522.
 (pdftex.def)             Requested size: 163.80983pt x 122.85738pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/consonantmerge.png, id=43, 481.8pt x 361.35pt>
+<images/consonantmerge.png, id=42, 481.8pt x 361.35pt>
 File: images/consonantmerge.png Graphic file (type png)
 
 <use images/consonantmerge.png>
-Package pdftex.def Info: images/consonantmerge.png used on input line 481.
+Package pdftex.def Info: images/consonantmerge.png used on input line 528.
 (pdftex.def)             Requested size: 163.80983pt x 122.85738pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/vowelmerge.png, id=44, 481.8pt x 361.35pt>
+<images/vowelmerge.png, id=43, 481.8pt x 361.35pt>
 File: images/vowelmerge.png Graphic file (type png)
  <use images/vowelmerge.png>
-Package pdftex.def Info: images/vowelmerge.png used on input line 487.
+Package pdftex.def Info: images/vowelmerge.png used on input line 534.
 (pdftex.def)             Requested size: 163.80983pt x 122.85738pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[8 <./images/visarga.png> <./images/consonant.png> <./images/vowel.png>]
-Underfull \hbox (badness 1715) in paragraph at lines 519--520
+[8]
+Underfull \hbox (badness 1715) in paragraph at lines 566--567
 []\OT1/ptm/m/it/10.95 uttara \OT1/ptm/m/n/10.95 (north) + \OT1/ptm/m/it/10.95 a
 yana \OT1/ptm/m/n/10.95 (move-ment) $\OMS/cmsy/m/n/10.95 !$ \OT1/ptm/m/it/10.95
  ut-
  []
 
 
-Underfull \hbox (badness 6063) in paragraph at lines 522--524
+Underfull \hbox (badness 6063) in paragraph at lines 569--571
 []\OT1/ptm/m/it/10.95 dak[]i[]a \OT1/ptm/m/n/10.95 (south) + \OT1/ptm/m/it/10.9
 5 ayana \OT1/ptm/m/n/10.95 (move-ment) $\OMS/cmsy/m/n/10.95 !$
  []
 
 
-Underfull \hbox (badness 2932) in paragraph at lines 522--524
+Underfull \hbox (badness 2932) in paragraph at lines 569--571
 \OT1/ptm/m/it/10.95 dak[]i[][]ayana \OT1/ptm/m/n/10.95 (south-ward move-ment, r
 efers to
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 546--547
+[9 <./images/visarga.png> <./images/consonant.png> <./images/vowel.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 593--594
 []\OT1/ptm/m/it/10.95 lak[]yasy[]arthatvavyavah[]ar[]anurodhena $\OMS/cmsy/m/n/
 10.95 !$
  []
 
 
-Overfull \hbox (97.23535pt too wide) in paragraph at lines 552--553
+Overfull \hbox (97.23535pt too wide) in paragraph at lines 599--600
 []\OT1/ptm/m/it/10.95 prapa[]nce'v[]antaravibh[]agapravibh[]agabhinn[]anantapad
 []arthasa[]nkule'pi
  []
 
-[9 <./images/visargamerge.png> <./images/consonantmerge.png> <./images/vowelmer
-ge.png>] [10
-
-] (./eacl2017.aux)
+[10 <./images/visargamerge.png> <./images/consonantmerge.png> <./images/vowelme
+rge.png>] (./eacl2017.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  )
 (\end occurred when \iffalse on line 331 was incomplete) 
 Here is how much of TeX's memory you used:
- 1850 strings out of 494447
- 27227 string characters out of 6166766
- 100130 words of memory out of 5000000
- 5140 multiletter control sequences out of 15000+600000
+ 1851 strings out of 494447
+ 27245 string characters out of 6166766
+ 102131 words of memory out of 5000000
+ 5141 multiletter control sequences out of 15000+600000
  25985 words of font info for 60 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 38i,10n,24p,1784b,252s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,13n,24p,1784b,252s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/201
 6basic/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2016basic/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016basic
@@ -941,7 +1011,7 @@ asic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016basic/
 texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2016basic/texm
 f-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016basic/texmf-dis
 t/fonts/type1/urw/times/utmri8a.pfb>
-Output written on eacl2017.pdf (10 pages, 227843 bytes).
+Output written on eacl2017.pdf (10 pages, 231198 bytes).
 PDF statistics:
  94 PDF objects out of 1000 (max. 8388607)
  55 compressed objects within 1 object stream
