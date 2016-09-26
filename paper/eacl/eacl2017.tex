@@ -66,21 +66,28 @@ Sanskrit is one of the oldest languages designed by mankind having its origin in
 <<Write about Sandhi and splitting and merging>>
 
 
-\subsection{Types of Sandhi} - Sandhi can take place either within a word, or between two words. Thus, it is of two types:
+The word ``sandhi'', more properly written as \textit{sa\d{m}dhi}, means ``junction'' or ``combination.'' It refers to the ``combination'' of two sounds that sit next to each other. The word ``sandhi'' was borrowed into English, where it refers to the same sorts of changes in any language. So, we can talk about English sandhi, Chinese sandhi, Latin sandhi, and so on.
+
+The concept of ``sandhi'' might seem strange to you. Fortunately, English shows some signs of sandhi rules. For example, consider three English words that are borrowed from Latin: ``indirect,'' ``impossible,'' and ``illuminate.'' Each of these words starts with ``in,'' but the ``n'' of this ``in'' has changed to more closely match the letter that follows it. Note that the pronunciation and spelling of these words have both changed. The same thing happens in Sanskrit, and if sandhi is applied in a text, we must write out all of the changes.
+
+\subsection{Types of Sandhi} - 
+
+Sandhi's can be classified based on the place either within a word, or between two words that it takes place. Thus Sandhi are of broadly two types
 \begin{enumerate}
-\item \textbf{Internal Sandhi:} Sanskrit grammar has three kinds of minimal meaningful units (morphemes) – prefixes, roots and suffixes and it seems that every word in Sanskrit can be derived from them. When these units combine to form a word, \textit{sa\d{m}hit\={a}} applies and certain changes take place. This is known as internal sandhi.
+\item \textbf{Internal Sandhi:} Sanskrit grammar has three granular meaningful units (morphemes) – prefixes, roots and suffixes, every word in Sanskrit can be derived from these units. When these units combine to form a word, \textit{sa\d{m}hit\={a}} applies and certain changes take place. This is known as internal sandhi.
+
 For example, \textit{ bho} (changed form of verb \textit{bh\={u}} bhuu (‘’to be’’)) + \textit{anam} (anam, a noun forming suffix) $\rightarrow$ \textit{bhavanam }(bhavanam, “being”) is a case of internal sandhi.
 
 \item \textbf{External Sandhi:}
-When sandhi takes place between two words, it is known as external sandhi. For example,
+On the otherhand when sandhi takes place between two words either morpheme or a compound wor, it is known as external sandhi. 
+
+For example,
 \textit{tau} (``both of them'') + \textit{ekad\={a}} (``once'') $\rightarrow$ \textit{t\={a}vekad\={a}} (``both of them once'') involves external sandhi.
 
 \end{enumerate}
 
+Sandhi's also can be further classified depending on type of the last letter of the word and and the first letter of its adjoining word, which are participating in forming the sandhi. The letters can be  either vowels, consonants or visarga based on these sandhis can be classified into the following three categories:
 
-
-    
-Also, depending on whether the two letters that are combining are vowels, consonants or visarga, sandhis are classified as follows:
 \begin{enumerate}
 \item \textbf{Vowel Sandhi:} Both letters are vowels e.g. \textit{ hima} (``snow'') + \textit{ \={a}laya\d{h}} (``house'') $\rightarrow$ \textit{him\={a}laya\d{h}} (``house of snow'')
 \item \textbf{Consonant Sandhi :}  At least one of the two letters is a consonant, e.g. \textit{v\d{r}k\d{s}a} (``tree'') + \textit{ch\={a}y\={a} }(``shade'') $\rightarrow$ \textit{v\d{r}k\d{s}acch\={a}y\={a}} (``shade of tree'') 
@@ -89,13 +96,15 @@ Also, depending on whether the two letters that are combining are vowels, conson
 \end{enumerate}
 
 
-\subsection{Sandhi Splitting}
-The process of breaking a sandhied word into the original units it is made of is known as sandhi splitting. A tool which can perform this task is referred to here as a sandhi splitter.
-\subsection{Sandhi Merging}
-On the other hand merging of two or more words into a compound word is refereed to Sandhi Merging.
+
+The process of breaking a sandhied word into morphemes it is made up of is known as sandhi splitting. A tool which can perform this task is referred to here as a sandhi splitter. The reverse process of combining two morphemes to form the compound word is known as Sandhi Merging.
+
+Implementing sandhi merging rules are reasonably simple when compared to implementing sandhi splitting tools. In case of sandhi merging tools one need to implemnt the transformation of the letters in case of most of the sandhi rules when concerned. But when we consider sandhi splitting we need to identify the position where exactly the split needs to occur. Thats the resaon most of the splitter tries to predict muliple split instead of suggesting only one split. In our evaluation we consider a split to be correct in case any of the suggested split is correct.
+
+Next section talks about top three state of the art sandhi merging and splitting tools that are available, and their underlying algorithms for implemnting these algorithms.
 
 \section{Exisiting Sandhi Splitting and Merging tools:}
-The process of breaking a sandhied word into the original units it is made of is known as sandhi splitting. A tool which can perform this task is referred to here as a sandhi splitter.  In the same lines the tools which can merge two words to form the compound word is known as sandhi merging tool. 
+The process of breaking a sandhied word into the original units it is made up of is known as sandhi splitting. A tool which can perform this task is referred to here as a sandhi splitter.  In the same lines the tools which can merge two words to form the compound word is known as sandhi merging tool. 
 There has been considerable amount of research in the field of sandhi splitting and merging. As of now, three distinct sandhi splitters and merging tools are available:
 
 
@@ -104,23 +113,30 @@ There has been considerable amount of research in the field of sandhi splitting 
 
 Architecture of the system is as follows:
 
-\subsubsection{Pre-processing}
-Pre-processing includes marking the punctation marks, check the word length to determine whether we can split the words or not, and searching in the corpus if the intput word is already an instance of the examples.
 
-\subsubsection{Subanta analysis}
-This analysis includes splitting the noun phrases into its constituents base (prātipadika) and case terminations (kāraka-vacana-vibhakti).  Sandhi analyzer  will  process  the  base  words only. 
 
-\subsubsection{Fixed List checking}
-	After  subanta analysis, the input text has been segmented into base and affixes. Now only  base  words  will  be  processed  for  sandhi analysis.  But  before  that  these  words  will  be  checked  into  a Dictionary (Monier Williams Sanskrit Digital Dictionary),  place  name  list  and  noun  list.  The  words  found  in  these  resources, will  be exempted  from  sandhi processing. These different files are  merged to  one text file which is named as lexicon.
+\begin{enumerate}
 	
-\subsubsection{Sandhi Analysis}
-The segmenter class will check the  vowel sandhi rule - base in the database to mark the resultant  sandhi sounds  (marker)  for  potential  splitting  and  to  identify  the  sandhi patterns  for  viccheda , corresponding to the marked sound. 
+	\item \textbf{Pre-processing:}
+	Pre-processing includes marking the punctations, checking the word length to determine whether we can split the words or not, and searching in the corpus if the intput word is already an instance of the examples to avoid processing.
+	
+	\item \textbf{Subanta analysis:}
+	This analysis includes splitting the noun phrases into its constituents base (prātipadika) and case terminations (kāraka-vacana-vibhakti).  Sandhi analyzer  will  process  the  base  words only. 
+	
+	\item \textbf{Fixed List checking:}
+	 After  subanta analysis, the input text has been segmented into base and affixes. Now only  base  words  will  be  processed  for  sandhi analysis.  But  before  that  these  words  will  be  checked  into  a Dictionary (Monier Williams Sanskrit Digital Dictionary),  place  name  list  and  noun  list.  The  words  found  in  these  resources, will  be exempted  from  sandhi processing. These different files are  merged to  one text file which is named as lexicon.
+	
+	\item \textbf{Sandhi Analysis:}
+	The segmenter class will check the  vowel sandhi rule - base in the database to mark the resultant  sandhi sounds  (marker)  for  potential  splitting  and  to  identify  the  sandhi patterns  for  viccheda , corresponding to the marked sound. 
+	
+	
+	\item \textbf{Result generator:}
+	At  each  step  of  marker  and  pattern  identification,  the  class  will  check  the  segmented  words  in  the  lexicon  to  generate  the  result.  For  this  purpose,  it  will  use  Dictionary (Monier Williams Sanskrit Digital Dictionary)  and  customized Sanskrit corpora as the linguistic resources. To be a valid segmentation , both  the segments must be available in either of the linguistic resources. If the word has more  than one sounds marked for  sandhi , then only the first word must be present in either of  the linguistics resources . The remaining string in this case will continue with the process  of rule pattern matching, splitting and search in the linguistic resources.
+\end{enumerate}
+	
 
 
-\subsubsection{Result generator}
-	At  each  step  of  marker  and  pattern  identification,  the  class  will  check  the  segmented  words  in  the  lexicon  to  generate  the  result.  For  this  purpose,  it  will  use  Dictionary (Monier Williams Sanskrit Digital Dictionary)  and  customized Sanskrit corpora as the ling uistic resources. To be a valid segmentation , both  the segments must be available in either of the linguistic resources. If the word has more  than one sounds marked for  sandhi , then only the first word must be present in either of  the linguistics resources . The remaining string in this case will continue with the process  of rule pattern matching, splitting and search in the linguistic resources.
-
-
+Here after this tool is known as JNU tool for comparing the results.
 \subsection{Sandhi-Splitter} This was developed at University of Hyderabad under the guidance of Ms. Amba Kulkarni (Associate Professor, Department of Sanskrit Studies). This is available at \url{http://sanskrit.uohyd.ac.in/scl/}  . 
 Another Sandhi splitter is available at the TDIL website 
 \url{http://tdil-dc.in/san/sandhi_splitter/index_dit.html}  but it is the same as the one mentioned above, the only difference being in version. The former is considered here because it is the latest version.
@@ -135,6 +151,7 @@ The basic outline of the algorithm is\cite{Kumar2010}:
 	\item The optimal solution will be the one with the highest weight.
 \end{enumerate}
 
+Here after this tool is referred as UOH for simplicity purpose.
 
 \subsection{The Sanskrit Reader Companion } This is a Sasnkrit segmenter and parser, and therefore, also able to split sandhis. This was developed at INRIA, France under the guidance of Professor Gerard Huet, emeritus Professor. This is available at \url{http://sanskrit.inria.fr/DICO/reader.fr.html}.
 
