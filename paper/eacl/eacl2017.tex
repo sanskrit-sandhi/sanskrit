@@ -384,16 +384,16 @@ Sutras where Sandhi Split Applicable –2,700
 
 \begin{table}[h]
 \begin{center}
-\begin{tabular}{ p{2cm}  r r r }
+\begin{tabular}{ p{2cm}  r r r r }
 \hline  
-\bf No. of letters ($\le$) & Samples & JNU & UoH \\
+\bf No. of letters ($\le$) & Samples & JNU & UoH & INRIA\\
 \hline
-\bf 10 & 93 & 4(4.3) & 21(22.6) \\
-\bf 20 & 571 & 10(1.75) & 100 (17.5) \\
-\bf 30 & 1512 & 17(1.12) & 226(14.9) \\
-\bf 40 & 2045 & 18 (0.88) & 263(12.86) \\
-\bf 50 & 2302 & 18(0.78) & 263(11.42) \\
-\bf All  & 2700 & 18 (0.66) & 263 (9.74) \\
+\bf	10	&	93	&	4(4.3)	&	21(22.6)	&	21	\\
+\bf	20	&	571	&	10(1.75)	&	100(17.5)	&	100	\\
+\bf	30	&	1512	&	17(1.12)	&	226(14.9)	&	226	\\
+\bf	40	&	2045	&	18(0.88)	&	263(12.86)	&	263	\\
+\bf	50	&	2302	&	18(0.78)	&	263(11.42)	&	263	\\
+\bf	All	&	2700	&	18(0.66)	&	263(9.74)	&	263	\\
 \hline
 \end{tabular}
 \end{center}
@@ -403,15 +403,21 @@ Sutras where Sandhi Split Applicable –2,700
 
 \subsection{Evaluation of Sandhi Merging tools}
 
-Sandhi Merging tool for rule based corpus
+Implementation of Sandhi merging tool is simpler when compared to implementing sandhi splitting and parsing tool. The advantage in sandhi merging is most of the rules consider only the last letter of the current word and the first letter of its adjacent word. So it is clear to use which rule. All the Sandhi Merging tools allow only two words to be merged. So in our automated tool we took first two pairs for merging and we took the resulting compound word for the next input along with its adjacent word. 
 
+INRIA sandhi merging tool has an option to choose between internal and external sandhi So for our analysis we tried both internal and external sandhis and merged the result, and gave positive merge if either of one tool merges it correctly. Other two tools has no distinguish between internal and external sandhis.
+
+For sandhi merging we did only automated evaluation, and the results were presented in the following subsections.
+
+
+\subsubsection{Rule based corpus}
 \begin{table}[h]
 	\begin{center}
-		\begin{tabular}{|l|rl|}
-			\hline \bf Splitting tool & \bf Manual \bf & Automated \\ \hline
-			JNU&x\%&20.92\% \\
-			UoH&x\%&32.97\% \\
-			INRIA&x\%&51.77\% \\
+		\begin{tabular}{|l|l|}
+			\hline \bf Splitting tool & Automated \\ \hline
+			JNU&20.92\% \\
+			UoH&32.97\% \\
+			INRIA&51.77\% \\
 			\hline
 		\end{tabular}
 	\end{center}
@@ -419,7 +425,7 @@ Sandhi Merging tool for rule based corpus
 \end{table}
 
 
-150 word copus
+\subsubsection{Benchmark dataset}
 
 \begin{table}[h]
 	\begin{center}
@@ -435,8 +441,7 @@ Sandhi Merging tool for rule based corpus
 	\caption{\label{font-table} Evaluation Results }
 \end{table}
 
-
-Bhagwatgita
+\subsubsection{\textit{Bhagavad-g\={\i}t\={a}} Corpus}
 \begin{table}[h]
 	\begin{center}
 		\begin{tabular}{p{1.4cm} | p{1.6cm} | p{1.5cm} | p{1.5cm}}
@@ -467,7 +472,7 @@ Bhagwatgita
 	\caption{\label{screen}Screenshot of the built QA system showing the orchestration flow for the question - ``problem with transfer order"}
 \end{figure}
 
-UoH Merging
+\subsubsection{UoH Corpus}
 
 \begin{table}[h]
 	\begin{center}
@@ -483,6 +488,26 @@ UoH Merging
 	\caption{\label{font-table} Evaluation Results }
 \end{table}
 
+
+\subsubsection{\textit{A\d{s}\d{t}\={a}dhy\={a}y\={\i}} Corpus}
+
+\begin{table}[h]
+	\begin{center}
+		\begin{tabular}{ p{2cm}  r r r r }
+			\hline  
+			\bf No. of letters ($\le$) & Samples & JNU & UoH & INRIA\\
+			\hline
+			\bf	10	&	93	&	26	&	58	&	51	\\
+			\bf	20	&	571	&	120	&	343	&	269	\\
+			\bf	30	&	1512	&	250	&	763	&	634	\\
+			\bf	40	&	2045	&	315	&	988	&	803	\\
+			\bf	50	&	2302	&	355	&	1096	&	890	\\
+			\bf	All	&	2700	&	411	&	1260	&	1016	\\
+			\hline
+		\end{tabular}
+	\end{center}
+	\caption{\label{font-table} Evaluation Results }
+\end{table}
 
 \section{Sandhitype based analysis}
 

@@ -10,7 +10,9 @@ out = open('astadhayi.txt.size','w')
 for line in open('astadhayi.txt.out').readlines():
 	line = line.strip().replace('"','')
 	lineSplit = line.split(',');
-	if isLengthGrater(lineSplit[2], 40):
+	if isLengthGrater(lineSplit[2], 50):
+		out.write(lineSplit[0]+',100'+'\n');
+	elif isLengthGrater(lineSplit[2], 40):
 		out.write(lineSplit[0]+',50'+'\n');
 	elif isLengthGrater(lineSplit[2], 30):
 		out.write(lineSplit[0]+',40'+'\n');
