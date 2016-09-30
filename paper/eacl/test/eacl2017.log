@@ -1,0 +1,245 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.17)  29 SEP 2016 11:14
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**eacl2017.tex
+(./eacl2017.tex
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 22 language(s) loaded.
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(./eacl2017.sty
+Conference Style for EACL 2017 -- released August 8th, 2016
+\titlebox=\skip43
+\aclrulerbox=\box26
+\aclrulercount=\count87
+\aclruleroffset=\dimen103
+\cv@lineheight=\dimen104
+\cv@boxheight=\dimen105
+\cv@tmpbox=\box27
+\cv@refno=\count88
+\cv@tot=\count89
+\cv@tmpc@=\count90
+\cv@tmpc=\count91
+) (/usr/local/texlive/2016basic/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+(./eacl2017.aux)
+\openout1 = `eacl2017.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 51.
+
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+ABD: EveryShipout initializing macros
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 52.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 52.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 52.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 52.
+
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 89.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 91.
+
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 91.
+
+Underfull \hbox (badness 1902) in paragraph at lines 91--92
+\OT1/ptm/m/n/10.95 able at $\OT1/pcr/m/n/10.95 http : / / eacl2017 . org/$\OT1/
+ptm/m/n/10.95 . Please
+ []
+
+
+Underfull \hbox (badness 1142) in paragraph at lines 107--109
+\OT1/ptm/m/n/10.95 of this doc-u-ment, it will com-pile to pro-duce
+ []
+
+[1{/usr/local/texlive/2016basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+
+]
+Underfull \hbox (badness 1383) in paragraph at lines 114--123
+\OT1/ptm/m/n/10.95 The EACL-2017 style de-fines a printed ruler
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--140
+\OT1/ptm/m/n/10.95 EACL pro-vides this de-scrip-tion in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--140
+\OT1/ptm/m/n/10.95 L[]T[]X2e (\OT1/pcr/m/n/9 eacl2017.tex\OT1/ptm/m/n/10.95 ) a
+nd PDF for-mat
+ []
+
+
+Underfull \hbox (badness 3838) in paragraph at lines 135--140
+\OT1/ptm/m/n/10.95 ACL bib-li-og-ra-phy style (\OT1/pcr/m/n/9 eacl2017.bst\OT1/
+ptm/m/n/10.95 ) and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--184
+[]\OT1/pcr/m/n/10.95 \special{papersize=210mm,297mm}
+ []
+
+
+Underfull \hbox (badness 7685) in paragraph at lines 178--184
+\OT1/ptm/m/n/10.95 in the la-tex pream-ble (di-rectly be-low the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--184
+[]\OT1/pcr/m/n/10.95 \usepackage \OT1/ptm/m/n/10.95 com-mands). Then us-ing
+ []
+
+[2]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 200.
+
+ (/usr/local/texlive/2016basic/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 200.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 300.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 300.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 303.
+
+Underfull \vbox (badness 2884) has occurred while \output is active []
+
+ [3]
+Underfull \hbox (badness 10000) in paragraph at lines 365--366
+[]\OT1/ptm/m/n/10.95 ``We pre-vi-ously showed (Gus-field,
+ []
+
+
+Underfull \hbox (badness 1152) in paragraph at lines 390--393
+[]\OT1/ptm/m/n/10.95 The L[]T[]X and BibT[]X style files pro-vided
+ []
+
+
+Underfull \hbox (badness 1142) in paragraph at lines 408--413
+\OT1/ptm/b/n/10.95 Illustrations\OT1/ptm/m/n/10.95 : Place fig-ures, ta-bles, a
+nd pho-
+ []
+
+[4]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 429.
+
+Underfull \hbox (badness 1365) in paragraph at lines 439--448
+[]\OT1/ptm/m/n/10.95 We ask you to sub-mit a ZIP file of your
+ []
+
+
+Underfull \hbox (badness 1087) in paragraph at lines 439--448
+\OT1/ptm/m/n/10.95 bind-ings al-low La-TeXML to ren-der the com-
+ []
+
+
+Underfull \hbox (badness 1466) in paragraph at lines 439--448
+\OT1/ptm/m/n/10.95 pack-ages that are of-fi-cially sup-ported by La-
+ []
+
+
+Underfull \vbox (badness 1466) has occurred while \output is active []
+
+
+Underfull \hbox (badness 2285) in paragraph at lines 480--486
+[]\OT1/ptm/m/n/10.95 However, note that sup-ple-men-tary ma-te-rial
+ []
+
+(./eacl2017.bbl
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 22.
+ [5])
+Underfull \hbox (badness 2181) in paragraph at lines 534--538
+[]\OT1/pcr/m/n/10.95 \appendix \OT1/ptm/m/n/10.95 be-fore any ap-pendix sec-tio
+n to
+ []
+
+[6
+
+] (./eacl2017.aux) )
+(\end occurred when \iffalse on line 331 was incomplete) 
+Here is how much of TeX's memory you used:
+ 586 strings out of 494447
+ 7495 string characters out of 6166766
+ 68832 words of memory out of 5000000
+ 3941 multiletter control sequences out of 15000+600000
+ 33891 words of font info for 71 fonts, out of 8000000 for 9000
+ 319 hyphenation exceptions out of 8191
+ 37i,17n,28p,385b,325s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/201
+6basic/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2016basic/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016basic
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016ba
+sic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/20
+16basic/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2016b
+asic/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2016bas
+ic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016basic/te
+xmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016basic/texmf-d
+ist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on eacl2017.pdf (6 pages, 121786 bytes).
+PDF statistics:
+ 56 PDF objects out of 1000 (max. 8388607)
+ 39 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

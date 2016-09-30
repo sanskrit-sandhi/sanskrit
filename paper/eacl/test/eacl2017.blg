@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: eacl2017.aux
+The style file: eacl2017.bst
+Database file #1: eacl2017.bib
+Warning--empty title in ACM:83
+Warning--can't use both volume and number fields in ACM:83
+Warning--empty publisher in ACM:83
+You've used 5 entries,
+            2490 wiz_defined-function locations,
+            586 strings with 5067 characters,
+and the built_in function-call counts, 1855 in all, are:
+= -- 187
+> -- 52
+< -- 3
++ -- 17
+- -- 16
+* -- 134
+:= -- 304
+add.period$ -- 19
+call.type$ -- 5
+change.case$ -- 24
+chr.to.int$ -- 5
+cite$ -- 8
+duplicate$ -- 91
+empty$ -- 155
+format.name$ -- 22
+if$ -- 387
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 8
+newline$ -- 32
+num.names$ -- 15
+pop$ -- 38
+preamble$ -- 1
+purify$ -- 33
+quote$ -- 0
+skip$ -- 63
+stack$ -- 0
+substring$ -- 83
+swap$ -- 22
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 28
+warning$ -- 3
+while$ -- 15
+width$ -- 9
+write$ -- 72
+(There were 3 warnings)
