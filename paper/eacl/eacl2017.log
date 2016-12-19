@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.17)  30 SEP 2016 12:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.9.17)  30 SEP 2016 23:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -81,87 +81,47 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen106
 \Gin@req@width=\dimen107
 )
-(./eacl2017.aux
-
-LaTeX Warning: Label `font-table' multiply defined.
-
-
-LaTeX Warning: Label `font-table' multiply defined.
-
-
-LaTeX Warning: Label `font-table' multiply defined.
-
-
-LaTeX Warning: Label `font-table' multiply defined.
-
-
-LaTeX Warning: Label `font-table' multiply defined.
-
-
-LaTeX Warning: Label `screen' multiply defined.
-
-
-LaTeX Warning: Label `screen' multiply defined.
-
-
-LaTeX Warning: Label `screen' multiply defined.
-
-
-LaTeX Warning: Label `font-table' multiply defined.
-
-
-LaTeX Warning: Label `font-table' multiply defined.
-
-
-LaTeX Warning: Label `font-table' multiply defined.
-
-
-LaTeX Warning: Label `font-table' multiply defined.
-
-
-LaTeX Warning: Label `font-table' multiply defined.
-
-
-LaTeX Warning: Label `screen' multiply defined.
-
-
-LaTeX Warning: Label `screen' multiply defined.
-
-
-LaTeX Warning: Label `screen' multiply defined.
-
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2016/09/27 v2.0 Span multiple rows of a table
+\multirow@colwidth=\skip44
+\multirow@cnta=\count93
+\multirow@cntb=\count94
+\multirow@dima=\skip45
+\bigstrutjot=\dimen108
 )
+(./eacl2017.aux)
 \openout1 = `eacl2017.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 50.
- (/usr/local/texlive/2016basic/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 34.
+
+(/usr/local/texlive/2016basic/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 ABD: EveryShipout initializing macros
 (/usr/local/texlive/2016basic/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count93
-\scratchdimen=\dimen108
+\scratchcounter=\count95
+\scratchdimen=\dimen109
 \scratchbox=\box28
-\nofMPsegments=\count94
-\nofMParguments=\count95
+\nofMPsegments=\count96
+\nofMParguments=\count97
 \everyMPshowfont=\toks15
-\MPscratchCnt=\count96
-\MPscratchDim=\dimen109
-\MPnumerator=\count97
-\makeMPintoPDFobject=\count98
+\MPscratchCnt=\count98
+\MPscratchDim=\dimen110
+\MPnumerator=\count99
+\makeMPintoPDFobject=\count100
 \everyMPtoPDFconversion=\toks16
 ) (/usr/local/texlive/2016basic/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
@@ -212,1407 +172,1226 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 35.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 51.
+(Font)              <12> on input line 35.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 51.
+(Font)              <8> on input line 35.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 51.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 51.
+(Font)              <6> on input line 35.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 35.
  (/usr/local/texlive/2016basic/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
-
-Underfull \vbox (badness 6658) has occurred while \output is active []
-
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 60.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 35.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 44.
 
 (/usr/local/texlive/2016basic/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 60.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 44.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 60.
-
-
-LaTeX Warning: Citation `bharati2007' on page 1 undefined on input line 64.
-
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 44.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 65.
+(Font)              <10.95> on input line 50.
+
+Overfull \hbox (3.55708pt too wide) in paragraph at lines 52--52
+[]\OT1/ptm/b/n/10.95 Criteria| 
+ []
+
+
+Overfull \hbox (1.76128pt too wide) in paragraph at lines 55--55
+[][]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
+\OT1/ptm/m/n/10.95 char-ac-
+ []
+
+
+Overfull \hbox (0.71858pt too wide) in paragraph at lines 50--67
+ [] 
+ []
+
 [1{/usr/local/texlive/2016basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 
 ]
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ì in font ptmr7t!
-
-Underfull \hbox (badness 1642) in paragraph at lines 71--72
-[]\OT1/ptm/b/n/10.95 Internal Sandhi: \OT1/ptm/m/n/10.95 San-skrit gram-mar has
-
- []
-
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ò in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ô in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ô in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ô in font ptmr7t!
-
-Underfull \hbox (badness 1910) in paragraph at lines 86--87
-[]\OT1/ptm/b/n/10.95 Vowel Sandhi: \OT1/ptm/m/n/10.95 Both let-ters are vow-els
-
- []
-
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 92.
+(Font)              <9> on input line 78.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 92.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 92.
+(Font)              <5> on input line 78.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 78.
+
 (/usr/local/texlive/2016basic/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ) [2]
-Underfull \hbox (badness 10000) in paragraph at lines 105--105
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
 [][]\OT1/ptm/m/n/9 Available at $\OT1/pcr/m/n/9 http : / / sanskrit . jnu . ac 
 . in /
  []
 
 
-LaTeX Warning: Citation `sachin2007sandhi' on page 3 undefined on input line 10
-5.
+Underfull \hbox (badness 1552) in paragraph at lines 91--92
+\OT1/ptm/m/n/10.95 Com-pu-ta-tional Lin-guis-tics, Spe-cial Cen-tre for
+ []
 
 
-Underfull \hbox (badness 1448) in paragraph at lines 127--127
+Underfull \hbox (badness 1448) in paragraph at lines 103--103
 [][]\OT1/ptm/m/n/9 Available at $\OT1/pcr/m/n/9 http : / / sanskrit . uohyd . a
 c . in /
  []
 
 
-LaTeX Warning: Citation `Kumar2010' on page 3 undefined on input line 128.
+LaTeX Warning: Citation `Kumar2010amb' on page 3 undefined on input line 104.
 
 
-LaTeX Warning: Citation `ss' on page 3 undefined on input line 129.
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 138--138
+Underfull \hbox (badness 10000) in paragraph at lines 113--113
 [][]\OT1/ptm/m/n/9 available at $\OT1/pcr/m/n/9 http : / / sanskrit . inria . f
 r /
  []
 
 
-LaTeX Warning: Citation `goyal2013completeness' on page 4 undefined on input li
-ne 138.
+Underfull \hbox (badness 10000) in paragraph at lines 120--120
+[][]\OT1/ptm/m/n/9 Available at: $\OT1/pcr/m/n/9 https : / / github . com /
+ []
 
-
-Underfull \hbox (badness 1314) in paragraph at lines 140--141
-\OT1/ptm/m/n/10.95 al-lowed classes and at-tested pre-verbs for
+[3]
+Underfull \hbox (badness 3019) in paragraph at lines 129--130
+[]\OT1/ptm/b/n/10.95 External: \OT1/ptm/m/n/10.95 svacchanda[] $\OMS/cmsy/m/n/1
+0.95 !$ \OT1/ptm/m/n/10.95 sva+chanda[]
  []
 
 
-Underfull \hbox (badness 1062) in paragraph at lines 141--142
-\OT1/ptm/m/n/10.95 curs for roots ac-count-ing for the var-i-ous
+Underfull \hbox (badness 1558) in paragraph at lines 132--133
+[]\OT1/ptm/m/n/10.95 There are about $\OT1/cmr/m/n/10.95 150$ \OT1/ptm/m/n/10.9
+5 ex-am-ples for in-ter-nal
+ []
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 139.
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
+[]\OT1/ptm/b/n/10.95 Rejected: \OT1/ptm/m/n/10.95 sarv[]anbandh[]unavasthit[]an
+ $\OMS/cmsy/m/n/10.95 !$
  []
 
 
-Overfull \hbox (4.28922pt too wide) in paragraph at lines 160--160
-[]\OT1/ptm/m/n/10.95 6.1.73.1| 
+Underfull \hbox (badness 10000) in paragraph at lines 151--151
+[][]$\OT1/pcr/m/n/9 http : / / sanskritdocuments . org /
  []
 
 
-Overfull \hbox (2.1535pt too wide) in paragraph at lines 160--161
-[]\OT1/ptm/m/n/10.95 internal| 
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
+[]\OT1/ptm/b/n/10.95 Further split pos-si-ble: \OT1/ptm/m/n/10.95 tad-
  []
 
 
-Overfull \hbox (4.28922pt too wide) in paragraph at lines 161--161
-[]\OT1/ptm/m/n/10.95 6.1.74.1| 
- []
-
-
-Overfull \hbox (2.1535pt too wide) in paragraph at lines 161--162
-[]\OT1/ptm/m/n/10.95 internal| 
- []
-
-
-Overfull \hbox (1.60919pt too wide) in paragraph at lines 162--162
-[]\OT1/ptm/m/n/10.95 svacchanda[]| 
- []
-
-
-Overfull \hbox (2.92314pt too wide) in paragraph at lines 162--162
-[]\OT1/ptm/m/n/10.95 sva+chanda[]| 
- []
-
-
-Overfull \hbox (4.28922pt too wide) in paragraph at lines 162--162
-[]\OT1/ptm/m/n/10.95 6.1.73.1| 
- []
-
-
-Overfull \hbox (3.80708pt too wide) in paragraph at lines 162--163
-[]\OT1/ptm/m/n/10.95 external| 
- []
-
-
-Overfull \hbox (4.28922pt too wide) in paragraph at lines 163--163
-[]\OT1/ptm/m/n/10.95 6.1.74.1| 
- []
-
-
-Overfull \hbox (3.80708pt too wide) in paragraph at lines 163--164
-[]\OT1/ptm/m/n/10.95 external| 
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
+\OT1/ptm/m/n/10.95 dhita[]sc[]asarvavibhakti[] $\OMS/cmsy/m/n/10.95 !$ \OT1/ptm
+/m/n/10.95 taddhita[] +
  []
 
 [4]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 189.
-
-Underfull \hbox (badness 7064) in paragraph at lines 203--203
-[]\OT1/ptm/m/n/10.95 tumula[] + vi +
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 214--215
-\OT1/pcr/m/n/10.95 org / learning _ tools / ashtadhyayi/$\OT1/ptm/m/n/10.95 .
- []
-
-
-Overfull \hbox (1.05013pt too wide) in paragraph at lines 221--222
-[]\OT1/ptm/m/n/10.95 prathamacaramatay[]alp[]ardhakatipayanem[]a[]sca
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
-\OMS/cmsy/m/n/10.95 !$ \OT1/ptm/m/n/10.95 prathamacara-
- []
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 222--223
-[]\OT1/ptm/m/n/10.95 udupadh[]adbh[]av[]adikarma[]oranyatarasy[]am
- []
-
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ò in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ô in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ú in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ù in font ptmr7t!
-
-Overfull \hbox (3.98207pt too wide) in paragraph at lines 267--267
+Overfull \hbox (3.98207pt too wide) in paragraph at lines 188--188
 []\OT1/ptm/b/n/10.95 Splitter| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 267--267
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 []\OT1/ptm/b/n/10.95 External
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 267--267
-\OT1/ptm/b/n/10.95 Sandhi
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 267--267
+Underfull \hbox (badness 10000) in paragraph at lines 188--189
 []\OT1/ptm/b/n/10.95 Internal
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 267--267
-\OT1/ptm/b/n/10.95 Sandhi
- []
-
-
-Overfull \hbox (1.0277pt too wide) in paragraph at lines 267--268
-[]\OT1/ptm/b/n/10.95 Overall| 
- []
-
-
-Overfull \hbox (2.47542pt too wide) in paragraph at lines 266--274
- [] 
- []
-
-[6]
-Overfull \hbox (6.82753pt too wide) in paragraph at lines 299--299
+Overfull \hbox (6.82753pt too wide) in paragraph at lines 207--207
 []\OT1/ptm/b/n/10.95 Splitter| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--299
-[]\OT1/ptm/b/n/10.95 Manual
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 299--299
-\OT1/ptm/b/n/10.95 Eval-u-a-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 299--300
-[]\OT1/ptm/b/n/10.95 Automated
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 299--300
-\OT1/ptm/b/n/10.95 Eval-u-a-tion
- []
-
-
-Overfull \hbox (1.95512pt too wide) in paragraph at lines 303--303
+Overfull \hbox (1.95512pt too wide) in paragraph at lines 211--211
 []\OT1/ptm/m/n/10.95 INRIA| 
  []
 
-
-Overfull \hbox (4.78362pt too wide) in paragraph at lines 328--328
+[5]
+Overfull \hbox (4.78362pt too wide) in paragraph at lines 224--224
 []\OT1/ptm/b/n/10.95 Chapter| 
  []
 
 
-Overfull \hbox (2.36026pt too wide) in paragraph at lines 328--328
+Overfull \hbox (2.36026pt too wide) in paragraph at lines 224--224
 []\OT1/ptm/b/n/10.95 Words| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 227--227
 []\OT1/ptm/m/n/10.95 2
  []
 
 
-Overfull \hbox (1.64864pt too wide) in paragraph at lines 331--331
+Overfull \hbox (1.64864pt too wide) in paragraph at lines 227--227
 \OT1/ptm/m/n/10.95 (1.3%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 227--227
 []\OT1/ptm/m/n/10.95 76
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 331--331
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 227--227
 \OT1/ptm/m/n/10.95 (48.4%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
+Underfull \hbox (badness 10000) in paragraph at lines 227--227
 []\OT1/ptm/m/n/10.95 114
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 331--331
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 227--227
 \OT1/ptm/m/n/10.95 (72.6%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 332--332
+Underfull \hbox (badness 10000) in paragraph at lines 228--228
 []\OT1/ptm/m/n/10.95 10
  []
 
 
-Overfull \hbox (1.64864pt too wide) in paragraph at lines 332--332
+Overfull \hbox (1.64864pt too wide) in paragraph at lines 228--228
 \OT1/ptm/m/n/10.95 (3.7%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 332--332
+Underfull \hbox (badness 10000) in paragraph at lines 228--228
 []\OT1/ptm/m/n/10.95 132
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 332--332
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 228--228
 \OT1/ptm/m/n/10.95 (48.9%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 332--332
+Underfull \hbox (badness 10000) in paragraph at lines 228--228
 []\OT1/ptm/m/n/10.95 188
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 332--332
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 228--228
 \OT1/ptm/m/n/10.95 (69.6%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 333--333
+Underfull \hbox (badness 10000) in paragraph at lines 229--229
 []\OT1/ptm/m/n/10.95 11
  []
 
 
-Overfull \hbox (1.64864pt too wide) in paragraph at lines 333--333
+Overfull \hbox (1.64864pt too wide) in paragraph at lines 229--229
 \OT1/ptm/m/n/10.95 (6.5%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 333--333
+Underfull \hbox (badness 10000) in paragraph at lines 229--229
 []\OT1/ptm/m/n/10.95 83
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 333--333
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 229--229
 \OT1/ptm/m/n/10.95 (49.1%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 333--333
+Underfull \hbox (badness 10000) in paragraph at lines 229--229
 []\OT1/ptm/m/n/10.95 110
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 333--333
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 229--229
 \OT1/ptm/m/n/10.95 (65.1%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 334--334
+Underfull \hbox (badness 10000) in paragraph at lines 230--230
 []\OT1/ptm/m/n/10.95 9
  []
 
 
-Overfull \hbox (1.64864pt too wide) in paragraph at lines 334--334
+Overfull \hbox (1.64864pt too wide) in paragraph at lines 230--230
 \OT1/ptm/m/n/10.95 (5.5%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 334--334
+Underfull \hbox (badness 10000) in paragraph at lines 230--230
 []\OT1/ptm/m/n/10.95 86
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 334--334
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 230--230
 \OT1/ptm/m/n/10.95 (52.1%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 334--334
+Underfull \hbox (badness 10000) in paragraph at lines 230--230
 []\OT1/ptm/m/n/10.95 108
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 334--334
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 230--230
 \OT1/ptm/m/n/10.95 (65.5%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--335
+Underfull \hbox (badness 10000) in paragraph at lines 231--231
 []\OT1/ptm/m/n/10.95 4
  []
 
 
-Overfull \hbox (1.64864pt too wide) in paragraph at lines 335--335
+Overfull \hbox (1.64864pt too wide) in paragraph at lines 231--231
 \OT1/ptm/m/n/10.95 (3.5%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--335
+Underfull \hbox (badness 10000) in paragraph at lines 231--231
 []\OT1/ptm/m/n/10.95 52
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 335--335
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 231--231
 \OT1/ptm/m/n/10.95 (46.0%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--335
+Underfull \hbox (badness 10000) in paragraph at lines 231--231
 []\OT1/ptm/m/n/10.95 76
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 335--335
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 231--231
 \OT1/ptm/m/n/10.95 (67.3%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 336--336
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
 []\OT1/ptm/m/n/10.95 13
  []
 
 
-Overfull \hbox (1.64864pt too wide) in paragraph at lines 336--336
+Overfull \hbox (1.64864pt too wide) in paragraph at lines 232--232
 \OT1/ptm/m/n/10.95 (7.0%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 336--336
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
 []\OT1/ptm/m/n/10.95 80
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 336--336
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 232--232
 \OT1/ptm/m/n/10.95 (42.8%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 336--336
+Underfull \hbox (badness 10000) in paragraph at lines 232--232
 []\OT1/ptm/m/n/10.95 122
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 336--336
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 232--232
 \OT1/ptm/m/n/10.95 (65.2%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 337--337
+Underfull \hbox (badness 10000) in paragraph at lines 233--233
 []\OT1/ptm/m/n/10.95 6
  []
 
 
-Overfull \hbox (1.64864pt too wide) in paragraph at lines 337--337
+Overfull \hbox (1.64864pt too wide) in paragraph at lines 233--233
 \OT1/ptm/m/n/10.95 (5.0%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 337--337
+Underfull \hbox (badness 10000) in paragraph at lines 233--233
 []\OT1/ptm/m/n/10.95 43
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 337--337
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 233--233
 \OT1/ptm/m/n/10.95 (35.8%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 337--337
+Underfull \hbox (badness 10000) in paragraph at lines 233--233
 []\OT1/ptm/m/n/10.95 84
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 337--337
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 233--233
 \OT1/ptm/m/n/10.95 (70.0%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 338--338
+Underfull \hbox (badness 10000) in paragraph at lines 234--234
 []\OT1/ptm/m/n/10.95 6
  []
 
 
-Overfull \hbox (1.64864pt too wide) in paragraph at lines 338--338
+Overfull \hbox (1.64864pt too wide) in paragraph at lines 234--234
 \OT1/ptm/m/n/10.95 (5.2%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 338--338
+Underfull \hbox (badness 10000) in paragraph at lines 234--234
 []\OT1/ptm/m/n/10.95 54
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 338--338
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 234--234
 \OT1/ptm/m/n/10.95 (46.6%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 338--338
+Underfull \hbox (badness 10000) in paragraph at lines 234--234
 []\OT1/ptm/m/n/10.95 79
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 338--338
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 234--234
 \OT1/ptm/m/n/10.95 (68.1%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 339--339
+Underfull \hbox (badness 10000) in paragraph at lines 235--235
 []\OT1/ptm/m/n/10.95 1
  []
 
 
-Overfull \hbox (1.64864pt too wide) in paragraph at lines 339--339
+Overfull \hbox (1.64864pt too wide) in paragraph at lines 235--235
 \OT1/ptm/m/n/10.95 (0.7%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 339--339
+Underfull \hbox (badness 10000) in paragraph at lines 235--235
 []\OT1/ptm/m/n/10.95 44
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 339--339
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 235--235
 \OT1/ptm/m/n/10.95 (32.6%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 339--339
+Underfull \hbox (badness 10000) in paragraph at lines 235--235
 []\OT1/ptm/m/n/10.95 91
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 339--339
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 235--235
 \OT1/ptm/m/n/10.95 (67.4%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 340--340
+Underfull \hbox (badness 10000) in paragraph at lines 236--236
 []\OT1/ptm/m/n/10.95 62
  []
 
 
-Overfull \hbox (1.64864pt too wide) in paragraph at lines 340--340
+Overfull \hbox (1.64864pt too wide) in paragraph at lines 236--236
 \OT1/ptm/m/n/10.95 (4.3%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 340--340
+Underfull \hbox (badness 10000) in paragraph at lines 236--236
 []\OT1/ptm/m/n/10.95 650
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 340--340
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 236--236
 \OT1/ptm/m/n/10.95 (45.4%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 340--340
+Underfull \hbox (badness 10000) in paragraph at lines 236--236
 []\OT1/ptm/m/n/10.95 972
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 340--340
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 236--236
 \OT1/ptm/m/n/10.95 (67.9%)| 
  []
 
-<images/split.png, id=30, 481.8pt x 361.35pt>
-File: images/split.png Graphic file (type png)
- <use images/split.png>
-Package pdftex.def Info: images/split.png used on input line 352.
-(pdftex.def)             Requested size: 163.80983pt x 122.85738pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ì in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ì in font ptmr7t!
-
-Overfull \hbox (5.83269pt too wide) in paragraph at lines 394--394
-[]\OT1/ptm/b/n/10.95 Sandhis| 
+Overfull \hbox (1.57326pt too wide) in paragraph at lines 269--269
+[]\OT1/ptm/b/n/10.95 Sandhi| 
  []
 
 
-Overfull \hbox (0.93822pt too wide) in paragraph at lines 394--395
+Overfull \hbox (0.93822pt too wide) in paragraph at lines 269--270
 []\OT1/ptm/b/n/10.95 INRIA| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 396--396
+Underfull \hbox (badness 10000) in paragraph at lines 271--271
 []\OT1/ptm/m/n/10.95 4
  []
 
 
-Overfull \hbox (7.3391pt too wide) in paragraph at lines 396--396
+Overfull \hbox (7.3391pt too wide) in paragraph at lines 271--271
 \OT1/ptm/m/n/10.95 (4.3%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 396--396
+Underfull \hbox (badness 10000) in paragraph at lines 271--271
 []\OT1/ptm/m/n/10.95 21
  []
 
 
-Overfull \hbox (4.27817pt too wide) in paragraph at lines 396--396
+Overfull \hbox (4.27817pt too wide) in paragraph at lines 271--271
 \OT1/ptm/m/n/10.95 (22.6%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 396--396
+Underfull \hbox (badness 10000) in paragraph at lines 271--271
 []\OT1/ptm/m/n/10.95 29
  []
 
 
-Overfull \hbox (4.27817pt too wide) in paragraph at lines 396--396
+Overfull \hbox (4.27817pt too wide) in paragraph at lines 271--271
 \OT1/ptm/m/n/10.95 (31.2%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 397--397
+Underfull \hbox (badness 10000) in paragraph at lines 272--272
 []\OT1/ptm/m/n/10.95 1
  []
 
 
-Overfull \hbox (7.3391pt too wide) in paragraph at lines 397--397
+Overfull \hbox (7.3391pt too wide) in paragraph at lines 272--272
 \OT1/ptm/m/n/10.95 (1.8%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 397--397
+Underfull \hbox (badness 10000) in paragraph at lines 272--272
 []\OT1/ptm/m/n/10.95 100
  []
 
 
-Overfull \hbox (4.27817pt too wide) in paragraph at lines 397--397
+Overfull \hbox (4.27817pt too wide) in paragraph at lines 272--272
 \OT1/ptm/m/n/10.95 (17.5%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 397--397
+Underfull \hbox (badness 10000) in paragraph at lines 272--272
 []\OT1/ptm/m/n/10.95 195
  []
 
 
-Overfull \hbox (4.27817pt too wide) in paragraph at lines 397--397
+Overfull \hbox (4.27817pt too wide) in paragraph at lines 272--272
 \OT1/ptm/m/n/10.95 (34.2%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 398--398
+Underfull \hbox (badness 10000) in paragraph at lines 273--273
 []\OT1/ptm/m/n/10.95 17
  []
 
 
-Overfull \hbox (7.3391pt too wide) in paragraph at lines 398--398
+Overfull \hbox (7.3391pt too wide) in paragraph at lines 273--273
 \OT1/ptm/m/n/10.95 (1.1%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 398--398
+Underfull \hbox (badness 10000) in paragraph at lines 273--273
 []\OT1/ptm/m/n/10.95 226
  []
 
 
-Overfull \hbox (4.27817pt too wide) in paragraph at lines 398--398
+Overfull \hbox (4.27817pt too wide) in paragraph at lines 273--273
 \OT1/ptm/m/n/10.95 (14.9%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 398--398
+Underfull \hbox (badness 10000) in paragraph at lines 273--273
 []\OT1/ptm/m/n/10.95 378
  []
 
 
-Overfull \hbox (4.27817pt too wide) in paragraph at lines 398--398
+Overfull \hbox (4.27817pt too wide) in paragraph at lines 273--273
 \OT1/ptm/m/n/10.95 (25.0%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 399--399
+Underfull \hbox (badness 10000) in paragraph at lines 274--274
 []\OT1/ptm/m/n/10.95 18
  []
 
 
-Overfull \hbox (7.3391pt too wide) in paragraph at lines 399--399
+Overfull \hbox (7.3391pt too wide) in paragraph at lines 274--274
 \OT1/ptm/m/n/10.95 (0.9%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 399--399
+Underfull \hbox (badness 10000) in paragraph at lines 274--274
 []\OT1/ptm/m/n/10.95 263
  []
 
 
-Overfull \hbox (4.27817pt too wide) in paragraph at lines 399--399
+Overfull \hbox (4.27817pt too wide) in paragraph at lines 274--274
 \OT1/ptm/m/n/10.95 (12.9%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 399--399
+Underfull \hbox (badness 10000) in paragraph at lines 274--274
 []\OT1/ptm/m/n/10.95 444
  []
 
 
-Overfull \hbox (4.27817pt too wide) in paragraph at lines 399--399
+Overfull \hbox (4.27817pt too wide) in paragraph at lines 274--274
 \OT1/ptm/m/n/10.95 (21.7%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 400--400
+Underfull \hbox (badness 10000) in paragraph at lines 275--275
 []\OT1/ptm/m/n/10.95 18
  []
 
 
-Overfull \hbox (7.3391pt too wide) in paragraph at lines 400--400
+Overfull \hbox (7.3391pt too wide) in paragraph at lines 275--275
 \OT1/ptm/m/n/10.95 (0.8%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 400--400
+Underfull \hbox (badness 10000) in paragraph at lines 275--275
 []\OT1/ptm/m/n/10.95 263
  []
 
 
-Overfull \hbox (4.27817pt too wide) in paragraph at lines 400--400
+Overfull \hbox (4.27817pt too wide) in paragraph at lines 275--275
 \OT1/ptm/m/n/10.95 (11.4%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 400--400
+Underfull \hbox (badness 10000) in paragraph at lines 275--275
 []\OT1/ptm/m/n/10.95 460
  []
 
 
-Overfull \hbox (4.27817pt too wide) in paragraph at lines 400--400
+Overfull \hbox (4.27817pt too wide) in paragraph at lines 275--275
 \OT1/ptm/m/n/10.95 (20.0%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 401--401
+Underfull \hbox (badness 10000) in paragraph at lines 276--276
 []\OT1/ptm/m/n/10.95 18
  []
 
 
-Overfull \hbox (7.3391pt too wide) in paragraph at lines 401--401
+Overfull \hbox (7.3391pt too wide) in paragraph at lines 276--276
 \OT1/ptm/m/n/10.95 (0.7%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 401--401
+Underfull \hbox (badness 10000) in paragraph at lines 276--276
 []\OT1/ptm/m/n/10.95 263
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 401--401
+Underfull \hbox (badness 10000) in paragraph at lines 276--276
 []\OT1/ptm/m/n/10.95 507
  []
 
 
-Overfull \hbox (4.27817pt too wide) in paragraph at lines 401--401
+Overfull \hbox (4.27817pt too wide) in paragraph at lines 276--276
 \OT1/ptm/m/n/10.95 (18.8%)| 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 1348) in paragraph at lines 284--285
+\OT1/ptm/m/n/10.95 split-ting tool's per-for-mance on three dif-fer-ent
+ []
 
- [7]
-<images/visarga.png, id=35, 481.8pt x 361.35pt>
+<images/merge.png, id=27, 481.8pt x 361.35pt>
+File: images/merge.png Graphic file (type png)
+ <use images/merge.png>
+Package pdftex.def Info: images/merge.png used on input line 288.
+(pdftex.def)             Requested size: 163.80983pt x 122.85738pt.
+
+<images/visarga.png, id=28, 481.8pt x 361.35pt>
 File: images/visarga.png Graphic file (type png)
  <use images/visarga.png>
-Package pdftex.def Info: images/visarga.png used on input line 414.
+Package pdftex.def Info: images/visarga.png used on input line 294.
 (pdftex.def)             Requested size: 163.80983pt x 122.85738pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/consonant.png, id=36, 481.8pt x 361.35pt>
+<images/consonant.png, id=29, 481.8pt x 361.35pt>
 File: images/consonant.png Graphic file (type png)
  <use images/consonant.png>
-Package pdftex.def Info: images/consonant.png used on input line 420.
+Package pdftex.def Info: images/consonant.png used on input line 300.
 (pdftex.def)             Requested size: 163.80983pt x 122.85738pt.
 
-<images/vowel.png, id=37, 481.8pt x 361.35pt>
-File: images/vowel.png Graphic file (type png)
- <use images/vowel.png>
-Package pdftex.def Info: images/vowel.png used on input line 426.
-(pdftex.def)             Requested size: 163.80983pt x 122.85738pt.
- [8 <./images/split.png> <./images/visarga.png> <./images/consonant.png> <./ima
-ges/vowel.png>]
-Underfull \hbox (badness 4752) in paragraph at lines 475--476
-\OT1/ptm/m/n/10.95 Merging re-sults for the sand-hied words of
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 4832) has occurred while \output is active []
+
+ [6 <./images/merge.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 343--344
+\OT1/ptm/m/n/10.95 Merging re-sults for the Sandhi words of
  []
 
 
-Overfull \hbox (10.47409pt too wide) in paragraph at lines 481--481
+Underfull \hbox (badness 3439) in paragraph at lines 343--344
+\OT1/ptm/m/it/10.95 Bhagavad-g[]^^Pt[]a \OT1/ptm/m/n/10.95 cor-pus is shown in 
+Ta-ble 9[].
+ []
+
+
+Overfull \hbox (10.47409pt too wide) in paragraph at lines 349--349
 []\OT1/ptm/b/n/10.95 Chapter| 
  []
 
 
-Overfull \hbox (2.36026pt too wide) in paragraph at lines 481--481
+Overfull \hbox (2.36026pt too wide) in paragraph at lines 349--349
 []\OT1/ptm/b/n/10.95 Words| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 484--484
+Underfull \hbox (badness 10000) in paragraph at lines 352--352
 []\OT1/ptm/m/n/10.95 47
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 484--484
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 352--352
 \OT1/ptm/m/n/10.95 (29.9%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 484--484
+Underfull \hbox (badness 10000) in paragraph at lines 352--352
 []\OT1/ptm/m/n/10.95 90
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 484--484
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 352--352
 \OT1/ptm/m/n/10.95 (57.3%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 484--484
+Underfull \hbox (badness 10000) in paragraph at lines 352--352
 []\OT1/ptm/m/n/10.95 87
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 484--484
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 352--352
 \OT1/ptm/m/n/10.95 (55.4%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 485--485
+Underfull \hbox (badness 10000) in paragraph at lines 353--353
 []\OT1/ptm/m/n/10.95 71
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 485--485
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 353--353
 \OT1/ptm/m/n/10.95 (26.3%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 485--485
+Underfull \hbox (badness 10000) in paragraph at lines 353--353
 []\OT1/ptm/m/n/10.95 181
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 485--485
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 353--353
 \OT1/ptm/m/n/10.95 (67.1%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 485--485
+Underfull \hbox (badness 10000) in paragraph at lines 353--353
 []\OT1/ptm/m/n/10.95 174
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 485--485
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 353--353
 \OT1/ptm/m/n/10.95 (64.4%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 486--486
+Underfull \hbox (badness 10000) in paragraph at lines 354--354
 []\OT1/ptm/m/n/10.95 52
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 486--486
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 354--354
 \OT1/ptm/m/n/10.95 (30.8%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 486--486
+Underfull \hbox (badness 10000) in paragraph at lines 354--354
 []\OT1/ptm/m/n/10.95 126
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 486--486
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 354--354
 \OT1/ptm/m/n/10.95 (74.6%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 486--486
+Underfull \hbox (badness 10000) in paragraph at lines 354--354
 []\OT1/ptm/m/n/10.95 111
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 486--486
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 354--354
 \OT1/ptm/m/n/10.95 (65.7%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 487--487
+Underfull \hbox (badness 10000) in paragraph at lines 355--355
 []\OT1/ptm/m/n/10.95 47
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 487--487
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 355--355
 \OT1/ptm/m/n/10.95 (28.5%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 487--487
+Underfull \hbox (badness 10000) in paragraph at lines 355--355
 []\OT1/ptm/m/n/10.95 121
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 487--487
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 355--355
 \OT1/ptm/m/n/10.95 (73.3%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 487--487
+Underfull \hbox (badness 10000) in paragraph at lines 355--355
 []\OT1/ptm/m/n/10.95 105
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 487--487
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 355--355
 \OT1/ptm/m/n/10.95 (63.6%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 488--488
+Underfull \hbox (badness 10000) in paragraph at lines 356--356
 []\OT1/ptm/m/n/10.95 29
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 488--488
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 356--356
 \OT1/ptm/m/n/10.95 (25.7%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 488--488
+Underfull \hbox (badness 10000) in paragraph at lines 356--356
 []\OT1/ptm/m/n/10.95 77
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 488--488
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 356--356
 \OT1/ptm/m/n/10.95 (68.1%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 488--488
+Underfull \hbox (badness 10000) in paragraph at lines 356--356
 []\OT1/ptm/m/n/10.95 64
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 488--488
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 356--356
 \OT1/ptm/m/n/10.95 (56.6%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 489--489
+Underfull \hbox (badness 10000) in paragraph at lines 357--357
 []\OT1/ptm/m/n/10.95 47
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 489--489
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 357--357
 \OT1/ptm/m/n/10.95 (25.1%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 489--489
+Underfull \hbox (badness 10000) in paragraph at lines 357--357
 []\OT1/ptm/m/n/10.95 114
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 489--489
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 357--357
 \OT1/ptm/m/n/10.95 (61.0%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 489--489
+Underfull \hbox (badness 10000) in paragraph at lines 357--357
 []\OT1/ptm/m/n/10.95 100
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 489--489
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 357--357
 \OT1/ptm/m/n/10.95 (53.5%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 490--490
+Underfull \hbox (badness 10000) in paragraph at lines 358--358
 []\OT1/ptm/m/n/10.95 29
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 490--490
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 358--358
 \OT1/ptm/m/n/10.95 (24.2%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 490--490
+Underfull \hbox (badness 10000) in paragraph at lines 358--358
 []\OT1/ptm/m/n/10.95 64
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 490--490
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 358--358
 \OT1/ptm/m/n/10.95 (53.3%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 490--490
+Underfull \hbox (badness 10000) in paragraph at lines 358--358
 []\OT1/ptm/m/n/10.95 53
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 490--490
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 358--358
 \OT1/ptm/m/n/10.95 (44.2%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 491--491
+Underfull \hbox (badness 10000) in paragraph at lines 359--359
 []\OT1/ptm/m/n/10.95 30
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 491--491
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 359--359
 \OT1/ptm/m/n/10.95 (25.9%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 491--491
+Underfull \hbox (badness 10000) in paragraph at lines 359--359
 []\OT1/ptm/m/n/10.95 67
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 491--491
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 359--359
 \OT1/ptm/m/n/10.95 (57.8%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 491--491
+Underfull \hbox (badness 10000) in paragraph at lines 359--359
 []\OT1/ptm/m/n/10.95 63
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 491--491
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 359--359
 \OT1/ptm/m/n/10.95 (54.3%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 492--492
+Underfull \hbox (badness 10000) in paragraph at lines 360--360
 []\OT1/ptm/m/n/10.95 27
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 492--492
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 360--360
 \OT1/ptm/m/n/10.95 (20.0%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 492--492
+Underfull \hbox (badness 10000) in paragraph at lines 360--360
 []\OT1/ptm/m/n/10.95 65
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 492--492
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 360--360
 \OT1/ptm/m/n/10.95 (48.2%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 492--492
+Underfull \hbox (badness 10000) in paragraph at lines 360--360
 []\OT1/ptm/m/n/10.95 55
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 492--492
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 360--360
 \OT1/ptm/m/n/10.95 (40.7%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 493--493
+Underfull \hbox (badness 10000) in paragraph at lines 361--361
 []\OT1/ptm/m/n/10.95 379
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 493--493
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 361--361
 \OT1/ptm/m/n/10.95 (26.5%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 493--493
+Underfull \hbox (badness 10000) in paragraph at lines 361--361
 []\OT1/ptm/m/n/10.95 905
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 493--493
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 361--361
 \OT1/ptm/m/n/10.95 (63.2%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 493--493
+Underfull \hbox (badness 10000) in paragraph at lines 361--361
 []\OT1/ptm/m/n/10.95 812
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 493--493
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 361--361
 \OT1/ptm/m/n/10.95 (56.7%)| 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 531--531
-[]\OT1/ptm/b/n/10.95 # of
+[7 <./images/visarga.png> <./images/consonant.png>]
+Underfull \hbox (badness 2884) in paragraph at lines 392--392
+[]\OT1/ptm/b/n/10.95 # let-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 531--531
-\OT1/ptm/b/n/10.95 let-
+Overfull \hbox (8.67815pt too wide) in paragraph at lines 392--392
+[]\OT1/ptm/b/n/10.95 Sandhis| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 531--531
-\OT1/ptm/b/n/10.95 ters
- []
-
-
-Overfull \hbox (6.2255pt too wide) in paragraph at lines 531--531
-[]\OT1/ptm/m/n/10.95 Sandhis| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 533--533
+Underfull \hbox (badness 10000) in paragraph at lines 394--394
 []\OT1/ptm/m/n/10.95 26
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 533--533
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 394--394
 \OT1/ptm/m/n/10.95 (28.0%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 533--533
+Underfull \hbox (badness 10000) in paragraph at lines 394--394
 []\OT1/ptm/m/n/10.95 58
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 533--533
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 394--394
 \OT1/ptm/m/n/10.95 (62.4%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 533--533
+Underfull \hbox (badness 10000) in paragraph at lines 394--394
 []\OT1/ptm/m/n/10.95 51
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 533--533
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 394--394
 \OT1/ptm/m/n/10.95 (54.8%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 534--534
+Underfull \hbox (badness 10000) in paragraph at lines 395--395
 []\OT1/ptm/m/n/10.95 120
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 534--534
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 395--395
 \OT1/ptm/m/n/10.95 (21.0%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 534--534
+Underfull \hbox (badness 10000) in paragraph at lines 395--395
 []\OT1/ptm/m/n/10.95 343
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 534--534
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 395--395
 \OT1/ptm/m/n/10.95 (60.1%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 534--534
+Underfull \hbox (badness 10000) in paragraph at lines 395--395
 []\OT1/ptm/m/n/10.95 269
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 534--534
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 395--395
 \OT1/ptm/m/n/10.95 (47.1%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 535--535
+Underfull \hbox (badness 10000) in paragraph at lines 396--396
 []\OT1/ptm/m/n/10.95 250
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 535--535
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 396--396
 \OT1/ptm/m/n/10.95 (16.5%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 535--535
+Underfull \hbox (badness 10000) in paragraph at lines 396--396
 []\OT1/ptm/m/n/10.95 763
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 535--535
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 396--396
 \OT1/ptm/m/n/10.95 (50.5%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 535--535
+Underfull \hbox (badness 10000) in paragraph at lines 396--396
 []\OT1/ptm/m/n/10.95 634
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 535--535
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 396--396
 \OT1/ptm/m/n/10.95 (41.9%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 536--536
+Underfull \hbox (badness 10000) in paragraph at lines 397--397
 []\OT1/ptm/m/n/10.95 315
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 536--536
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 397--397
 \OT1/ptm/m/n/10.95 (15.4%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 536--536
+Underfull \hbox (badness 10000) in paragraph at lines 397--397
 []\OT1/ptm/m/n/10.95 988
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 536--536
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 397--397
 \OT1/ptm/m/n/10.95 (48.3%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 536--536
+Underfull \hbox (badness 10000) in paragraph at lines 397--397
 []\OT1/ptm/m/n/10.95 803
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 536--536
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 397--397
 \OT1/ptm/m/n/10.95 (39.3%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 537--537
+Underfull \hbox (badness 10000) in paragraph at lines 398--398
 []\OT1/ptm/m/n/10.95 355
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 537--537
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 398--398
 \OT1/ptm/m/n/10.95 (15.4%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 537--537
+Underfull \hbox (badness 10000) in paragraph at lines 398--398
 []\OT1/ptm/m/n/10.95 1096
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 537--537
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 398--398
 \OT1/ptm/m/n/10.95 (47.6%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 537--537
+Underfull \hbox (badness 10000) in paragraph at lines 398--398
 []\OT1/ptm/m/n/10.95 890
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 537--537
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 398--398
 \OT1/ptm/m/n/10.95 (38.7%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 538--538
+Underfull \hbox (badness 10000) in paragraph at lines 399--399
 []\OT1/ptm/m/n/10.95 411
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 538--538
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 399--399
 \OT1/ptm/m/n/10.95 (15.2%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 538--538
+Underfull \hbox (badness 10000) in paragraph at lines 399--399
 []\OT1/ptm/m/n/10.95 1260
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 538--538
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 399--399
 \OT1/ptm/m/n/10.95 (46.7%)| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 538--538
+Underfull \hbox (badness 10000) in paragraph at lines 399--399
 []\OT1/ptm/m/n/10.95 1016
  []
 
 
-Overfull \hbox (1.43315pt too wide) in paragraph at lines 538--538
+Overfull \hbox (1.43315pt too wide) in paragraph at lines 399--399
 \OT1/ptm/m/n/10.95 (37.6%)| 
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 1253) in paragraph at lines 440--442
+[]\OT1/ptm/b/n/10.95 Cascading split ef-fect: \OT1/ptm/m/n/10.95 There are some
 
-[9] <images/visargamerge.png, id=48, 481.8pt x 361.35pt>
-File: images/visargamerge.png Graphic file (type png)
-
-<use images/visargamerge.png>
-Package pdftex.def Info: images/visargamerge.png used on input line 550.
-(pdftex.def)             Requested size: 163.80983pt x 122.85738pt.
-
-<images/consonantmerge.png, id=49, 481.8pt x 361.35pt>
-File: images/consonantmerge.png Graphic file (type png)
-
-<use images/consonantmerge.png>
-Package pdftex.def Info: images/consonantmerge.png used on input line 556.
-(pdftex.def)             Requested size: 163.80983pt x 122.85738pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/vowelmerge.png, id=50, 481.8pt x 361.35pt>
-File: images/vowelmerge.png Graphic file (type png)
- <use images/vowelmerge.png>
-Package pdftex.def Info: images/vowelmerge.png used on input line 562.
-(pdftex.def)             Requested size: 163.80983pt x 122.85738pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 2343) has occurred while \output is active []
-
- [10 <./images/visargamerge.png> <./images/consonantmerge.png> <./images/vowelm
-erge.png>]
-Underfull \hbox (badness 1715) in paragraph at lines 594--595
-[]\OT1/ptm/m/it/10.95 uttara \OT1/ptm/m/n/10.95 (north) + \OT1/ptm/m/it/10.95 a
-yana \OT1/ptm/m/n/10.95 (move-ment) $\OMS/cmsy/m/n/10.95 !$ \OT1/ptm/m/it/10.95
- ut-
  []
 
 
-Underfull \hbox (badness 6063) in paragraph at lines 597--599
-[]\OT1/ptm/m/it/10.95 dak[]i[]a \OT1/ptm/m/n/10.95 (south) + \OT1/ptm/m/it/10.9
-5 ayana \OT1/ptm/m/n/10.95 (move-ment) $\OMS/cmsy/m/n/10.95 !$
+Underfull \hbox (badness 1292) in paragraph at lines 448--452
+\OT1/ptm/m/n/10.95 with-out nec-es-sar-ily there be-ing a change
  []
 
 
-Underfull \hbox (badness 2932) in paragraph at lines 597--599
-\OT1/ptm/m/it/10.95 dak[]i[][]ayana \OT1/ptm/m/n/10.95 (south-ward move-ment, r
-efers to
+Underfull \hbox (badness 1178) in paragraph at lines 448--452
+\OT1/ptm/m/n/10.95 when they merge, also cre-ates prob-lems.
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 621--622
-[]\OT1/ptm/m/it/10.95 lak[]yasy[]arthatvavyavah[]ar[]anurodhena $\OMS/cmsy/m/n/
-10.95 !$
+[8] (./eacl2017.bbl
+Underfull \hbox (badness 3108) in paragraph at lines 50--53
+[]\OT1/ptm/m/n/10 Anil Ku-mar, Vipul Mit-tal, and Amba Kulka-rni,
  []
 
+) [9
 
-Overfull \hbox (97.23535pt too wide) in paragraph at lines 627--628
-[]\OT1/ptm/m/it/10.95 prapa[]nce'v[]antaravibh[]agapravibh[]agabhinn[]anantapad
-[]arthasa[]nkule'pi
- []
-
-[11] (./eacl2017.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- )
+] (./eacl2017.aux) )
 (\end occurred when \iffalse on line 331 was incomplete) 
 Here is how much of TeX's memory you used:
- 1852 strings out of 494447
- 27219 string characters out of 6166766
- 102150 words of memory out of 5000000
- 5142 multiletter control sequences out of 15000+600000
- 27063 words of font info for 61 fonts, out of 8000000 for 9000
+ 1905 strings out of 494447
+ 27790 string characters out of 6166766
+ 101063 words of memory out of 5000000
+ 5191 multiletter control sequences out of 15000+600000
+ 29817 words of font info for 63 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 38i,13n,23p,1802b,297s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,12n,23p,1803b,297s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/201
 6basic/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2016basic/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016basic
@@ -1624,10 +1403,10 @@ ic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016basic/te
 xmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2016basic/texmf-
 dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016basic/texmf-dist/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on eacl2017.pdf (11 pages, 221324 bytes).
+Output written on eacl2017.pdf (9 pages, 171673 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
+ 77 PDF objects out of 1000 (max. 8388607)
+ 50 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

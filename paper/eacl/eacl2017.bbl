@@ -1,0 +1,61 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citename{Bharati and Kulkarni}2007]{bharati2007}
+Akshar Bharati and Amba Kulkarni.
+\newblock 2007.
+\newblock Sanskrit and computational linguistics.
+\newblock In {\em First International Sanskrit Computational Symposium.
+  Department of Sanskrit Studies, University of Hyderabad}.
+
+\bibitem[\protect\citename{Bharati \bgroup et al.\egroup
+  }2006]{bharati2006building}
+Akshar Bharati, Amba~P Kulkarni, and V~Sheeba.
+\newblock 2006.
+\newblock Building a wide coverage sanskrit morphological analyser: A practical
+  approach.
+\newblock In {\em The First National Symposium on Modelling and Shallow Parsing
+  of Indian Languages, IIT-Bombay}.
+
+\bibitem[\protect\citename{Gillon}2009]{Gillon2009}
+Brendan~S. Gillon, 2009.
+\newblock {\em Tagging Classical Sanskrit Compounds}, pages 98--105.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg.
+
+\bibitem[\protect\citename{Goyal and Huet}2013]{goyal2013completeness}
+Pawan Goyal and G{\'e}rard Huet.
+\newblock 2013.
+\newblock Completeness analysis of a sanskrit reader.
+\newblock In {\em International Symposium on Sanskrit Computational
+  Linguistics}, pages 130--171.
+
+\bibitem[\protect\citename{Huet}2003]{huet2003}
+G{\'e}rard Huet.
+\newblock 2003.
+\newblock Towards computational processing of sanskrit.
+\newblock In {\em International Conference on Natural Language Processing
+  (ICON)}. Citeseer.
+
+\bibitem[\protect\citename{ILTP-DC}2008]{ss}
+ILTP-DC.
+\newblock 2008.
+\newblock Sandhi-splitter.
+
+\bibitem[\protect\citename{Kulkarni and Shukl}2009]{kulkarni2009sanskrit}
+Amba Kulkarni and Devanand Shukl.
+\newblock 2009.
+\newblock Sanskrit morphological analyser: Some issues.
+\newblock {\em Indian Linguistics}, 70(1-4):169--177.
+
+\bibitem[\protect\citename{Kumar \bgroup et al.\egroup }2010]{kumar2010a}
+Anil Kumar, Vipul Mittal, and Amba Kulkarni, 2010.
+\newblock {\em Sanskrit Compound Processor}, pages 57--69.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg.
+
+\bibitem[\protect\citename{Sachin}2007]{sachin2007sandhi}
+Kumar Sachin.
+\newblock 2007.
+\newblock Sandhi splitter and analyzer for sanskrit (with reference to ac
+  sandhi).
+\newblock {\em M. {P}hil. degree at {SCSS, JNU} (submitted, 2007)}.
+
+\end{thebibliography}
