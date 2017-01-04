@@ -23,8 +23,9 @@ from six.moves import zip
 max_features = 159970  # vocabulary size most common words in data
 second_max_features = 500
 skip_top = 100  # ignore top 100 most common words
-nb_epoch = 1
+nb_epoch = 25
 dim_proj = 256  # embedding space dimension
+negativeSamples_size = 3
 
 save = True
 load_model_flag = False
@@ -101,7 +102,9 @@ print("Index words -- ",len(sandhiData["index"]))
 
 training_sandhi = set()
 validation_sandhi = set()
+train_val_sanhi = set()
 test_sandhi = set()
+total_sampleSeen = 0
 
 # training process
 model = None
@@ -123,13 +126,15 @@ if train_model:
             if(sandhi_count % 10 == 0):
                 test_sandhi.add(i)
             else:
-                training_sandhi.add(i)
+                train_val_sanhi.add(i)
 
         sandhi_count = 0 
-        for i in training_sandhi:
+        for i in train_val_sanhi:
             sandhi_count = sandhi_count + 1 
             if(sandhi_count % 5 == 0):
                 validation_sandhi.add(i)
+            else:
+                training_sandhi.add(i)
 
         sandhiDataset = {"training":training_sandhi, "test":test_sandhi, "validation":validation_sandhi}
         six.moves.cPickle.dump(sandhiDataset, open(os.path.join(save_dir, trainTestData_fname), "wb"))
@@ -161,7 +166,7 @@ if train_model:
         model = Sequential()
         model.add(Merge(models, mode='dot'))
         
-        model.compile(loss='mse', optimizer='rmsprop')
+        model.compile(loss='mse', optimizer='rmsprop', metrics=['accuracy'])
 
         for e in range(nb_epoch):
             print('-' * 40)
@@ -186,9 +191,9 @@ if train_model:
                     context_vec.append(sandhiData["index"][cw])
                     output_vec.append(1)
 
-                negativeSamples = set(random.sample(sandhiData["rootWords"], 5))
+                negativeSamples = set(random.sample(sandhiData["rootWords"], negativeSamples_size))
                 while len(negativeSamples.intersection(sandhiData["sandhi"][i])):
-                    negativeSamples = set(random.sample(sandhiData["rootWords"], 5))
+                    negativeSamples = set(random.sample(sandhiData["rootWords"], negativeSamples_size))
 
                 for ncw in negativeSamples:
                     input_vec.append(sandhiData["index"][i])
@@ -198,7 +203,7 @@ if train_model:
                 if sandhi_count % 200 == 0:
 
                     ### one gradient update per 20 compound words
-                    print( "Mini batch of 200", sandhi_count / 200)
+                    # print( "Mini batch of 200", sandhi_count / 200)
                     X = np.array(input_vec, dtype="int32")
                     Y = np.array(context_vec, dtype="int32")
                     labels = output_vec 
@@ -212,15 +217,14 @@ if train_model:
                     context_vec = []
 
                 if sandhi_count % 2000 == 0:
-                    print( "Processed 10 batch of 200", sandhi_count / 2000 ,"Mean Loss --", np.mean(losses))
+                    print( "#", sandhi_count / 2000 ,"Mean Loss 2000 compound word:", np.mean(losses))
                     # progbar.update(i, values=[("loss", np.mean(losses))])
                     losses = []
-                    break
+                    # break
 
             print('-' * 15,'Epoch', e, "completed", '-' * 15)
-            print('Samples seen:', samples_seen)
-
-            if sandhi_count % 200 != 0:
+        
+            if len(losses) > 0:
                 print( "Last batch of 200")
                 X = np.array(input_vec, dtype="int32")
                 Y = np.array(context_vec, dtype="int32")
@@ -230,40 +234,66 @@ if train_model:
                 losses.append(loss)
                 samples_seen += len(labels)
 
-                print( "Model Mean Loss--", np.mean(losses))
+                print( "Model Mean Loss at Epoch End--", np.mean(losses))
                 losses = []
 
-            # score = model.evaluate(X Y_test, verbose=0)
-            # print('Test accuracy:', score[1])
+            print('Samples seen:', samples_seen, " Next validation...")
+            total_sampleSeen = total_sampleSeen + samples_seen
+
+            input_vec = []
+            output_vec = []
+            context_vec = []
+            for i in validation_sandhi:
+                for cw in sandhiData["sandhi"][i]:
+                        input_vec.append(sandhiData["index"][i])
+                        context_vec.append(sandhiData["index"][cw])
+                        output_vec.append(1)
+
+                negativeSamples = set(random.sample(sandhiData["rootWords"], negativeSamples_size))
+                while len(negativeSamples.intersection(sandhiData["sandhi"][i])):
+                    negativeSamples = set(random.sample(sandhiData["rootWords"], negativeSamples_size))
+
+                for ncw in negativeSamples:
+                    input_vec.append(sandhiData["index"][i])
+                    context_vec.append(sandhiData["index"][ncw])
+                    output_vec.append(0)
+
+            X_test = np.array(input_vec, dtype="int32")
+            C_test = np.array(context_vec, dtype="int32")
+            labels_test = output_vec 
+            score = model.evaluate([X_test,C_test], labels_test, batch_size=2000, verbose=0)
+            print('Validation accuracy:', score[1]*100)
+
+            if save:
+                print("Saving model after epoch:", e)
+                if not os.path.exists(save_dir):
+                    os.makedirs(save_dir)
+                model.save(os.path.join(save_dir, model_save_fname))
 
         print("Training completed!")
-
+        print("Total sample seen:",total_sampleSeen)
         if save:
-            print("Saving model...")
+            print("Saving final model...")
             if not os.path.exists(save_dir):
                 os.makedirs(save_dir)
             model.save(os.path.join(save_dir, model_save_fname))
 
 
 print("Length of training set", len(training_sandhi))
+print("Length of validation set", len(validation_sandhi))
 print("Length of testing set", len(test_sandhi))
 print("It's test time!")
 
 # recover the embedding weights trained with skipgram:
 weights = model.layers[0].get_weights()
 
-# # we no longer need this
-# del model
-model.compile(loss='mse', optimizer='rmsprop')
-
 # weights[:skip_top] = np.zeros((skip_top, dim_proj))
 norm_weights = np_utils.normalize(weights)
 
 reverse_sandhi_index = dict([(v, k) for k, v in sandhiData["index"].items()])
-word_index = sandhiData["index"]
-
+sandhi_index = sandhiData["index"]
 def embed_word(w):
-    i = word_index.get(w)
+    i = sandhi_index.get(w)
     if (not i) or (i >= max_features):
         return None
     return norm_weights[i]
@@ -274,9 +304,8 @@ def closest_to_point(point, nb_closest=10):
     tups.sort(key=lambda x: x[1], reverse=True)
     return [(reverse_sandhi_index.get(t[0]), t[1]) for t in tups[:nb_closest]]
 
-
 def closest_to_word(w, nb_closest=10):
-    i = word_index.get(w)
+    i = sandhi_index.get(w)
     if (not i) or (i >= max_features):
         return []
     return closest_to_point(norm_weights[i].T, nb_closest)
@@ -284,24 +313,10 @@ def closest_to_word(w, nb_closest=10):
 test_count = 0 
 for test_word in test_sandhi:
     test_count = test_count + 1
-    if(test_count == 2):
+    if(test_count == 5):
         break
-    print(model.predict([sandhiData["index"][test_word]], batch_size=1))
+    # print(model.predict([sandhi_index[test_word]], batch_size=1))
     # res = closest_to_word(test_word)
     # print('====', test_word)
     # for r in res:
     #     print(r)
-
-
-''' the resuls in comments below were for:
-    5.8M HN comments
-    dim_proj = 256
-    nb_epoch = 2
-    optimizer = rmsprop
-    loss = mse
-    max_features = 50000
-    skip_top = 100
-    negative_samples = 1.
-    window_size = 4
-    and frequency subsampling of factor 10e-5.
-'''
